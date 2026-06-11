@@ -15,6 +15,7 @@ export function Footer() {
         <div>
           <p className="font-semibold text-white">Guides</p>
           <div className="mt-3 grid gap-2 text-sm">
+            <Link to="/guides">Guides library</Link>
             <Link to="/ats-resume-guide">ATS resume guide</Link>
             <Link to="/software-engineer-resume-guide">Software engineer resume</Link>
             <Link to="/recent-graduate-resume-guide">Recent graduate resume</Link>

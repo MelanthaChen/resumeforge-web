@@ -7,11 +7,21 @@ export type OptimizationStrategy =
   | 'community_insight_enhanced'
   | 'comparison_enhanced'
 
+export type GuideCategory =
+  | 'Resume Writing'
+  | 'ATS'
+  | 'Career Change'
+  | 'Students'
+  | 'Interviews'
+  | 'Job Search'
+  | 'Resume Builders'
+
 export type Article = {
   slug: string
   title: string
   description: string
   category: string
+  guideCategory: GuideCategory
   content: string
   author: string
   source_type: SourceType

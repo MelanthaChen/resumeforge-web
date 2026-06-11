@@ -1,7 +1,7 @@
 import { FaqBlock } from '../components/FaqBlock'
 import { Seo } from '../components/Seo'
 import { SITE_URL } from '../config/site'
-import { faqs } from '../data/faqs'
+import { faqs, faqTopics } from '../data/faqs'
 
 export function FaqPage() {
   const structuredData = [
@@ -57,8 +57,15 @@ export function FaqPage() {
             Clear answers about what this site is, what it intentionally does
             not do, and how its GEO experiment content is organized.
           </p>
-          <div className="mt-10">
-            <FaqBlock items={faqs} />
+          <div className="mt-10 grid gap-8">
+            {faqTopics.map((topic) => (
+              <section key={topic.topic}>
+                <h2 className="mb-4 text-2xl font-semibold text-slate-950">
+                  {topic.topic}
+                </h2>
+                <FaqBlock items={topic.items} />
+              </section>
+            ))}
           </div>
         </div>
       </section>

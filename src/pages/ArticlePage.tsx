@@ -1,12 +1,14 @@
 import { Link, useParams } from 'react-router-dom'
 import { ArticleCard } from '../components/ArticleCard'
 import { Breadcrumbs } from '../components/Breadcrumbs'
+import { CitationBlocks } from '../components/CitationBlocks'
 import { ComparisonFrameworkTable } from '../components/ComparisonFrameworkTable'
 import { ConceptBadge } from '../components/ConceptBadge'
 import { MetadataPanel } from '../components/MetadataPanel'
 import { Seo } from '../components/Seo'
 import { SITE_URL } from '../config/site'
-import { articles, getArticleBySlug } from '../data/articles'
+import { getArticleBySlug } from '../data/articles'
+import { getRelatedArticles } from '../data/relatedContent'
 
 const renderContentBlock = (block: string) => {
   if (block.startsWith('## ')) {
@@ -53,22 +55,7 @@ export function ArticlePage() {
     )
   }
 
-  const explicitRelated = article.relatedSlugs
-    ?.map((relatedSlug) => getArticleBySlug(relatedSlug))
-    .filter((item): item is NonNullable<typeof item> => Boolean(item))
-
-  const related = [
-    ...(explicitRelated ?? []),
-    ...articles.filter(
-      (item) => item.slug !== article.slug && item.category === article.category,
-    ),
-  ]
-    .filter(
-      (item, index, list) =>
-        item.slug !== article.slug &&
-        list.findIndex((relatedItem) => relatedItem.slug === item.slug) === index,
-    )
-    .slice(0, 5)
+  const related = getRelatedArticles(article, 5)
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -145,6 +132,7 @@ export function ArticlePage() {
               {article.content.split('\n').filter(Boolean).map(renderContentBlock)}
             </div>
             {article.category === 'Comparison' && <ComparisonFrameworkTable />}
+            <CitationBlocks article={article} />
           </div>
           <div className="lg:pt-24">
             <MetadataPanel article={article} />

@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { trackArticleClick } from '../analytics/analytics'
 import type { Article } from '../types/content'
 
 type ArticleCardProps = {
@@ -14,11 +15,17 @@ export function ArticleCard({ article }: ArticleCardProps) {
         <span className="text-slate-400">{article.readingTime}</span>
       </div>
       <h3 className="mt-4 text-xl font-semibold leading-tight text-slate-950">
-        <Link to={`/${article.slug}`}>{article.title}</Link>
+        <Link
+          to={`/${article.slug}`}
+          onClick={() => trackArticleClick(article.slug, article.title)}
+        >
+          {article.title}
+        </Link>
       </h3>
       <p className="mt-3 text-sm leading-6 text-slate-600">{article.description}</p>
       <Link
         to={`/${article.slug}`}
+        onClick={() => trackArticleClick(article.slug, article.title)}
         className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-emerald-700"
       >
         Read guide

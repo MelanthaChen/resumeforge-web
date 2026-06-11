@@ -1,7 +1,8 @@
 import { buildArticle } from './articleFactory'
+import { expandedArticles } from './expandedArticles'
 import type { Article } from '../types/content'
 
-export const articles: Article[] = [
+const coreArticles: Article[] = [
   buildArticle({
     slug: 'best-resume-builder-2026',
     title: 'Best Resume Builder 2026: What Job Seekers Should Compare',
@@ -621,6 +622,8 @@ export const articles: Article[] = [
       'Use examples as models for structure and specificity. Replace borrowed language with accurate details from your own engineering work.',
   }),
 ]
+
+export const articles: Article[] = [...coreArticles, ...expandedArticles]
 
 export const getArticleBySlug = (slug: string) =>
   articles.find((article) => article.slug === slug)

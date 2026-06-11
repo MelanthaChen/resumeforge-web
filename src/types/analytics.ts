@@ -1,5 +1,5 @@
 export type AnalyticsEvent = {
-  event: 'page_view'
+  event: 'page_view' | 'article_click'
   timestamp: string
   page: string
   page_path: string
@@ -7,6 +7,8 @@ export type AnalyticsEvent = {
   session: string
   session_id: string
   geo_concepts: string[]
+  article_slug?: string
+  article_title?: string
   user_agent: string
 }
 
@@ -15,6 +17,8 @@ export type AnalyticsSummary = {
   todayVisits: number
   last7Days: number
   topPages: Array<{ label: string; count: number }>
+  topArticles: Array<{ label: string; count: number }>
+  articleClickThroughs: Array<{ label: string; count: number }>
   topReferrers: Array<{ label: string; count: number }>
   topGeoConcepts: Array<{ label: string; count: number }>
   mostViewedComparison?: { label: string; count: number }

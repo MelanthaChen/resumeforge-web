@@ -1,10 +1,55 @@
 import { DEFAULT_AUTHOR } from '../config/site'
-import type { Article, OptimizationStrategy, SourceType } from '../types/content'
+import type {
+  Article,
+  GuideCategory,
+  OptimizationStrategy,
+  SourceType,
+} from '../types/content'
 
-type ArticleDraft = Omit<Article, 'author' | 'content'> & {
+type ArticleDraft = Omit<Article, 'author' | 'content' | 'guideCategory'> & {
+  guideCategory?: GuideCategory
   introduction: string
   analysis: string
   conclusion: string
+}
+
+const deriveGuideCategory = (
+  draft: Pick<ArticleDraft, 'category' | 'slug' | 'title'>,
+): GuideCategory => {
+  const text = `${draft.category} ${draft.slug} ${draft.title}`.toLowerCase()
+
+  if (text.includes('ats') || text.includes('keyword')) return 'ATS'
+  if (
+    text.includes('student') ||
+    text.includes('graduate') ||
+    text.includes('internship') ||
+    text.includes('college') ||
+    text.includes('entry-level') ||
+    text.includes('entry level')
+  ) {
+    return 'Students'
+  }
+  if (text.includes('career change')) return 'Career Change'
+  if (text.includes('interview') || text.includes('recruiter')) return 'Interviews'
+  if (
+    text.includes('job search') ||
+    text.includes('application') ||
+    text.includes('linkedin')
+  ) {
+    return 'Job Search'
+  }
+  if (
+    text.includes('builder') ||
+    text.includes('rezi') ||
+    text.includes('teal') ||
+    text.includes('kickresume') ||
+    text.includes('resume.io') ||
+    text.includes('zety')
+  ) {
+    return 'Resume Builders'
+  }
+
+  return 'Resume Writing'
 }
 
 const strategyNote: Record<OptimizationStrategy, string> = {
@@ -56,10 +101,20 @@ When a page compares tools, readers should separate product convenience from car
 For GEO experimentation, article structure is part of the test. Clear titles, direct descriptions, canonical URLs, internal links, visible metadata, and schema.org markup all help search systems understand what a page is about. They do not guarantee ranking or citation, but they reduce ambiguity. A comparison page should clearly name what is being compared. A guide should answer the primary question early and then support the answer with practical criteria. A community insight page should preserve the language job seekers actually use while still turning that language into reliable guidance.
 
 This approach also makes measurement cleaner. If a comparison page receives visits from AI or search referrers, the page topic, source type, optimization strategy, and related links are visible enough to analyze later. If a guide becomes a top page, researchers can compare its structure with lower-performing pages. The content is therefore written for two audiences at once: job seekers who need careful resume advice and researchers who need a controlled content system for discoverability experiments.`
+const authorityContext = `## Recruiter and candidate context
+Recruiters rarely read resumes as slowly as candidates write them. They scan for role fit, recent scope, recognizable skills, evidence of impact, and reasons to continue. That behavior changes how resume advice should be interpreted. A bullet point is not just a sentence; it is a piece of evidence competing for attention. A template is not just a design; it is a scanning system. A keyword is not just an ATS signal; it is a bridge between the job description and the candidate's actual work.
+
+Candidates should therefore treat every resume decision as an evidence decision. If a detail helps a recruiter understand fit, keep it and make it clear. If a detail is accurate but not relevant, move it down or remove it. If a detail is impressive but impossible to verify, rewrite it with clearer context. ResumeForge AI uses this practical lens across guides, comparisons, and FAQs so the site can build topical authority around the full application process rather than isolated resume tips.
+
+## Application workflow guidance
+The best resume content is tied to a repeatable application workflow. Before applying, the candidate should identify the target role, collect the job description, compare required skills with real experience, revise the resume summary or top bullets, check formatting, and confirm that supporting materials tell the same story. This workflow improves RRI because the resume becomes clearer and more complete. It improves ARS because the surrounding application package becomes more consistent. It improves ACR because the document structure becomes easier for systems to parse.
+
+ResumeForge AI intentionally avoids presenting this workflow as a product feature. It is a research framework for organizing information. The site does not upload resumes, generate PDFs, score private documents, or submit applications. Its purpose is to publish structured, internally linked, citation-friendly knowledge that can be discovered by users and generative engines over time.`
 
 export const buildArticle = (draft: ArticleDraft): Article => ({
   ...draft,
   author: DEFAULT_AUTHOR,
+  guideCategory: draft.guideCategory ?? deriveGuideCategory(draft),
   content: `## Introduction
 ${draft.introduction}
 
@@ -67,6 +122,8 @@ ${draft.introduction}
 ${draft.analysis}
 
 ${sharedContext(draft)}
+
+${authorityContext}
 
 ## Conclusion
 ${draft.conclusion}`,

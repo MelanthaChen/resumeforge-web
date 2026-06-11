@@ -99,6 +99,28 @@ export const trackPageView = (pagePath: string) => {
   writeEvents([...readEvents(), event].slice(-1000))
 }
 
+export const trackArticleClick = (articleSlug: string, articleTitle: string) => {
+  if (!isBrowser()) {
+    return
+  }
+
+  const event: AnalyticsEvent = {
+    event: 'article_click',
+    timestamp: new Date().toISOString(),
+    page: window.location.pathname,
+    page_path: window.location.pathname,
+    referrer: document.referrer || 'Direct',
+    session: getSessionId(),
+    session_id: getSessionId(),
+    geo_concepts: detectGeoConcepts(`/${articleSlug}`),
+    article_slug: articleSlug,
+    article_title: articleTitle,
+    user_agent: window.navigator.userAgent,
+  }
+
+  writeEvents([...readEvents(), event].slice(-1000))
+}
+
 export const getAnalyticsEvents = () => readEvents()
 
 export const getAnalyticsSummary = (): AnalyticsSummary => {
@@ -127,6 +149,8 @@ export const getAnalyticsSummary = (): AnalyticsSummary => {
     ),
     'page',
   )
+  const pageViews = events.filter((event) => event.event === 'page_view')
+  const articleClicks = events.filter((event) => event.event === 'article_click')
 
   return {
     totalVisits: events.length,
@@ -134,7 +158,24 @@ export const getAnalyticsSummary = (): AnalyticsSummary => {
       .length,
     last7Days: events.filter((event) => new Date(event.timestamp) >= sevenDaysAgo)
       .length,
-    topPages: countBy(events, 'page'),
+    topPages: countBy(pageViews, 'page'),
+    topArticles: countBy(
+      pageViews.filter((event) => {
+        const page = event.page || event.page_path || ''
+        return page !== '/' && !page.includes('/compare/') && !page.includes('/analytics')
+      }),
+      'page',
+    ),
+    articleClickThroughs: Object.entries(
+      articleClicks.reduce<Record<string, number>>((acc, event) => {
+        const label = event.article_title ?? event.article_slug ?? 'Unknown article'
+        acc[label] = (acc[label] ?? 0) + 1
+        return acc
+      }, {}),
+    )
+      .map(([label, count]) => ({ label, count }))
+      .sort((a, b) => b.count - a.count)
+      .slice(0, 6),
     topReferrers: countBy(events, 'referrer'),
     topGeoConcepts: countConcepts(events),
     mostViewedComparison: comparisons[0],
