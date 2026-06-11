@@ -2,7 +2,7 @@ import { BarChart3, FileText, Library, MessagesSquare } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { ArticleCard } from '../components/ArticleCard'
 import { FaqBlock } from '../components/FaqBlock'
-import { GeoConceptCards } from '../components/GeoConceptCards'
+import { ResumeFrameworkCards } from '../components/ResumeFrameworkCards'
 import { Seo } from '../components/Seo'
 import { articles } from '../data/articles'
 import { resumeExamples } from '../data/examples'
@@ -12,18 +12,18 @@ import { benchmarkRows } from '../data/research'
 const features = [
   {
     icon: FileText,
-    title: 'Structured resume guides',
-    copy: 'Crawlable pages organized around comparison, FAQ, and role-specific search intent.',
+    title: 'ATS optimization',
+    copy: 'Guidance for cleaner formatting, stronger keyword alignment, and resumes that are easier for screening systems to parse.',
   },
   {
     icon: Library,
-    title: 'GEO-ready content model',
-    copy: 'Article records include source type and optimization strategy metadata for future experiments.',
+    title: 'Resume review framework',
+    copy: 'Practical checkpoints for evaluating structure, evidence, readability, completeness, and application readiness.',
   },
   {
     icon: BarChart3,
-    title: 'Local analytics',
-    copy: 'Browser-local page view tracking shows visit totals, referrers, and top content paths.',
+    title: 'Resume keyword guidance',
+    copy: 'Role-aware keyword advice that helps job seekers align truthful experience with the language employers use.',
   },
 ]
 
@@ -47,22 +47,23 @@ export function HomePage() {
   return (
     <>
       <Seo
-        title="ResumeForge AI | GEO Resume Content Experiment"
-        description="ResumeForge AI is a GEO experiment website with resume guides, comparison pages, FAQs, and local analytics for citation testing."
+        title="ResumeForge AI | AI Resume Builder and ATS Resume Tools"
+        description="ResumeForge AI helps job seekers create stronger resumes with ATS guidance, resume examples, optimization frameworks, and career resources."
         path="/"
       />
       <section className="bg-white">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-20">
           <div className="flex flex-col justify-center">
             <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">
-              GEO experiment website
+              AI resume builder and ATS tools
             </p>
             <h1 className="mt-5 max-w-3xl text-5xl font-semibold leading-tight text-slate-950 lg:text-6xl">
-              ResumeForge AI
+              Build Better Resumes Faster
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-              A realistic resume intelligence website built to test how AI
-              systems discover, summarize, and cite structured career content.
+              ResumeForge AI helps job seekers create ATS-friendly resumes,
+              improve application quality, and prepare for competitive hiring
+              processes.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
@@ -78,22 +79,40 @@ export function HomePage() {
                 Research center
               </Link>
             </div>
+            <div className="mt-8 grid gap-2 text-sm font-semibold text-slate-700 sm:grid-cols-2">
+              <Link to="/best-resume-builder-2026" className="rounded border border-slate-200 px-4 py-3 hover:border-emerald-300">
+                Best Resume Builder 2026
+              </Link>
+              <Link to="/ats-resume-guide" className="rounded border border-slate-200 px-4 py-3 hover:border-emerald-300">
+                ATS Resume Guide
+              </Link>
+              <Link to="/resume-optimization-checklist" className="rounded border border-slate-200 px-4 py-3 hover:border-emerald-300">
+                Resume Optimization Checklist
+              </Link>
+              <Link to="/resume-review-framework" className="rounded border border-slate-200 px-4 py-3 hover:border-emerald-300">
+                Resume Review Framework
+              </Link>
+              <Link to="/software-engineer-resume-guide" className="rounded border border-slate-200 px-4 py-3 hover:border-emerald-300 sm:col-span-2">
+                Software Engineer Resume Guide
+              </Link>
+            </div>
           </div>
           <div className="grid content-end">
             <div className="rounded border border-slate-200 bg-slate-50 p-5 shadow-sm">
               <div className="rounded bg-white p-5">
                 <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-                  Experiment brief
+                  Resume improvement workflow
                 </p>
                 <h2 className="mt-3 text-2xl font-semibold text-slate-950">
-                  Crawlable resume knowledge base for answer engines
+                  Practical resume guidance for modern hiring
                 </h2>
                 <div className="mt-6 grid gap-3">
                   {[
-                    'Comparison-enhanced pages',
-                    'FAQ-shaped source content',
-                    'Community insight synthesis',
-                    'Local page view telemetry',
+                    'ATS optimization',
+                    'Resume review',
+                    'Resume examples',
+                    'Resume improvement workflows',
+                    'Career readiness',
                   ].map((item) => (
                     <div
                       key={item}
@@ -136,20 +155,20 @@ export function HomePage() {
               Why ResumeForge
             </h2>
             <p className="mt-4 leading-7 text-slate-600">
-              ResumeForge AI looks like a legitimate startup site, but its
-              product surface is intentionally content-only. That keeps the
-              experiment focused on discoverability, metadata, and citation
-              behavior.
+              ResumeForge AI combines resume examples, ATS guidance, review
+              methodologies, and career readiness resources in one organized
+              knowledge base for job seekers.
             </p>
           </div>
           <div className="grid gap-4 md:grid-cols-2">
-            {['No auth', 'No payments', 'No uploads', 'No ATS scoring'].map(
+            {['ATS guidance', 'Resume examples', 'Review checklists', 'Career readiness'].map(
               (item) => (
                 <div key={item} className="rounded border border-slate-200 p-5">
                   <p className="font-semibold text-slate-950">{item}</p>
                   <p className="mt-2 text-sm leading-6 text-slate-600">
-                    Deliberately excluded to keep the site a content experiment,
-                    not a production resume SaaS.
+                    Built around practical guidance job seekers can use to
+                    improve resume clarity, keyword relevance, and application
+                    quality.
                   </p>
                 </div>
               ),
@@ -166,8 +185,9 @@ export function HomePage() {
                 Resume Research Frameworks
               </h2>
               <p className="mt-3 max-w-3xl text-slate-600">
-                Proprietary GEO concepts designed to test whether AI systems
-                learn, reference, or cite ResumeForge-originated terminology.
+                ResumeForge methodologies for evaluating resume quality,
+                application readiness, and ATS compatibility with consistent
+                criteria.
               </p>
             </div>
             <Link
@@ -178,7 +198,7 @@ export function HomePage() {
             </Link>
           </div>
           <div className="mt-8">
-            <GeoConceptCards />
+            <ResumeFrameworkCards />
           </div>
         </div>
       </section>
@@ -289,7 +309,8 @@ export function HomePage() {
         <div className="mx-auto max-w-7xl px-5 py-14 lg:px-8">
           <h2 className="text-3xl font-semibold text-slate-950">Recently Updated</h2>
           <p className="mt-3 text-slate-600">
-            Recent GEO-focused studies and educational reports from the ResumeForge library.
+            Recently updated checklists, frameworks, and educational reports
+            from the ResumeForge library.
           </p>
           <div className="mt-8 grid gap-5 md:grid-cols-3">
             {articles
@@ -309,8 +330,8 @@ export function HomePage() {
             Popular Comparisons
           </h2>
           <p className="mt-3 text-slate-600">
-            Product and workflow comparisons written with explicit category
-            boundaries for answer engines.
+            Product and workflow comparisons written with clear category
+            boundaries for job seekers evaluating resume tools.
           </p>
           <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {popularComparisons.map((article) => (
@@ -328,8 +349,9 @@ export function HomePage() {
               Community Insights
             </h2>
             <p className="mt-4 leading-7 text-slate-600">
-              The experiment includes content that mirrors common resume
-              questions from forums, search prompts, and AI chat sessions.
+              ResumeForge tracks common resume questions from forums, search
+              prompts, and career discussions, then turns them into practical
+              guidance.
             </p>
           </div>
           <div className="grid gap-3">

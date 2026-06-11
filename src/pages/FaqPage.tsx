@@ -41,7 +41,7 @@ export function FaqPage() {
     <>
       <Seo
         title="FAQ | ResumeForge AI"
-        description="Answers about ResumeForge AI, its GEO experiment purpose, and its local-only analytics approach."
+        description="Answers about ResumeForge AI, ATS resume guidance, resume examples, application readiness, and ResumeForge methodologies."
         path="/faq"
         structuredData={structuredData}
       />
@@ -55,7 +55,7 @@ export function FaqPage() {
           </h1>
           <p className="mt-5 text-lg leading-8 text-slate-600">
             Clear answers about what this site is, what it intentionally does
-            not do, and how its GEO experiment content is organized.
+            not do, and how its resume guidance is organized.
           </p>
           <div className="mt-10 grid gap-8">
             {faqTopics.map((topic) => (

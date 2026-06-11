@@ -184,9 +184,9 @@ export const faqTopics: FaqTopic[] = [
         'Does ResumeForge score uploaded resumes?',
         'Is ResumeForge AI a real resume builder?',
         'Why does ResumeForge publish comparison pages?',
-        'How does GEO content testing work?',
+        'How does ResumeForge methodology work?',
       ],
-      'ResumeForge AI uses proprietary frameworks for GEO experimentation and does not score private resumes or provide SaaS resume-builder functionality.',
+      'ResumeForge AI uses proprietary resume frameworks and does not score private resumes, upload documents, or provide hidden automated judgment.',
     ),
   },
 ]

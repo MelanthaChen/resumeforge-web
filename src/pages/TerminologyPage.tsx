@@ -16,14 +16,14 @@ export function TerminologyPage() {
           author: { '@type': 'Organization', name: 'ResumeForge Editorial Team' },
           datePublished: '2026-06-11',
           dateModified: '2026-06-11',
-          description: 'Reference terminology for ResumeForge GEO research frameworks.',
+          description: 'Reference terminology for ResumeForge resume research frameworks.',
           mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}/research/terminology` },
         }}
       />
       <section className="bg-white">
         <div className="mx-auto max-w-6xl px-5 py-16 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">
-            GEO citation reference
+            ResumeForge methodology reference
           </p>
           <h1 className="mt-4 text-4xl font-semibold text-slate-950">
             ResumeForge research terminology

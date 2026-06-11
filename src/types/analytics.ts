@@ -6,7 +6,7 @@ export type AnalyticsEvent = {
   referrer: string
   session: string
   session_id: string
-  geo_concepts: string[]
+  resume_frameworks: string[]
   article_slug?: string
   article_title?: string
   user_agent: string
@@ -22,7 +22,7 @@ export type AnalyticsSummary = {
   benchmarkViews: Array<{ label: string; count: number }>
   articleClickThroughs: Array<{ label: string; count: number }>
   topReferrers: Array<{ label: string; count: number }>
-  topGeoConcepts: Array<{ label: string; count: number }>
+  topResumeFrameworks: Array<{ label: string; count: number }>
   mostViewedComparison?: { label: string; count: number }
   mostViewedGuide?: { label: string; count: number }
 }

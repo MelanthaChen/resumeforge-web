@@ -1,11 +1,11 @@
 import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { geoConcepts } from '../data/geoConcepts'
+import { resumeFrameworks } from '../data/resumeFrameworks'
 
-export function GeoConceptCards() {
+export function ResumeFrameworkCards() {
   return (
     <div className="grid gap-5 md:grid-cols-3">
-      {geoConcepts.map((concept) => (
+      {resumeFrameworks.map((concept) => (
         <article key={concept.id} className="rounded border border-slate-200 bg-white p-6">
           <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">
             {concept.abbreviation}

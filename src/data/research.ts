@@ -1,8 +1,8 @@
-import { geoConcepts, frameworkComparisonRows } from './geoConcepts'
-import type { GeoConceptId } from './geoConcepts'
+import { resumeFrameworks, frameworkComparisonRows } from './resumeFrameworks'
+import type { ResumeFrameworkId } from './resumeFrameworks'
 
 export type ResearchFramework = {
-  id: GeoConceptId
+  id: ResumeFrameworkId
   slug: string
   name: string
   abbreviation: string
@@ -13,7 +13,7 @@ export type ResearchFramework = {
   limitations: string[]
 }
 
-export const researchFrameworks: ResearchFramework[] = geoConcepts.map((concept) => ({
+export const researchFrameworks: ResearchFramework[] = resumeFrameworks.map((concept) => ({
   id: concept.id,
   slug: concept.id,
   name: concept.name,

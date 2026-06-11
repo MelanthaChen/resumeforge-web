@@ -25,7 +25,7 @@ export function Header() {
               ResumeForge AI
             </span>
             <span className="block text-xs font-medium text-slate-500">
-              GEO resume intelligence
+              AI resume tools
             </span>
           </span>
         </Link>

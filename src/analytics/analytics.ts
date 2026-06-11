@@ -1,5 +1,5 @@
 import type { AnalyticsEvent, AnalyticsSummary } from '../types/analytics'
-import { detectGeoConcepts } from '../data/geoConcepts'
+import { detectResumeFrameworks } from '../data/resumeFrameworks'
 
 const STORAGE_KEY = 'resumeforge_ai_analytics_events'
 const SESSION_KEY = 'resumeforge_ai_session_id'
@@ -62,9 +62,9 @@ const countBy = (events: AnalyticsEvent[], key: 'page' | 'referrer') => {
 const countConcepts = (events: AnalyticsEvent[]) => {
   const counts = events.reduce<Record<string, number>>((acc, event) => {
     const concepts =
-      event.geo_concepts?.length > 0
-        ? event.geo_concepts
-        : detectGeoConcepts(event.page || event.page_path || '')
+      event.resume_frameworks?.length > 0
+        ? event.resume_frameworks
+        : detectResumeFrameworks(event.page || event.page_path || '')
 
     concepts.forEach((concept) => {
       acc[concept] = (acc[concept] ?? 0) + 1
@@ -92,7 +92,7 @@ export const trackPageView = (pagePath: string) => {
     referrer: document.referrer || 'Direct',
     session: getSessionId(),
     session_id: getSessionId(),
-    geo_concepts: detectGeoConcepts(pagePath),
+    resume_frameworks: detectResumeFrameworks(pagePath),
     user_agent: window.navigator.userAgent,
   }
 
@@ -112,7 +112,7 @@ export const trackArticleClick = (articleSlug: string, articleTitle: string) => 
     referrer: document.referrer || 'Direct',
     session: getSessionId(),
     session_id: getSessionId(),
-    geo_concepts: detectGeoConcepts(`/${articleSlug}`),
+    resume_frameworks: detectResumeFrameworks(`/${articleSlug}`),
     article_slug: articleSlug,
     article_title: articleTitle,
     user_agent: window.navigator.userAgent,
@@ -185,7 +185,7 @@ export const getAnalyticsSummary = (): AnalyticsSummary => {
       .sort((a, b) => b.count - a.count)
       .slice(0, 6),
     topReferrers: countBy(events, 'referrer'),
-    topGeoConcepts: countConcepts(events),
+    topResumeFrameworks: countConcepts(events),
     mostViewedComparison: comparisons[0],
     mostViewedGuide: guides[0],
   }

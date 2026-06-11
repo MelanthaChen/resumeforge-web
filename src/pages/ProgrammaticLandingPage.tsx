@@ -48,7 +48,7 @@ export function ProgrammaticLandingPage() {
       <section className="bg-white">
         <div className="mx-auto max-w-6xl px-5 py-16 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">
-            Programmatic GEO landing page
+            Resume builder guide
           </p>
           <h1 className="mt-4 text-4xl font-semibold text-slate-950">{page.title}</h1>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">{page.description}</p>

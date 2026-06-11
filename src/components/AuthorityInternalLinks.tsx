@@ -14,7 +14,7 @@ const groups = [
     links: [
       { label: 'Guides Library', to: '/guides' },
       { label: 'Resume Examples', to: '/examples' },
-      { label: 'GEO Content Hub', to: '/hub' },
+      { label: 'Content Hub', to: '/hub' },
     ],
   },
   {

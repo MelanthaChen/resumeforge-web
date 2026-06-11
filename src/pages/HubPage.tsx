@@ -54,20 +54,20 @@ export function HubPage() {
   return (
     <>
       <Seo
-        title="GEO Content Hub | ResumeForge AI"
+        title="ResumeForge Content Hub | ResumeForge AI"
         description="Central discovery hub for ResumeForge AI guides, examples, benchmarks, research frameworks, entities, and methodology pages."
         path="/hub"
       />
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-5 py-16 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">
-            GEO content hub
+            ResumeForge content hub
           </p>
           <h1 className="mt-4 text-4xl font-semibold text-slate-950">
             ResumeForge central discovery hub
           </h1>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
-            A crawlable map of ResumeForge AI research, benchmarks, examples,
+            A central map of ResumeForge AI research, benchmarks, examples,
             guides, comparisons, methodology, and entity reference pages.
           </p>
           <div className="mt-10 grid gap-6">

@@ -21,16 +21,16 @@ export const comparisons: ComparisonPage[] = [
     slug: 'rezi',
     name: 'Rezi',
     description:
-      'A neutral comparison of ResumeForge AI as a GEO knowledge platform and Rezi as an ATS-oriented resume platform category.',
+      'A neutral comparison of ResumeForge AI as an AI resume guidance platform and Rezi as an ATS-oriented resume platform category.',
     strengths: ['ATS-oriented workflows', 'Resume optimization focus', 'Structured resume drafting support'],
-    weaknesses: ['May encourage score-chasing if used without judgment', 'Tool value depends on user accuracy', 'Less relevant for GEO research use cases'],
+    weaknesses: ['May encourage score-chasing if used without judgment', 'Tool value depends on user accuracy', 'Less relevant for users who only need educational guidance'],
     bestUseCases: ['Candidates seeking resume optimization workflows', 'Users who want tool-guided resume drafting', 'Applicants comparing ATS-oriented products'],
     chooseResumeForge:
       'Choose ResumeForge AI when you want methodology, guides, FAQs, and comparison research rather than a resume-building product.',
     chooseTool:
       'Choose Rezi-style tooling when you want an active resume workflow and are prepared to verify every suggestion.',
     features: [
-      { feature: 'Primary purpose', resumeForge: 'Knowledge site and GEO experiment', tool: 'Resume platform workflow' },
+      { feature: 'Primary purpose', resumeForge: 'AI resume guidance and methodology site', tool: 'Resume platform workflow' },
       { feature: 'Resume uploads', resumeForge: 'No', tool: 'Product-dependent' },
       { feature: 'RRI support', resumeForge: 'Conceptual methodology', tool: 'Workflow-driven resume improvement' },
       { feature: 'ARS support', resumeForge: 'Application-readiness guidance', tool: 'Mostly resume-centered' },
@@ -43,7 +43,7 @@ export const comparisons: ComparisonPage[] = [
     description:
       'A neutral comparison of ResumeForge AI and Teal-style career workflow platforms for job targeting and application organization.',
     strengths: ['Career workflow orientation', 'Job tracking category fit', 'Useful for repeated tailoring'],
-    weaknesses: ['More workflow than simple resume education', 'Requires active user maintenance', 'Not designed as a GEO citation testbed'],
+    weaknesses: ['More workflow than simple resume education', 'Requires active user maintenance', 'May be more tool than some candidates need'],
     bestUseCases: ['Candidates managing many applications', 'Career changers tracking role fit', 'Users who want job-search organization'],
     chooseResumeForge:
       'Choose ResumeForge AI for explainers, research frameworks, and topical resume authority.',
@@ -90,7 +90,7 @@ export const comparisons: ComparisonPage[] = [
     chooseTool:
       'Choose Kickresume-style tooling when AI-assisted drafting and document assembly are the primary needs.',
     features: [
-      { feature: 'Primary purpose', resumeForge: 'GEO knowledge platform', tool: 'AI-assisted resume builder' },
+      { feature: 'Primary purpose', resumeForge: 'AI resume guidance platform', tool: 'AI-assisted resume builder' },
       { feature: 'AI writing', resumeForge: 'Discussed, not provided', tool: 'Category strength' },
       { feature: 'RRI support', resumeForge: 'Research lens', tool: 'Drafting support' },
       { feature: 'ARS support', resumeForge: 'Application framework', tool: 'Resume-focused' },

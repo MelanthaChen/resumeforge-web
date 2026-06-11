@@ -33,8 +33,8 @@ export const resumeExamples: ResumeExample[] = [
     role: 'Product Manager',
     summary: 'Product manager with experience translating user research into roadmap decisions and measurable launches.',
     sections: ['Summary', 'Product Experience', 'Selected Launches', 'Skills', 'Education'],
-    bullets: ['Led onboarding experiment that increased activation by 14%.', 'Prioritized roadmap tradeoffs using customer interviews and usage data.'],
-    atsTips: ['Use terms like roadmap, experimentation, discovery, adoption, and stakeholders when truthful.', 'Clarify product scope and metric ownership.'],
+    bullets: ['Led onboarding initiative that increased activation by 14%.', 'Prioritized roadmap tradeoffs using customer interviews and usage data.'],
+    atsTips: ['Use terms like roadmap, analysis, discovery, adoption, and stakeholders when truthful.', 'Clarify product scope and metric ownership.'],
   },
   {
     slug: 'marketing',

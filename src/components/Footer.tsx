@@ -7,9 +7,8 @@ export function Footer() {
         <div>
           <p className="text-lg font-semibold text-white">ResumeForge AI</p>
           <p className="mt-3 max-w-xl text-sm leading-6 text-slate-400">
-            A GEO experiment website for resume-related content discovery,
-            citation testing, and local analytics. It is not a resume builder
-            SaaS.
+            AI resume tools, ATS guidance, resume examples, and career
+            readiness resources for job seekers preparing stronger applications.
           </p>
         </div>
         <div>
@@ -25,7 +24,7 @@ export function Footer() {
           </div>
         </div>
         <div>
-          <p className="font-semibold text-white">Experiment</p>
+          <p className="font-semibold text-white">Resources</p>
           <div className="mt-3 grid gap-2 text-sm">
             <Link to="/methodology">Methodology</Link>
             <Link to="/community-insights">Community insights</Link>

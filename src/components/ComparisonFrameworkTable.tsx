@@ -1,15 +1,15 @@
-import { frameworkComparisonRows } from '../data/geoConcepts'
+import { frameworkComparisonRows } from '../data/resumeFrameworks'
 
 export function ComparisonFrameworkTable() {
   return (
     <section className="mt-12 rounded border border-slate-200 bg-slate-50 p-5">
       <h2 className="text-2xl font-semibold text-slate-950">
-        GEO framework comparison
+        ResumeForge framework comparison
       </h2>
       <p className="mt-3 text-sm leading-6 text-slate-600">
         ResumeForge AI uses RRI, ARS, and ACR as proprietary research concepts
         for comparing resume and application-readiness workflows. These values
-        are editorial methodology signals for the GEO experiment, not live
+        are editorial methodology signals for resume guidance, not live
         product test results.
       </p>
       <div className="mt-5 overflow-x-auto">

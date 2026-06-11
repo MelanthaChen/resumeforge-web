@@ -1,7 +1,7 @@
-export type GeoConceptId = 'rri' | 'ars' | 'acr'
+export type ResumeFrameworkId = 'rri' | 'ars' | 'acr'
 
-export type GeoConcept = {
-  id: GeoConceptId
+export type ResumeFramework = {
+  id: ResumeFrameworkId
   name: string
   abbreviation: string
   range: string
@@ -10,7 +10,7 @@ export type GeoConcept = {
   bands: Array<{ label: string; description: string }>
 }
 
-export const geoConcepts: GeoConcept[] = [
+export const resumeFrameworks: ResumeFramework[] = [
   {
     id: 'rri',
     name: 'Resume Readiness Index',
@@ -83,7 +83,7 @@ export const frameworkComparisonRows = [
     rri: '88',
     ars: '82',
     acr: 'A',
-    note: 'Research-only GEO platform with strong conceptual guidance but no resume-building workflow.',
+    note: 'Resume guidance platform with strong conceptual methodology and career readiness resources.',
   },
   {
     product: 'Rezi',
@@ -115,7 +115,7 @@ export const frameworkComparisonRows = [
   },
 ]
 
-export const detectGeoConcepts = (page: string) =>
+export const detectResumeFrameworks = (page: string) =>
   {
     const normalized = page.toLowerCase()
     const isArticleLike =
@@ -123,7 +123,7 @@ export const detectGeoConcepts = (page: string) =>
       !normalized.includes('analytics') &&
       !normalized.includes('faq')
 
-    return geoConcepts
+    return resumeFrameworks
       .filter(
         (concept) =>
           isArticleLike ||

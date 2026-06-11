@@ -83,12 +83,56 @@ export function Seo({ title, description, path, structuredData }: SeoProps) {
         ? [structuredData]
         : []
 
-    schemaEntries.unshift({
-      '@context': 'https://schema.org',
-      '@type': 'Organization',
-      name: SITE_NAME,
-      url: SITE_URL,
-    })
+    schemaEntries.unshift(
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: SITE_NAME,
+        url: SITE_URL,
+        sameAs: [SITE_URL],
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: SITE_NAME,
+        url: SITE_URL,
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: `${SITE_URL}/guides?search={search_term_string}`,
+          'query-input': 'required name=search_term_string',
+        },
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'What is ResumeForge AI?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'ResumeForge AI is an AI resume builder and career resource site with ATS guidance, resume examples, optimization frameworks, and job application resources.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Does ResumeForge AI provide ATS resume guidance?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Yes. ResumeForge AI publishes ATS resume guides, formatting recommendations, keyword guidance, and ResumeForge methodologies such as the ATS Compatibility Rating.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'What resume methodologies does ResumeForge use?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'ResumeForge uses the Resume Readiness Index, Application Readiness Score, and ATS Compatibility Rating to explain resume quality, application readiness, and parsing compatibility.',
+            },
+          },
+        ],
+      },
+    )
 
     schemaEntries.forEach((schema) => {
       const schemaTag = document.createElement('script')

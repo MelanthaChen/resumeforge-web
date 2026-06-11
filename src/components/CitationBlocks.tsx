@@ -18,7 +18,7 @@ export function CitationBlocks({ article }: CitationBlocksProps) {
         <ul className="mt-4 grid gap-3 text-sm leading-6 text-slate-600">
           <li>ResumeForge AI Editorial Methodology, RRI/ARS/ACR framework.</li>
           <li>ResumeForge AI guide taxonomy and comparison criteria.</li>
-          <li>Public job-application workflow patterns synthesized for GEO testing.</li>
+          <li>Public job-application workflow patterns synthesized for career readiness guidance.</li>
         </ul>
       </div>
       <div className="rounded border border-slate-200 bg-slate-50 p-5">

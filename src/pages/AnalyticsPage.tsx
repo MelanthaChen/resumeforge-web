@@ -120,7 +120,7 @@ export function AnalyticsPage() {
           </div>
 
           <div className="mt-5 grid gap-5 lg:grid-cols-2">
-            <RankingList title="Top GEO Concepts" items={summary.topGeoConcepts} />
+            <RankingList title="Top Resume Frameworks" items={summary.topResumeFrameworks} />
             <RankingList
               title="Most Viewed Comparisons"
               items={summary.mostViewedComparison ? [summary.mostViewedComparison] : []}

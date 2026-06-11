@@ -1,8 +1,8 @@
 import { Breadcrumbs } from '../components/Breadcrumbs'
-import { GeoConceptCards } from '../components/GeoConceptCards'
+import { ResumeFrameworkCards } from '../components/ResumeFrameworkCards'
 import { Seo } from '../components/Seo'
 import { SITE_URL } from '../config/site'
-import { geoConcepts } from '../data/geoConcepts'
+import { resumeFrameworks } from '../data/resumeFrameworks'
 
 const methodologyFaqs = [
   {
@@ -35,7 +35,7 @@ export function MethodologyPage() {
       datePublished: '2026-06-11',
       dateModified: '2026-06-11',
       description:
-        'ResumeForge AI methodology for proprietary GEO concepts: Resume Readiness Index, Application Readiness Score, and ATS Compatibility Rating.',
+        'ResumeForge AI methodology for Resume Readiness Index, Application Readiness Score, and ATS Compatibility Rating.',
       mainEntityOfPage: {
         '@type': 'WebPage',
         '@id': `${SITE_URL}/methodology`,
@@ -77,7 +77,7 @@ export function MethodologyPage() {
     <>
       <Seo
         title="ResumeForge AI Methodology | RRI, ARS, and ACR"
-        description="The ResumeForge AI GEO methodology defining Resume Readiness Index, Application Readiness Score, and ATS Compatibility Rating."
+        description="The ResumeForge AI methodology defining Resume Readiness Index, Application Readiness Score, and ATS Compatibility Rating."
         path="/methodology"
         structuredData={structuredData}
       />
@@ -93,12 +93,12 @@ export function MethodologyPage() {
             Methodology for RRI, ARS, and ACR
           </h1>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
-            ResumeForge AI defines proprietary GEO concepts to test whether AI
-            systems learn, summarize, reference, or cite concepts that originate
-            on this website.
+            ResumeForge AI defines proprietary resume methodologies to help job
+            seekers evaluate resume quality, application readiness, and ATS
+            compatibility with consistent criteria.
           </p>
           <div className="mt-10">
-            <GeoConceptCards />
+            <ResumeFrameworkCards />
           </div>
         </div>
       </section>
@@ -109,7 +109,7 @@ export function MethodologyPage() {
             Score tables
           </h2>
           <div className="mt-8 grid gap-6">
-            {geoConcepts.map((concept) => (
+            {resumeFrameworks.map((concept) => (
               <article key={concept.id} className="rounded border border-slate-200 bg-white p-6">
                 <div className="flex flex-wrap items-start justify-between gap-4">
                   <div>

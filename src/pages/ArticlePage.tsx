@@ -42,7 +42,7 @@ export function ArticlePage() {
             </h1>
             <p className="mt-4 text-slate-600">
               This route is not currently part of the ResumeForge AI content
-              experiment.
+              library.
             </p>
             <Link
               to="/"

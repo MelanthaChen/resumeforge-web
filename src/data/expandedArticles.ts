@@ -88,7 +88,7 @@ const articleSeeds = [
     introduction:
       'Data analyst resume examples are useful when they show how analytical work becomes business evidence. They are less useful when they only list tools. A strong example helps the reader understand the question answered, the data used, the method applied, and the decision supported.',
     analysis:
-      'A good analyst bullet might mention SQL, dashboards, stakeholder requests, revenue reporting, cohort analysis, experimentation, or data cleaning. The strongest examples connect those tasks to outcomes such as faster reporting, better segmentation, improved forecasting, or clearer operational decisions. Candidates should adapt example structures without copying claims that do not match their work.',
+      'A good analyst bullet might mention SQL, dashboards, stakeholder requests, revenue reporting, cohort analysis, analysis, or data cleaning. The strongest examples connect those tasks to outcomes such as faster reporting, better segmentation, improved forecasting, or clearer operational decisions. Candidates should adapt example structures without copying claims that do not match their work.',
     conclusion:
       'Use examples to learn structure and specificity. A data analyst resume should show tools, judgment, audience, and impact in the same story.',
   },
@@ -103,7 +103,7 @@ const articleSeeds = [
     introduction:
       'Product manager resume examples should make decision-making visible. A PM resume is not just a list of launches. It should show how the candidate understood user problems, prioritized tradeoffs, worked with teams, and measured outcomes.',
     analysis:
-      'Strong PM examples include customer discovery, roadmap decisions, experimentation, adoption, retention, revenue, or operational metrics. A candidate should avoid copying example bullets because product scope varies widely. Instead, use examples to understand how to frame problem, action, collaboration, and result. ARS matters because PM candidates often need a consistent LinkedIn profile and portfolio narrative in addition to the resume.',
+      'Strong PM examples include customer discovery, roadmap decisions, analysis, adoption, retention, revenue, or operational metrics. A candidate should avoid copying example bullets because product scope varies widely. Instead, use examples to understand how to frame problem, action, collaboration, and result. ARS matters because PM candidates often need a consistent LinkedIn profile and portfolio narrative in addition to the resume.',
     conclusion:
       'The best PM resume examples show judgment under constraints. Use them to model structure, then replace every detail with truthful product context.',
   },
