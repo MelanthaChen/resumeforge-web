@@ -13,9 +13,11 @@ export type Article = {
   description: string
   category: string
   content: string
+  author: string
   source_type: SourceType
   optimization_strategy: OptimizationStrategy
   publishedAt: string
   updatedAt: string
   readingTime: string
+  relatedSlugs?: string[]
 }

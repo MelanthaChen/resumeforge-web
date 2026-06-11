@@ -31,7 +31,15 @@ const insights = [
 ]
 
 export function HomePage() {
-  const popularGuides = articles.slice(0, 6)
+  const popularGuides = articles
+    .filter((article) => article.category === 'Guide')
+    .slice(0, 6)
+  const popularComparisons = articles
+    .filter((article) => article.category === 'Comparison')
+    .slice(0, 6)
+  const communityArticles = articles
+    .filter((article) => article.category === 'Community Insight')
+    .slice(0, 3)
 
   return (
     <>
@@ -174,6 +182,23 @@ export function HomePage() {
       </section>
 
       <section className="bg-white">
+        <div className="mx-auto max-w-7xl px-5 py-14 lg:px-8">
+          <h2 className="text-3xl font-semibold text-slate-950">
+            Popular Comparisons
+          </h2>
+          <p className="mt-3 text-slate-600">
+            Product and workflow comparisons written with explicit category
+            boundaries for answer engines.
+          </p>
+          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {popularComparisons.map((article) => (
+              <ArticleCard key={article.slug} article={article} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-slate-200 bg-slate-50">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
           <div>
             <MessagesSquare className="size-7 text-emerald-700" />
@@ -190,6 +215,9 @@ export function HomePage() {
               <div key={insight} className="rounded border border-slate-200 bg-slate-50 p-4">
                 <p className="text-sm leading-6 text-slate-700">{insight}</p>
               </div>
+            ))}
+            {communityArticles.map((article) => (
+              <ArticleCard key={article.slug} article={article} />
             ))}
           </div>
         </div>

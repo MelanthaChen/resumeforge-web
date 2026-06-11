@@ -1,31 +1,90 @@
 import { useEffect } from 'react'
-
-const SITE_URL = 'https://resumeforge.ai'
+import { SITE_URL } from '../config/site'
 
 type SeoProps = {
   title: string
   description: string
   path: string
+  structuredData?: Record<string, unknown>
 }
 
-export function Seo({ title, description, path }: SeoProps) {
+const upsertMeta = (selector: string, attributes: Record<string, string>) => {
+  const tag =
+    document.querySelector<HTMLMetaElement>(selector) ??
+    document.createElement('meta')
+
+  Object.entries(attributes).forEach(([key, value]) => {
+    tag.setAttribute(key, value)
+  })
+
+  document.head.appendChild(tag)
+}
+
+export function Seo({ title, description, path, structuredData }: SeoProps) {
   useEffect(() => {
     document.title = title
 
-    const descriptionTag =
-      document.querySelector<HTMLMetaElement>('meta[name="description"]') ??
-      document.createElement('meta')
-    descriptionTag.name = 'description'
-    descriptionTag.content = description
-    document.head.appendChild(descriptionTag)
+    const url = `${SITE_URL}${path}`
+
+    upsertMeta('meta[name="description"]', {
+      name: 'description',
+      content: description,
+    })
+
+    upsertMeta('meta[property="og:title"]', {
+      property: 'og:title',
+      content: title,
+    })
+
+    upsertMeta('meta[property="og:description"]', {
+      property: 'og:description',
+      content: description,
+    })
+
+    upsertMeta('meta[property="og:url"]', {
+      property: 'og:url',
+      content: url,
+    })
+
+    upsertMeta('meta[property="og:type"]', {
+      property: 'og:type',
+      content: structuredData ? 'article' : 'website',
+    })
+
+    upsertMeta('meta[name="twitter:card"]', {
+      name: 'twitter:card',
+      content: 'summary',
+    })
+
+    upsertMeta('meta[name="twitter:title"]', {
+      name: 'twitter:title',
+      content: title,
+    })
+
+    upsertMeta('meta[name="twitter:description"]', {
+      name: 'twitter:description',
+      content: description,
+    })
 
     const canonicalTag =
       document.querySelector<HTMLLinkElement>('link[rel="canonical"]') ??
       document.createElement('link')
     canonicalTag.rel = 'canonical'
-    canonicalTag.href = `${SITE_URL}${path}`
+    canonicalTag.href = url
     document.head.appendChild(canonicalTag)
-  }, [description, path, title])
+
+    document
+      .querySelectorAll<HTMLScriptElement>('script[data-resumeforge-schema]')
+      .forEach((tag) => tag.remove())
+
+    if (structuredData) {
+      const schemaTag = document.createElement('script')
+      schemaTag.type = 'application/ld+json'
+      schemaTag.dataset.resumeforgeSchema = 'true'
+      schemaTag.textContent = JSON.stringify(structuredData)
+      document.head.appendChild(schemaTag)
+    }
+  }, [description, path, structuredData, title])
 
   return null
 }

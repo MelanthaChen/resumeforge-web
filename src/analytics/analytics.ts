@@ -1,6 +1,7 @@
 import type { AnalyticsEvent, AnalyticsSummary } from '../types/analytics'
 
 const STORAGE_KEY = 'resumeforge_ai_analytics_events'
+const SESSION_KEY = 'resumeforge_ai_session_id'
 
 const isBrowser = () => typeof window !== 'undefined'
 
@@ -25,9 +26,28 @@ const writeEvents = (events: AnalyticsEvent[]) => {
   window.localStorage.setItem(STORAGE_KEY, JSON.stringify(events))
 }
 
-const countBy = (events: AnalyticsEvent[], key: 'page_path' | 'referrer') => {
+const getSessionId = () => {
+  if (!isBrowser()) {
+    return 'server'
+  }
+
+  const existing = window.sessionStorage.getItem(SESSION_KEY)
+
+  if (existing) {
+    return existing
+  }
+
+  const sessionId =
+    window.crypto?.randomUUID?.() ??
+    `session_${Date.now()}_${Math.random().toString(36).slice(2)}`
+  window.sessionStorage.setItem(SESSION_KEY, sessionId)
+  return sessionId
+}
+
+const countBy = (events: AnalyticsEvent[], key: 'page' | 'referrer') => {
   const counts = events.reduce<Record<string, number>>((acc, event) => {
-    const label = event[key] || 'Direct'
+    const label =
+      key === 'page' ? event.page || event.page_path || 'Unknown' : event.referrer || 'Direct'
     acc[label] = (acc[label] ?? 0) + 1
     return acc
   }, {})
@@ -46,8 +66,10 @@ export const trackPageView = (pagePath: string) => {
   const event: AnalyticsEvent = {
     event: 'page_view',
     timestamp: new Date().toISOString(),
+    page: pagePath,
     page_path: pagePath,
     referrer: document.referrer || 'Direct',
+    session_id: getSessionId(),
     user_agent: window.navigator.userAgent,
   }
 
@@ -64,13 +86,34 @@ export const getAnalyticsSummary = (): AnalyticsSummary => {
   sevenDaysAgo.setDate(now.getDate() - 6)
   sevenDaysAgo.setHours(0, 0, 0, 0)
 
+  const comparisons = countBy(
+    events.filter(
+      (event) =>
+        (event.page || event.page_path || '').includes('vs-') ||
+        (event.page || event.page_path || '').includes('-vs-') ||
+        (event.page || event.page_path || '').includes('builder-vs'),
+    ),
+    'page',
+  )
+  const guides = countBy(
+    events.filter(
+      (event) =>
+        (event.page || event.page_path || '').includes('guide') ||
+        (event.page || event.page_path || '').includes('mistakes') ||
+        (event.page || event.page_path || '').includes('builders'),
+    ),
+    'page',
+  )
+
   return {
     totalVisits: events.length,
     todayVisits: events.filter((event) => event.timestamp.startsWith(today))
       .length,
     last7Days: events.filter((event) => new Date(event.timestamp) >= sevenDaysAgo)
       .length,
-    topPages: countBy(events, 'page_path'),
+    topPages: countBy(events, 'page'),
     topReferrers: countBy(events, 'referrer'),
+    mostViewedComparison: comparisons[0],
+    mostViewedGuide: guides[0],
   }
 }

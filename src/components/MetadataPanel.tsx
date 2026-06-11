@@ -25,6 +25,26 @@ export function MetadataPanel({ article }: MetadataPanelProps) {
       </h2>
       <dl className="mt-4 grid gap-3 text-sm">
         <div>
+          <dt className="font-semibold text-emerald-900">Author</dt>
+          <dd className="mt-1 text-emerald-800">{article.author}</dd>
+        </div>
+        <div>
+          <dt className="font-semibold text-emerald-900">Published</dt>
+          <dd className="mt-1 text-emerald-800">{article.publishedAt}</dd>
+        </div>
+        <div>
+          <dt className="font-semibold text-emerald-900">Last Updated</dt>
+          <dd className="mt-1 text-emerald-800">{article.updatedAt}</dd>
+        </div>
+        <div>
+          <dt className="font-semibold text-emerald-900">Reading Time</dt>
+          <dd className="mt-1 text-emerald-800">{article.readingTime}</dd>
+        </div>
+        <div>
+          <dt className="font-semibold text-emerald-900">Category</dt>
+          <dd className="mt-1 text-emerald-800">{article.category}</dd>
+        </div>
+        <div>
           <dt className="font-semibold text-emerald-900">Source type</dt>
           <dd className="mt-1 text-emerald-800">
             {sourceTypeLabels[article.source_type]}
@@ -37,10 +57,6 @@ export function MetadataPanel({ article }: MetadataPanelProps) {
           <dd className="mt-1 text-emerald-800">
             {strategyLabels[article.optimization_strategy]}
           </dd>
-        </div>
-        <div>
-          <dt className="font-semibold text-emerald-900">Updated</dt>
-          <dd className="mt-1 text-emerald-800">{article.updatedAt}</dd>
         </div>
       </dl>
     </aside>

@@ -2,7 +2,20 @@ import { Link, useParams } from 'react-router-dom'
 import { ArticleCard } from '../components/ArticleCard'
 import { MetadataPanel } from '../components/MetadataPanel'
 import { Seo } from '../components/Seo'
+import { SITE_URL } from '../config/site'
 import { articles, getArticleBySlug } from '../data/articles'
+
+const renderContentBlock = (block: string) => {
+  if (block.startsWith('## ')) {
+    return (
+      <h2 key={block} className="mt-10 text-2xl font-semibold text-slate-950">
+        {block.replace('## ', '')}
+      </h2>
+    )
+  }
+
+  return <p key={block}>{block}</p>
+}
 
 export function ArticlePage() {
   const { slug = '' } = useParams()
@@ -37,9 +50,39 @@ export function ArticlePage() {
     )
   }
 
-  const related = articles
-    .filter((item) => item.slug !== article.slug && item.category === article.category)
-    .slice(0, 3)
+  const explicitRelated = article.relatedSlugs
+    ?.map((relatedSlug) => getArticleBySlug(relatedSlug))
+    .filter((item): item is NonNullable<typeof item> => Boolean(item))
+
+  const related = [
+    ...(explicitRelated ?? []),
+    ...articles.filter(
+      (item) => item.slug !== article.slug && item.category === article.category,
+    ),
+  ]
+    .filter(
+      (item, index, list) =>
+        item.slug !== article.slug &&
+        list.findIndex((relatedItem) => relatedItem.slug === item.slug) === index,
+    )
+    .slice(0, 5)
+
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: article.title,
+    author: {
+      '@type': 'Organization',
+      name: article.author,
+    },
+    datePublished: article.publishedAt,
+    dateModified: article.updatedAt,
+    description: article.description,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${SITE_URL}/${article.slug}`,
+    },
+  }
 
   return (
     <>
@@ -47,6 +90,7 @@ export function ArticlePage() {
         title={`${article.title} | ResumeForge AI`}
         description={article.description}
         path={`/${article.slug}`}
+        structuredData={articleSchema}
       />
       <article className="bg-white">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-8">
@@ -61,14 +105,15 @@ export function ArticlePage() {
               {article.description}
             </p>
             <div className="mt-5 flex flex-wrap gap-3 text-sm text-slate-500">
+              <span>By {article.author}</span>
               <span>Published {article.publishedAt}</span>
+              <span>Updated {article.updatedAt}</span>
               <span>{article.readingTime}</span>
+              <span>{article.category}</span>
             </div>
 
             <div className="prose-content mt-10">
-              {article.content.split('\n\n').map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
-              ))}
+              {article.content.split('\n').filter(Boolean).map(renderContentBlock)}
             </div>
           </div>
           <div className="lg:pt-24">
@@ -83,7 +128,7 @@ export function ArticlePage() {
             <h2 className="text-3xl font-semibold text-slate-950">
               Related pages
             </h2>
-            <div className="mt-8 grid gap-5 md:grid-cols-3">
+            <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
               {related.map((item) => (
                 <ArticleCard key={item.slug} article={item} />
               ))}

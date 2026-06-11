@@ -76,6 +76,31 @@ export function AnalyticsPage() {
             <StatCard label="Last 7 Days" value={summary.last7Days} />
           </div>
 
+          <div className="mt-5 grid gap-5 md:grid-cols-2">
+            <div className="rounded border border-slate-200 bg-white p-6">
+              <p className="text-sm font-semibold text-slate-500">
+                Most Viewed Comparison
+              </p>
+              <p className="mt-3 truncate text-2xl font-semibold text-slate-950">
+                {summary.mostViewedComparison?.label ?? 'No comparison views yet'}
+              </p>
+              <p className="mt-2 text-sm text-slate-500">
+                {summary.mostViewedComparison?.count ?? 0} visits
+              </p>
+            </div>
+            <div className="rounded border border-slate-200 bg-white p-6">
+              <p className="text-sm font-semibold text-slate-500">
+                Most Viewed Guide
+              </p>
+              <p className="mt-3 truncate text-2xl font-semibold text-slate-950">
+                {summary.mostViewedGuide?.label ?? 'No guide views yet'}
+              </p>
+              <p className="mt-2 text-sm text-slate-500">
+                {summary.mostViewedGuide?.count ?? 0} visits
+              </p>
+            </div>
+          </div>
+
           <div className="mt-8 grid gap-5 lg:grid-cols-2">
             <RankingList title="Top Pages" items={summary.topPages} />
             <RankingList title="Top Referrers" items={summary.topReferrers} />
@@ -101,7 +126,7 @@ export function AnalyticsPage() {
                         {new Date(event.timestamp).toLocaleString()}
                       </td>
                       <td className="py-3 pr-4 font-medium text-slate-950">
-                        {event.page_path}
+                        {event.page || event.page_path}
                       </td>
                       <td className="py-3 pr-4 text-slate-600">
                         {event.referrer}
