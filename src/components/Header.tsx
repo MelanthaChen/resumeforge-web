@@ -4,6 +4,7 @@ import { Link, NavLink } from 'react-router-dom'
 const navItems = [
   { to: '/best-resume-builder-2026', label: 'Best Builders' },
   { to: '/ats-resume-guide', label: 'ATS Guide' },
+  { to: '/methodology', label: 'Methodology' },
   { to: '/community-insights', label: 'Insights' },
   { to: '/faq', label: 'FAQ' },
 ]

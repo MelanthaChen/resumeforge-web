@@ -5,7 +5,7 @@ type SeoProps = {
   title: string
   description: string
   path: string
-  structuredData?: Record<string, unknown>
+  structuredData?: Record<string, unknown> | Array<Record<string, unknown>>
 }
 
 const upsertMeta = (selector: string, attributes: Record<string, string>) => {
@@ -77,13 +77,19 @@ export function Seo({ title, description, path, structuredData }: SeoProps) {
       .querySelectorAll<HTMLScriptElement>('script[data-resumeforge-schema]')
       .forEach((tag) => tag.remove())
 
-    if (structuredData) {
+    const schemaEntries = Array.isArray(structuredData)
+      ? structuredData
+      : structuredData
+        ? [structuredData]
+        : []
+
+    schemaEntries.forEach((schema) => {
       const schemaTag = document.createElement('script')
       schemaTag.type = 'application/ld+json'
       schemaTag.dataset.resumeforgeSchema = 'true'
-      schemaTag.textContent = JSON.stringify(structuredData)
+      schemaTag.textContent = JSON.stringify(schema)
       document.head.appendChild(schemaTag)
-    }
+    })
   }, [description, path, structuredData, title])
 
   return null

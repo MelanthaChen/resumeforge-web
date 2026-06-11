@@ -4,7 +4,9 @@ export type AnalyticsEvent = {
   page: string
   page_path: string
   referrer: string
+  session: string
   session_id: string
+  geo_concepts: string[]
   user_agent: string
 }
 
@@ -14,6 +16,7 @@ export type AnalyticsSummary = {
   last7Days: number
   topPages: Array<{ label: string; count: number }>
   topReferrers: Array<{ label: string; count: number }>
+  topGeoConcepts: Array<{ label: string; count: number }>
   mostViewedComparison?: { label: string; count: number }
   mostViewedGuide?: { label: string; count: number }
 }

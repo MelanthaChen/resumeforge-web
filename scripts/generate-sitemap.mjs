@@ -20,6 +20,7 @@ const articleUrls = articleMatches.map((match) => ({
 const urls = [
   { loc: '/', lastmod: defaultLastmod },
   { loc: '/faq', lastmod: defaultLastmod },
+  { loc: '/methodology', lastmod: defaultLastmod },
   ...articleUrls,
 ]
 

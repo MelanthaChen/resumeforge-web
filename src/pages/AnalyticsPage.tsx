@@ -106,6 +106,14 @@ export function AnalyticsPage() {
             <RankingList title="Top Referrers" items={summary.topReferrers} />
           </div>
 
+          <div className="mt-5 grid gap-5 lg:grid-cols-2">
+            <RankingList title="Top GEO Concepts" items={summary.topGeoConcepts} />
+            <RankingList
+              title="Most Viewed Comparisons"
+              items={summary.mostViewedComparison ? [summary.mostViewedComparison] : []}
+            />
+          </div>
+
           <section className="mt-8 rounded border border-slate-200 bg-white p-6">
             <h2 className="text-xl font-semibold text-slate-950">
               Recent page views
@@ -120,8 +128,8 @@ export function AnalyticsPage() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100">
-                  {recentEvents.map((event) => (
-                    <tr key={`${event.timestamp}-${event.page_path}`}>
+                  {recentEvents.map((event, index) => (
+                    <tr key={`${event.timestamp}-${event.page || event.page_path}-${index}`}>
                       <td className="py-3 pr-4 text-slate-600">
                         {new Date(event.timestamp).toLocaleString()}
                       </td>

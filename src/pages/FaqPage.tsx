@@ -1,14 +1,49 @@
 import { FaqBlock } from '../components/FaqBlock'
 import { Seo } from '../components/Seo'
+import { SITE_URL } from '../config/site'
 import { faqs } from '../data/faqs'
 
 export function FaqPage() {
+  const structuredData = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqs.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.answer,
+        },
+      })),
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: `${SITE_URL}/`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'FAQ',
+          item: `${SITE_URL}/faq`,
+        },
+      ],
+    },
+  ]
+
   return (
     <>
       <Seo
         title="FAQ | ResumeForge AI"
         description="Answers about ResumeForge AI, its GEO experiment purpose, and its local-only analytics approach."
         path="/faq"
+        structuredData={structuredData}
       />
       <section className="bg-white">
         <div className="mx-auto max-w-4xl px-5 py-16 lg:px-8">

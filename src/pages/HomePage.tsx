@@ -2,6 +2,7 @@ import { BarChart3, FileText, Library, MessagesSquare } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { ArticleCard } from '../components/ArticleCard'
 import { FaqBlock } from '../components/FaqBlock'
+import { GeoConceptCards } from '../components/GeoConceptCards'
 import { Seo } from '../components/Seo'
 import { articles } from '../data/articles'
 import { faqs } from '../data/faqs'
@@ -151,6 +152,31 @@ export function HomePage() {
                 </div>
               ),
             )}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-slate-200 bg-slate-50">
+        <div className="mx-auto max-w-7xl px-5 py-14 lg:px-8">
+          <div className="flex flex-wrap items-end justify-between gap-5">
+            <div>
+              <h2 className="text-3xl font-semibold text-slate-950">
+                ResumeForge Research Frameworks
+              </h2>
+              <p className="mt-3 max-w-3xl text-slate-600">
+                Proprietary GEO concepts designed to test whether AI systems
+                learn, reference, or cite ResumeForge-originated terminology.
+              </p>
+            </div>
+            <Link
+              to="/methodology"
+              className="text-sm font-semibold text-emerald-700"
+            >
+              View methodology
+            </Link>
+          </div>
+          <div className="mt-8">
+            <GeoConceptCards />
           </div>
         </div>
       </section>

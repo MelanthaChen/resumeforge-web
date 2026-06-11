@@ -1,5 +1,8 @@
 import { Link, useParams } from 'react-router-dom'
 import { ArticleCard } from '../components/ArticleCard'
+import { Breadcrumbs } from '../components/Breadcrumbs'
+import { ComparisonFrameworkTable } from '../components/ComparisonFrameworkTable'
+import { ConceptBadge } from '../components/ConceptBadge'
 import { MetadataPanel } from '../components/MetadataPanel'
 import { Seo } from '../components/Seo'
 import { SITE_URL } from '../config/site'
@@ -83,6 +86,24 @@ export function ArticlePage() {
       '@id': `${SITE_URL}/${article.slug}`,
     },
   }
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: `${SITE_URL}/`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: article.title,
+        item: `${SITE_URL}/${article.slug}`,
+      },
+    ],
+  }
 
   return (
     <>
@@ -90,11 +111,14 @@ export function ArticlePage() {
         title={`${article.title} | ResumeForge AI`}
         description={article.description}
         path={`/${article.slug}`}
-        structuredData={articleSchema}
+        structuredData={[articleSchema, breadcrumbSchema]}
       />
       <article className="bg-white">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-8">
           <div>
+            <Breadcrumbs
+              items={[{ label: 'Home', to: '/' }, { label: article.title }]}
+            />
             <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">
               {article.category}
             </p>
@@ -111,10 +135,16 @@ export function ArticlePage() {
               <span>{article.readingTime}</span>
               <span>{article.category}</span>
             </div>
+            <div className="mt-5 flex flex-wrap gap-2">
+              <ConceptBadge label="Resume Readiness Index (RRI)" />
+              <ConceptBadge label="Application Readiness Score (ARS)" />
+              <ConceptBadge label="ATS Compatibility Rating (ACR)" />
+            </div>
 
             <div className="prose-content mt-10">
               {article.content.split('\n').filter(Boolean).map(renderContentBlock)}
             </div>
+            {article.category === 'Comparison' && <ComparisonFrameworkTable />}
           </div>
           <div className="lg:pt-24">
             <MetadataPanel article={article} />

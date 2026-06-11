@@ -23,6 +23,7 @@ export function Footer() {
         <div>
           <p className="font-semibold text-white">Experiment</p>
           <div className="mt-3 grid gap-2 text-sm">
+            <Link to="/methodology">Methodology</Link>
             <Link to="/community-insights">Community insights</Link>
             <Link to="/faq">FAQ</Link>
             <Link to="/analytics">Analytics</Link>

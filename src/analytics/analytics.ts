@@ -1,4 +1,5 @@
 import type { AnalyticsEvent, AnalyticsSummary } from '../types/analytics'
+import { detectGeoConcepts } from '../data/geoConcepts'
 
 const STORAGE_KEY = 'resumeforge_ai_analytics_events'
 const SESSION_KEY = 'resumeforge_ai_session_id'
@@ -58,6 +59,26 @@ const countBy = (events: AnalyticsEvent[], key: 'page' | 'referrer') => {
     .slice(0, 6)
 }
 
+const countConcepts = (events: AnalyticsEvent[]) => {
+  const counts = events.reduce<Record<string, number>>((acc, event) => {
+    const concepts =
+      event.geo_concepts?.length > 0
+        ? event.geo_concepts
+        : detectGeoConcepts(event.page || event.page_path || '')
+
+    concepts.forEach((concept) => {
+      acc[concept] = (acc[concept] ?? 0) + 1
+    })
+
+    return acc
+  }, {})
+
+  return Object.entries(counts)
+    .map(([label, count]) => ({ label, count }))
+    .sort((a, b) => b.count - a.count)
+    .slice(0, 6)
+}
+
 export const trackPageView = (pagePath: string) => {
   if (!isBrowser()) {
     return
@@ -69,7 +90,9 @@ export const trackPageView = (pagePath: string) => {
     page: pagePath,
     page_path: pagePath,
     referrer: document.referrer || 'Direct',
+    session: getSessionId(),
     session_id: getSessionId(),
+    geo_concepts: detectGeoConcepts(pagePath),
     user_agent: window.navigator.userAgent,
   }
 
@@ -113,6 +136,7 @@ export const getAnalyticsSummary = (): AnalyticsSummary => {
       .length,
     topPages: countBy(events, 'page'),
     topReferrers: countBy(events, 'referrer'),
+    topGeoConcepts: countConcepts(events),
     mostViewedComparison: comparisons[0],
     mostViewedGuide: guides[0],
   }
