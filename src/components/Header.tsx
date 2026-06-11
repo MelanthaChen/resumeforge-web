@@ -2,14 +2,14 @@ import { Menu, Search } from 'lucide-react'
 import { Link, NavLink } from 'react-router-dom'
 
 const navItems = [
+  { to: '/', label: 'Home' },
   { to: '/guides', label: 'Guides' },
+  { to: '/compare/rezi', label: 'Comparisons' },
+  { to: '/examples', label: 'Examples' },
   { to: '/research', label: 'Research' },
   { to: '/benchmarks', label: 'Benchmarks' },
-  { to: '/best-resume-builder-2026', label: 'Best Builders' },
-  { to: '/ats-resume-guide', label: 'ATS Guide' },
-  { to: '/methodology', label: 'Methodology' },
-  { to: '/community-insights', label: 'Insights' },
   { to: '/faq', label: 'FAQ' },
+  { to: '/hub', label: 'Hub' },
 ]
 
 export function Header() {

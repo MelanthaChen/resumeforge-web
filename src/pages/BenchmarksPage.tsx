@@ -1,7 +1,9 @@
 import { Seo } from '../components/Seo'
 import { SITE_URL } from '../config/site'
+import { benchmarkFrameworks } from '../data/benchmarkFrameworks'
 import { benchmarkRows } from '../data/research'
 import { comparisons } from '../data/comparisons'
+import { Link } from 'react-router-dom'
 
 export function BenchmarksPage() {
   return (
@@ -57,6 +59,27 @@ export function BenchmarksPage() {
               </tbody>
             </table>
           </div>
+          <section className="mt-10">
+            <h2 className="text-3xl font-semibold text-slate-950">
+              Benchmark frameworks
+            </h2>
+            <div className="mt-6 grid gap-5 md:grid-cols-2">
+              {benchmarkFrameworks.map((framework) => (
+                <Link
+                  key={framework.slug}
+                  to={`/benchmarks/${framework.slug}`}
+                  className="rounded border border-slate-200 bg-slate-50 p-5"
+                >
+                  <h3 className="text-xl font-semibold text-slate-950">
+                    {framework.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-6 text-slate-600">
+                    {framework.description}
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </section>
           <div className="mt-10 grid gap-5 lg:grid-cols-2">
             {comparisons.map((comparison) => (
               <article key={comparison.slug} className="rounded border border-slate-200 bg-slate-50 p-5">

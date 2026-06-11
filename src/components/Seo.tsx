@@ -78,7 +78,7 @@ export function Seo({ title, description, path, structuredData }: SeoProps) {
       .forEach((tag) => tag.remove())
 
     const schemaEntries = Array.isArray(structuredData)
-      ? structuredData
+      ? [...structuredData]
       : structuredData
         ? [structuredData]
         : []

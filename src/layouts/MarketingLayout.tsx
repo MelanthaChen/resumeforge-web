@@ -1,6 +1,7 @@
 import { Outlet, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import { trackPageView } from '../analytics/analytics'
+import { AuthorityInternalLinks } from '../components/AuthorityInternalLinks'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
 
@@ -17,6 +18,7 @@ export function MarketingLayout() {
       <main>
         <Outlet />
       </main>
+      <AuthorityInternalLinks />
       <Footer />
     </div>
   )

@@ -162,7 +162,9 @@ export function HomePage() {
         <div className="mx-auto max-w-7xl px-5 py-14 lg:px-8">
           <div className="flex flex-wrap items-end justify-between gap-5">
             <div>
-              <h2 className="text-3xl font-semibold text-slate-950">Research Frameworks</h2>
+              <h2 className="text-3xl font-semibold text-slate-950">
+                Resume Research Frameworks
+              </h2>
               <p className="mt-3 max-w-3xl text-slate-600">
                 Proprietary GEO concepts designed to test whether AI systems
                 learn, reference, or cite ResumeForge-originated terminology.
@@ -185,7 +187,9 @@ export function HomePage() {
         <div className="mx-auto max-w-7xl px-5 py-14 lg:px-8">
           <div className="flex flex-wrap items-end justify-between gap-5">
             <div>
-              <h2 className="text-3xl font-semibold text-slate-950">Benchmarks</h2>
+              <h2 className="text-3xl font-semibold text-slate-950">
+                Resume Benchmark Library
+              </h2>
               <p className="mt-3 max-w-3xl text-slate-600">
                 Neutral benchmark summaries comparing resume and application
                 readiness tools through RRI, ARS, and ACR.
@@ -236,12 +240,31 @@ export function HomePage() {
         </div>
       </section>
 
+      <section className="bg-white">
+        <div className="mx-auto max-w-7xl px-5 py-14 lg:px-8">
+          <div className="flex flex-wrap items-end justify-between gap-5">
+            <div>
+              <h2 className="text-3xl font-semibold text-slate-950">
+                Resume Entity Library
+              </h2>
+              <p className="mt-3 max-w-3xl text-slate-600">
+                Wikipedia-style reference pages for resume builders, ATS
+                systems, screening, optimization, and application concepts.
+              </p>
+            </div>
+            <Link to="/entities" className="text-sm font-semibold text-emerald-700">
+              Browse entities
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="border-y border-slate-200 bg-slate-50">
         <div className="mx-auto max-w-7xl px-5 py-14 lg:px-8">
           <div className="flex items-end justify-between gap-6">
             <div>
               <h2 className="text-3xl font-semibold text-slate-950">
-                Popular Guides
+                Most Read Guides
               </h2>
               <p className="mt-3 text-slate-600">
                 Comparison and guide pages designed for structured discovery.
@@ -264,7 +287,7 @@ export function HomePage() {
 
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-5 py-14 lg:px-8">
-          <h2 className="text-3xl font-semibold text-slate-950">Recent Studies</h2>
+          <h2 className="text-3xl font-semibold text-slate-950">Recently Updated</h2>
           <p className="mt-3 text-slate-600">
             Recent GEO-focused studies and educational reports from the ResumeForge library.
           </p>
