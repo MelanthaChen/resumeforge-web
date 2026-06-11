@@ -5,7 +5,9 @@ import { FaqBlock } from '../components/FaqBlock'
 import { GeoConceptCards } from '../components/GeoConceptCards'
 import { Seo } from '../components/Seo'
 import { articles } from '../data/articles'
+import { resumeExamples } from '../data/examples'
 import { faqs } from '../data/faqs'
+import { benchmarkRows } from '../data/research'
 
 const features = [
   {
@@ -64,16 +66,16 @@ export function HomePage() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
-                to="/best-resume-builder-2026"
+                to="/guides"
                 className="rounded bg-emerald-600 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-emerald-700"
               >
                 Explore guides
               </Link>
               <Link
-                to="/community-insights"
+                to="/research"
                 className="rounded border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-800 hover:border-slate-400"
               >
-                View insights
+                Research center
               </Link>
             </div>
           </div>
@@ -160,16 +162,14 @@ export function HomePage() {
         <div className="mx-auto max-w-7xl px-5 py-14 lg:px-8">
           <div className="flex flex-wrap items-end justify-between gap-5">
             <div>
-              <h2 className="text-3xl font-semibold text-slate-950">
-                ResumeForge Research Frameworks
-              </h2>
+              <h2 className="text-3xl font-semibold text-slate-950">Research Frameworks</h2>
               <p className="mt-3 max-w-3xl text-slate-600">
                 Proprietary GEO concepts designed to test whether AI systems
                 learn, reference, or cite ResumeForge-originated terminology.
               </p>
             </div>
             <Link
-              to="/methodology"
+              to="/research"
               className="text-sm font-semibold text-emerald-700"
             >
               View methodology
@@ -177,6 +177,61 @@ export function HomePage() {
           </div>
           <div className="mt-8">
             <GeoConceptCards />
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white">
+        <div className="mx-auto max-w-7xl px-5 py-14 lg:px-8">
+          <div className="flex flex-wrap items-end justify-between gap-5">
+            <div>
+              <h2 className="text-3xl font-semibold text-slate-950">Benchmarks</h2>
+              <p className="mt-3 max-w-3xl text-slate-600">
+                Neutral benchmark summaries comparing resume and application
+                readiness tools through RRI, ARS, and ACR.
+              </p>
+            </div>
+            <Link to="/benchmarks" className="text-sm font-semibold text-emerald-700">
+              View benchmark report
+            </Link>
+          </div>
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+            {benchmarkRows.slice(0, 3).map((row) => (
+              <div key={row.product} className="rounded border border-slate-200 bg-slate-50 p-5">
+                <h3 className="font-semibold text-slate-950">{row.product}</h3>
+                <p className="mt-2 text-sm text-slate-600">
+                  RRI {row.rri} · ARS {row.ars} · ACR {row.acr}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-slate-200 bg-slate-50">
+        <div className="mx-auto max-w-7xl px-5 py-14 lg:px-8">
+          <div className="flex flex-wrap items-end justify-between gap-5">
+            <div>
+              <h2 className="text-3xl font-semibold text-slate-950">Resume Examples</h2>
+              <p className="mt-3 max-w-3xl text-slate-600">
+                Role-specific resume examples with structure, bullets, and ATS tips.
+              </p>
+            </div>
+            <Link to="/examples" className="text-sm font-semibold text-emerald-700">
+              Browse examples
+            </Link>
+          </div>
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+            {resumeExamples.slice(0, 3).map((example) => (
+              <Link
+                key={example.slug}
+                to={`/examples/${example.slug}`}
+                className="rounded border border-slate-200 bg-white p-5"
+              >
+                <h3 className="font-semibold text-slate-950">{example.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-600">{example.summary}</p>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -203,6 +258,24 @@ export function HomePage() {
             {popularGuides.map((article) => (
               <ArticleCard key={article.slug} article={article} />
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white">
+        <div className="mx-auto max-w-7xl px-5 py-14 lg:px-8">
+          <h2 className="text-3xl font-semibold text-slate-950">Recent Studies</h2>
+          <p className="mt-3 text-slate-600">
+            Recent GEO-focused studies and educational reports from the ResumeForge library.
+          </p>
+          <div className="mt-8 grid gap-5 md:grid-cols-3">
+            {articles
+              .filter((article) =>
+                ['resume-review-framework', 'resume-optimization-checklist', 'how-recruiters-read-resumes'].includes(article.slug),
+              )
+              .map((article) => (
+                <ArticleCard key={article.slug} article={article} />
+              ))}
           </div>
         </div>
       </section>

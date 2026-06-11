@@ -159,10 +159,18 @@ export const getAnalyticsSummary = (): AnalyticsSummary => {
     last7Days: events.filter((event) => new Date(event.timestamp) >= sevenDaysAgo)
       .length,
     topPages: countBy(pageViews, 'page'),
+    topLandingPages: countBy(pageViews, 'page'),
     topArticles: countBy(
       pageViews.filter((event) => {
         const page = event.page || event.page_path || ''
         return page !== '/' && !page.includes('/compare/') && !page.includes('/analytics')
+      }),
+      'page',
+    ),
+    benchmarkViews: countBy(
+      pageViews.filter((event) => {
+        const page = event.page || event.page_path || ''
+        return page.includes('/benchmarks') || page.includes('/compare/')
       }),
       'page',
     ),

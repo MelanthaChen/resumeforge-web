@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { SITE_URL } from '../config/site'
+import { SITE_NAME, SITE_URL } from '../config/site'
 
 type SeoProps = {
   title: string
@@ -82,6 +82,13 @@ export function Seo({ title, description, path, structuredData }: SeoProps) {
       : structuredData
         ? [structuredData]
         : []
+
+    schemaEntries.unshift({
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: SITE_NAME,
+      url: SITE_URL,
+    })
 
     schemaEntries.forEach((schema) => {
       const schemaTag = document.createElement('script')

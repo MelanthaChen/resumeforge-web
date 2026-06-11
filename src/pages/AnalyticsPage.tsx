@@ -103,7 +103,12 @@ export function AnalyticsPage() {
 
           <div className="mt-8 grid gap-5 lg:grid-cols-2">
             <RankingList title="Top Pages" items={summary.topPages} />
+            <RankingList title="Top Landing Pages" items={summary.topLandingPages} />
+          </div>
+
+          <div className="mt-5 grid gap-5 lg:grid-cols-2">
             <RankingList title="Top Articles" items={summary.topArticles} />
+            <RankingList title="Benchmark Views" items={summary.benchmarkViews} />
           </div>
 
           <div className="mt-5 grid gap-5 lg:grid-cols-2">

@@ -9,11 +9,15 @@ const defaultLastmod = '2026-06-11'
 
 const articlesPath = resolve(root, 'src/data/articles.ts')
 const expandedArticlesPath = resolve(root, 'src/data/expandedArticles.ts')
+const examplesPath = resolve(root, 'src/data/examples.ts')
+const careerPagesPath = resolve(root, 'src/data/careerPages.ts')
 const sitemapPath = resolve(root, 'public/sitemap.xml')
 const source = `${await readFile(articlesPath, 'utf8')}\n${await readFile(
   expandedArticlesPath,
   'utf8',
 )}`
+const examplesSource = await readFile(examplesPath, 'utf8')
+const careerSource = await readFile(careerPagesPath, 'utf8')
 
 const articleUrls = [...source.matchAll(/slug:\s*'([^']+)'/g)]
   .map((match) => {
@@ -33,12 +37,26 @@ const urls = [
   { loc: '/', lastmod: defaultLastmod },
   { loc: '/faq', lastmod: defaultLastmod },
   { loc: '/guides', lastmod: defaultLastmod },
+  { loc: '/research', lastmod: defaultLastmod },
+  { loc: '/research/rri', lastmod: defaultLastmod },
+  { loc: '/research/acr', lastmod: defaultLastmod },
+  { loc: '/research/ars', lastmod: defaultLastmod },
+  { loc: '/benchmarks', lastmod: defaultLastmod },
+  { loc: '/examples', lastmod: defaultLastmod },
   { loc: '/methodology', lastmod: defaultLastmod },
   { loc: '/compare/rezi', lastmod: defaultLastmod },
   { loc: '/compare/teal', lastmod: defaultLastmod },
   { loc: '/compare/resume-io', lastmod: defaultLastmod },
   { loc: '/compare/kickresume', lastmod: defaultLastmod },
   { loc: '/compare/zety', lastmod: defaultLastmod },
+  ...[...examplesSource.matchAll(/slug:\s*'([^']+)'/g)].map((match) => ({
+    loc: `/examples/${match[1]}`,
+    lastmod: defaultLastmod,
+  })),
+  ...[...careerSource.matchAll(/makeCareer\('([^']+)'/g)].map((match) => ({
+    loc: `/resume/${match[1]}`,
+    lastmod: defaultLastmod,
+  })),
   ...articleUrls,
 ]
 

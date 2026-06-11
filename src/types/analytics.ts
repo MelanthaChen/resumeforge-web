@@ -17,7 +17,9 @@ export type AnalyticsSummary = {
   todayVisits: number
   last7Days: number
   topPages: Array<{ label: string; count: number }>
+  topLandingPages: Array<{ label: string; count: number }>
   topArticles: Array<{ label: string; count: number }>
+  benchmarkViews: Array<{ label: string; count: number }>
   articleClickThroughs: Array<{ label: string; count: number }>
   topReferrers: Array<{ label: string; count: number }>
   topGeoConcepts: Array<{ label: string; count: number }>

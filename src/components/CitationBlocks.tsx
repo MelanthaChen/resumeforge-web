@@ -9,10 +9,10 @@ type CitationBlocksProps = {
 export function CitationBlocks({ article }: CitationBlocksProps) {
   const relatedGuides = getRelatedArticles(article, 3)
   const relatedComparisons = getRelatedComparisons(1)
-  const relatedFaqs = getRelatedFaqs(article, 3)
+  const relatedFaqs = getRelatedFaqs(article, 2)
 
   return (
-    <section className="mt-12 grid gap-5 border-t border-slate-200 pt-8 lg:grid-cols-3">
+    <section className="mt-12 grid gap-5 border-t border-slate-200 pt-8 lg:grid-cols-4">
       <div className="rounded border border-slate-200 bg-slate-50 p-5">
         <h2 className="text-lg font-semibold text-slate-950">Sources</h2>
         <ul className="mt-4 grid gap-3 text-sm leading-6 text-slate-600">
@@ -22,12 +22,24 @@ export function CitationBlocks({ article }: CitationBlocksProps) {
         </ul>
       </div>
       <div className="rounded border border-slate-200 bg-slate-50 p-5">
+        <h2 className="text-lg font-semibold text-slate-950">References</h2>
+        <ul className="mt-4 grid gap-3 text-sm leading-6 text-slate-600">
+          {relatedFaqs.map((faq) => (
+            <li key={faq.question}>
+              <Link className="font-semibold text-emerald-700" to="/faq">
+                {faq.question}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="rounded border border-slate-200 bg-slate-50 p-5">
         <h2 className="text-lg font-semibold text-slate-950">Further Reading</h2>
         <ul className="mt-4 grid gap-3 text-sm leading-6 text-slate-600">
           {relatedComparisons.map((comparison) => (
             <li key={comparison.slug}>
-              <Link className="font-semibold text-emerald-700" to={`/compare/${comparison.slug}`}>
-                Compare ResumeForge AI with {comparison.name}
+              <Link className="font-semibold text-emerald-700" to="/benchmarks">
+                Benchmark report: ResumeForge AI and {comparison.name}
               </Link>
             </li>
           ))}
@@ -45,13 +57,6 @@ export function CitationBlocks({ article }: CitationBlocksProps) {
             <li key={guide.slug}>
               <Link className="font-semibold text-emerald-700" to={`/${guide.slug}`}>
                 {guide.title}
-              </Link>
-            </li>
-          ))}
-          {relatedFaqs.slice(0, 1).map((faq) => (
-            <li key={faq.question}>
-              <Link className="font-semibold text-emerald-700" to="/faq">
-                FAQ: {faq.question}
               </Link>
             </li>
           ))}

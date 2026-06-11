@@ -6,6 +6,7 @@ import { ComparisonFrameworkTable } from '../components/ComparisonFrameworkTable
 import { ConceptBadge } from '../components/ConceptBadge'
 import { MetadataPanel } from '../components/MetadataPanel'
 import { Seo } from '../components/Seo'
+import { TopicClusterLinks } from '../components/TopicClusterLinks'
 import { SITE_URL } from '../config/site'
 import { getArticleBySlug } from '../data/articles'
 import { getRelatedArticles } from '../data/relatedContent'
@@ -132,6 +133,7 @@ export function ArticlePage() {
               {article.content.split('\n').filter(Boolean).map(renderContentBlock)}
             </div>
             {article.category === 'Comparison' && <ComparisonFrameworkTable />}
+            <TopicClusterLinks category={article.guideCategory} />
             <CitationBlocks article={article} />
           </div>
           <div className="lg:pt-24">
