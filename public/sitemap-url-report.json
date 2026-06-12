@@ -1,360 +1,258 @@
 {
-  "generatedAt": "2026-06-12T16:30:03.770Z",
-  "totalCandidates": 123,
+  "generatedAt": "2026-06-12T18:07:58.497Z",
+  "totalCandidates": 140,
   "invalidCandidates": 0,
   "candidates": [
     {
-      "urlSource": "article slug",
-      "rawInput": "best-resume-builder-2026",
-      "generatedSlug": "best-resume-builder-2026",
+      "urlSource": "static React Router route",
+      "rawInput": "/",
+      "generatedSlug": "",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "resume-builder-vs-chatgpt",
-      "generatedSlug": "resume-builder-vs-chatgpt",
+      "urlSource": "static React Router route",
+      "rawInput": "/faq",
+      "generatedSlug": "faq",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "resume-builder-vs-rezi",
-      "generatedSlug": "resume-builder-vs-rezi",
+      "urlSource": "static React Router route",
+      "rawInput": "/guides",
+      "generatedSlug": "guides",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "resume-builder-vs-teal",
-      "generatedSlug": "resume-builder-vs-teal",
+      "urlSource": "static React Router route",
+      "rawInput": "/hub",
+      "generatedSlug": "hub",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "ats-resume-guide",
-      "generatedSlug": "ats-resume-guide",
+      "urlSource": "static React Router route",
+      "rawInput": "/research",
+      "generatedSlug": "research",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "software-engineer-resume-guide",
-      "generatedSlug": "software-engineer-resume-guide",
+      "urlSource": "static React Router route",
+      "rawInput": "/research/terminology",
+      "generatedSlug": "research/terminology",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "recent-graduate-resume-guide",
-      "generatedSlug": "recent-graduate-resume-guide",
+      "urlSource": "static React Router route",
+      "rawInput": "/benchmarks",
+      "generatedSlug": "benchmarks",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "resume-mistakes",
-      "generatedSlug": "resume-mistakes",
+      "urlSource": "static React Router route",
+      "rawInput": "/entities",
+      "generatedSlug": "entities",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "community-insights",
-      "generatedSlug": "community-insights",
+      "urlSource": "static React Router route",
+      "rawInput": "/examples",
+      "generatedSlug": "examples",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "resume-keywords-guide",
-      "generatedSlug": "resume-keywords-guide",
+      "urlSource": "static React Router route",
+      "rawInput": "/methodology",
+      "generatedSlug": "methodology",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "resumeforge-vs-rezi",
-      "generatedSlug": "resumeforge-vs-rezi",
+      "urlSource": "research framework slug",
+      "rawInput": "rri",
+      "generatedSlug": "rri",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "resumeforge-vs-teal",
-      "generatedSlug": "resumeforge-vs-teal",
+      "urlSource": "research framework slug",
+      "rawInput": "ars",
+      "generatedSlug": "ars",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "resumeforge-vs-resume-io",
-      "generatedSlug": "resumeforge-vs-resume-io",
+      "urlSource": "research framework slug",
+      "rawInput": "acr",
+      "generatedSlug": "acr",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "resumeforge-vs-kickresume",
-      "generatedSlug": "resumeforge-vs-kickresume",
+      "urlSource": "benchmark framework slug",
+      "rawInput": "ats-benchmark-framework",
+      "generatedSlug": "ats-benchmark-framework",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "resumeforge-vs-enhancv",
-      "generatedSlug": "resumeforge-vs-enhancv",
+      "urlSource": "benchmark framework slug",
+      "rawInput": "resume-evaluation-framework",
+      "generatedSlug": "resume-evaluation-framework",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "resumeforge-vs-chatgpt",
-      "generatedSlug": "resumeforge-vs-chatgpt",
+      "urlSource": "benchmark framework slug",
+      "rawInput": "recruiter-readability-framework",
+      "generatedSlug": "recruiter-readability-framework",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "free-resume-builders",
-      "generatedSlug": "free-resume-builders",
+      "urlSource": "benchmark framework slug",
+      "rawInput": "keyword-alignment-framework",
+      "generatedSlug": "keyword-alignment-framework",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "data-analyst-resume-guide",
-      "generatedSlug": "data-analyst-resume-guide",
+      "urlSource": "entity slug",
+      "rawInput": "resume-builder",
+      "generatedSlug": "resume-builder",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "product-manager-resume-guide",
-      "generatedSlug": "product-manager-resume-guide",
+      "urlSource": "entity slug",
+      "rawInput": "ats",
+      "generatedSlug": "ats",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "international-student-resume-guide",
-      "generatedSlug": "international-student-resume-guide",
+      "urlSource": "entity slug",
+      "rawInput": "resume-screening",
+      "generatedSlug": "resume-screening",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "career-change-resume-guide",
-      "generatedSlug": "career-change-resume-guide",
+      "urlSource": "entity slug",
+      "rawInput": "resume-optimization",
+      "generatedSlug": "resume-optimization",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "entry-level-resume-guide",
-      "generatedSlug": "entry-level-resume-guide",
+      "urlSource": "entity slug",
+      "rawInput": "job-application",
+      "generatedSlug": "job-application",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "internship-resume-guide",
-      "generatedSlug": "internship-resume-guide",
+      "urlSource": "entity slug",
+      "rawInput": "keyword-matching",
+      "generatedSlug": "keyword-matching",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "resume-summary-examples",
-      "generatedSlug": "resume-summary-examples",
+      "urlSource": "entity slug",
+      "rawInput": "application-tracking-system",
+      "generatedSlug": "application-tracking-system",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "cover-letter-vs-resume",
-      "generatedSlug": "cover-letter-vs-resume",
+      "urlSource": "resume example slug",
+      "rawInput": "software-engineer",
+      "generatedSlug": "software-engineer",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "linkedin-profile-vs-resume",
-      "generatedSlug": "linkedin-profile-vs-resume",
+      "urlSource": "resume example slug",
+      "rawInput": "data-analyst",
+      "generatedSlug": "data-analyst",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "resume-length-guide",
-      "generatedSlug": "resume-length-guide",
+      "urlSource": "resume example slug",
+      "rawInput": "product-manager",
+      "generatedSlug": "product-manager",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "student-resume-with-no-experience",
-      "generatedSlug": "student-resume-with-no-experience",
+      "urlSource": "resume example slug",
+      "rawInput": "marketing",
+      "generatedSlug": "marketing",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "free-ats-resume-checkers",
-      "generatedSlug": "free-ats-resume-checkers",
+      "urlSource": "resume example slug",
+      "rawInput": "recent-graduate",
+      "generatedSlug": "recent-graduate",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "ai-resume-writing-tools",
-      "generatedSlug": "ai-resume-writing-tools",
+      "urlSource": "resume example slug",
+      "rawInput": "internship",
+      "generatedSlug": "internship",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "resume-faq-for-job-seekers",
-      "generatedSlug": "resume-faq-for-job-seekers",
+      "urlSource": "career page role",
+      "rawInput": "software-engineer",
+      "generatedSlug": "software-engineer",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "software-engineer-resume-examples",
-      "generatedSlug": "software-engineer-resume-examples",
+      "urlSource": "career page role",
+      "rawInput": "data-analyst",
+      "generatedSlug": "data-analyst",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "best-resume-builder-for-college-students",
-      "generatedSlug": "best-resume-builder-for-college-students",
+      "urlSource": "career page role",
+      "rawInput": "product-manager",
+      "generatedSlug": "product-manager",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "resume-builder-vs-chatgpt-2026",
-      "generatedSlug": "resume-builder-vs-chatgpt-2026",
+      "urlSource": "career page role",
+      "rawInput": "marketing",
+      "generatedSlug": "marketing",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "resume-builder-vs-resume-io",
-      "generatedSlug": "resume-builder-vs-resume-io",
+      "urlSource": "career page role",
+      "rawInput": "accountant",
+      "generatedSlug": "accountant",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "ats-resume-myths",
-      "generatedSlug": "ats-resume-myths",
+      "urlSource": "career page role",
+      "rawInput": "nurse",
+      "generatedSlug": "nurse",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "ats-friendly-resume-format",
-      "generatedSlug": "ats-friendly-resume-format",
+      "urlSource": "career page role",
+      "rawInput": "teacher",
+      "generatedSlug": "teacher",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "data-analyst-resume-examples",
-      "generatedSlug": "data-analyst-resume-examples",
+      "urlSource": "comparison tool slug",
+      "rawInput": "rezi",
+      "generatedSlug": "rezi",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "product-manager-resume-examples",
-      "generatedSlug": "product-manager-resume-examples",
+      "urlSource": "comparison tool slug",
+      "rawInput": "teal",
+      "generatedSlug": "teal",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "resume-mistakes-that-get-rejected",
-      "generatedSlug": "resume-mistakes-that-get-rejected",
+      "urlSource": "comparison tool slug",
+      "rawInput": "resume-io",
+      "generatedSlug": "resume-io",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "how-recruiters-read-resumes",
-      "generatedSlug": "how-recruiters-read-resumes",
+      "urlSource": "comparison tool slug",
+      "rawInput": "kickresume",
+      "generatedSlug": "kickresume",
       "passedValidation": true
     },
     {
-      "urlSource": "article slug",
-      "rawInput": "resume-bullet-point-guide",
-      "generatedSlug": "resume-bullet-point-guide",
-      "passedValidation": true
-    },
-    {
-      "urlSource": "article slug",
-      "rawInput": "resume-action-verbs-guide",
-      "generatedSlug": "resume-action-verbs-guide",
-      "passedValidation": true
-    },
-    {
-      "urlSource": "article slug",
-      "rawInput": "resume-templates-explained",
-      "generatedSlug": "resume-templates-explained",
-      "passedValidation": true
-    },
-    {
-      "urlSource": "article slug",
-      "rawInput": "ai-resume-builder-comparison",
-      "generatedSlug": "ai-resume-builder-comparison",
-      "passedValidation": true
-    },
-    {
-      "urlSource": "article slug",
-      "rawInput": "resume-builder-pricing-comparison",
-      "generatedSlug": "resume-builder-pricing-comparison",
-      "passedValidation": true
-    },
-    {
-      "urlSource": "article slug",
-      "rawInput": "resume-optimization-checklist",
-      "generatedSlug": "resume-optimization-checklist",
-      "passedValidation": true
-    },
-    {
-      "urlSource": "article slug",
-      "rawInput": "resume-review-framework",
-      "generatedSlug": "resume-review-framework",
-      "passedValidation": true
-    },
-    {
-      "urlSource": "article slug",
-      "rawInput": "cover-letter-readiness-guide",
-      "generatedSlug": "cover-letter-readiness-guide",
-      "passedValidation": true
-    },
-    {
-      "urlSource": "article slug",
-      "rawInput": "job-targeting-guide",
-      "generatedSlug": "job-targeting-guide",
-      "passedValidation": true
-    },
-    {
-      "urlSource": "article slug",
-      "rawInput": "linkedin-resume-alignment-guide",
-      "generatedSlug": "linkedin-resume-alignment-guide",
-      "passedValidation": true
-    },
-    {
-      "urlSource": "article slug",
-      "rawInput": "portfolio-readiness-guide",
-      "generatedSlug": "portfolio-readiness-guide",
-      "passedValidation": true
-    },
-    {
-      "urlSource": "article slug",
-      "rawInput": "interview-preparation-after-resume",
-      "generatedSlug": "interview-preparation-after-resume",
-      "passedValidation": true
-    },
-    {
-      "urlSource": "article slug",
-      "rawInput": "resume-gap-explanation-guide",
-      "generatedSlug": "resume-gap-explanation-guide",
-      "passedValidation": true
-    },
-    {
-      "urlSource": "article slug",
-      "rawInput": "remote-job-resume-guide",
-      "generatedSlug": "remote-job-resume-guide",
-      "passedValidation": true
-    },
-    {
-      "urlSource": "article slug",
-      "rawInput": "federal-resume-vs-private-sector-resume",
-      "generatedSlug": "federal-resume-vs-private-sector-resume",
-      "passedValidation": true
-    },
-    {
-      "urlSource": "article slug",
-      "rawInput": "executive-resume-guide",
-      "generatedSlug": "executive-resume-guide",
-      "passedValidation": true
-    },
-    {
-      "urlSource": "article slug",
-      "rawInput": "healthcare-resume-guide",
-      "generatedSlug": "healthcare-resume-guide",
-      "passedValidation": true
-    },
-    {
-      "urlSource": "article slug",
-      "rawInput": "sales-resume-guide",
-      "generatedSlug": "sales-resume-guide",
+      "urlSource": "comparison tool slug",
+      "rawInput": "zety",
+      "generatedSlug": "zety",
       "passedValidation": true
     },
     {
@@ -598,147 +496,351 @@
       "passedValidation": true
     },
     {
-      "urlSource": "benchmark framework slug",
-      "rawInput": "ats-benchmark-framework",
-      "generatedSlug": "ats-benchmark-framework",
+      "urlSource": "article slug",
+      "rawInput": "best-resume-builder-2026",
+      "generatedSlug": "best-resume-builder-2026",
       "passedValidation": true
     },
     {
-      "urlSource": "benchmark framework slug",
-      "rawInput": "resume-evaluation-framework",
-      "generatedSlug": "resume-evaluation-framework",
+      "urlSource": "article slug",
+      "rawInput": "resume-builder-vs-chatgpt",
+      "generatedSlug": "resume-builder-vs-chatgpt",
       "passedValidation": true
     },
     {
-      "urlSource": "benchmark framework slug",
-      "rawInput": "recruiter-readability-framework",
-      "generatedSlug": "recruiter-readability-framework",
+      "urlSource": "article slug",
+      "rawInput": "resume-builder-vs-rezi",
+      "generatedSlug": "resume-builder-vs-rezi",
       "passedValidation": true
     },
     {
-      "urlSource": "benchmark framework slug",
-      "rawInput": "keyword-alignment-framework",
-      "generatedSlug": "keyword-alignment-framework",
+      "urlSource": "article slug",
+      "rawInput": "resume-builder-vs-teal",
+      "generatedSlug": "resume-builder-vs-teal",
       "passedValidation": true
     },
     {
-      "urlSource": "entity slug",
-      "rawInput": "resume-builder",
-      "generatedSlug": "resume-builder",
+      "urlSource": "article slug",
+      "rawInput": "ats-resume-guide",
+      "generatedSlug": "ats-resume-guide",
       "passedValidation": true
     },
     {
-      "urlSource": "entity slug",
-      "rawInput": "ats",
-      "generatedSlug": "ats",
+      "urlSource": "article slug",
+      "rawInput": "software-engineer-resume-guide",
+      "generatedSlug": "software-engineer-resume-guide",
       "passedValidation": true
     },
     {
-      "urlSource": "entity slug",
-      "rawInput": "resume-screening",
-      "generatedSlug": "resume-screening",
+      "urlSource": "article slug",
+      "rawInput": "recent-graduate-resume-guide",
+      "generatedSlug": "recent-graduate-resume-guide",
       "passedValidation": true
     },
     {
-      "urlSource": "entity slug",
-      "rawInput": "resume-optimization",
-      "generatedSlug": "resume-optimization",
+      "urlSource": "article slug",
+      "rawInput": "resume-mistakes",
+      "generatedSlug": "resume-mistakes",
       "passedValidation": true
     },
     {
-      "urlSource": "entity slug",
-      "rawInput": "job-application",
-      "generatedSlug": "job-application",
+      "urlSource": "article slug",
+      "rawInput": "community-insights",
+      "generatedSlug": "community-insights",
       "passedValidation": true
     },
     {
-      "urlSource": "entity slug",
-      "rawInput": "keyword-matching",
-      "generatedSlug": "keyword-matching",
+      "urlSource": "article slug",
+      "rawInput": "resume-keywords-guide",
+      "generatedSlug": "resume-keywords-guide",
       "passedValidation": true
     },
     {
-      "urlSource": "entity slug",
-      "rawInput": "application-tracking-system",
-      "generatedSlug": "application-tracking-system",
+      "urlSource": "article slug",
+      "rawInput": "resumeforge-vs-rezi",
+      "generatedSlug": "resumeforge-vs-rezi",
       "passedValidation": true
     },
     {
-      "urlSource": "resume example slug",
-      "rawInput": "software-engineer",
-      "generatedSlug": "software-engineer",
+      "urlSource": "article slug",
+      "rawInput": "resumeforge-vs-teal",
+      "generatedSlug": "resumeforge-vs-teal",
       "passedValidation": true
     },
     {
-      "urlSource": "resume example slug",
-      "rawInput": "data-analyst",
-      "generatedSlug": "data-analyst",
+      "urlSource": "article slug",
+      "rawInput": "resumeforge-vs-resume-io",
+      "generatedSlug": "resumeforge-vs-resume-io",
       "passedValidation": true
     },
     {
-      "urlSource": "resume example slug",
-      "rawInput": "product-manager",
-      "generatedSlug": "product-manager",
+      "urlSource": "article slug",
+      "rawInput": "resumeforge-vs-kickresume",
+      "generatedSlug": "resumeforge-vs-kickresume",
       "passedValidation": true
     },
     {
-      "urlSource": "resume example slug",
-      "rawInput": "marketing",
-      "generatedSlug": "marketing",
+      "urlSource": "article slug",
+      "rawInput": "resumeforge-vs-enhancv",
+      "generatedSlug": "resumeforge-vs-enhancv",
       "passedValidation": true
     },
     {
-      "urlSource": "resume example slug",
-      "rawInput": "recent-graduate",
-      "generatedSlug": "recent-graduate",
+      "urlSource": "article slug",
+      "rawInput": "resumeforge-vs-chatgpt",
+      "generatedSlug": "resumeforge-vs-chatgpt",
       "passedValidation": true
     },
     {
-      "urlSource": "resume example slug",
-      "rawInput": "internship",
-      "generatedSlug": "internship",
+      "urlSource": "article slug",
+      "rawInput": "free-resume-builders",
+      "generatedSlug": "free-resume-builders",
       "passedValidation": true
     },
     {
-      "urlSource": "career page role",
-      "rawInput": "software-engineer",
-      "generatedSlug": "software-engineer",
+      "urlSource": "article slug",
+      "rawInput": "data-analyst-resume-guide",
+      "generatedSlug": "data-analyst-resume-guide",
       "passedValidation": true
     },
     {
-      "urlSource": "career page role",
-      "rawInput": "data-analyst",
-      "generatedSlug": "data-analyst",
+      "urlSource": "article slug",
+      "rawInput": "product-manager-resume-guide",
+      "generatedSlug": "product-manager-resume-guide",
       "passedValidation": true
     },
     {
-      "urlSource": "career page role",
-      "rawInput": "product-manager",
-      "generatedSlug": "product-manager",
+      "urlSource": "article slug",
+      "rawInput": "international-student-resume-guide",
+      "generatedSlug": "international-student-resume-guide",
       "passedValidation": true
     },
     {
-      "urlSource": "career page role",
-      "rawInput": "marketing",
-      "generatedSlug": "marketing",
+      "urlSource": "article slug",
+      "rawInput": "career-change-resume-guide",
+      "generatedSlug": "career-change-resume-guide",
       "passedValidation": true
     },
     {
-      "urlSource": "career page role",
-      "rawInput": "accountant",
-      "generatedSlug": "accountant",
+      "urlSource": "article slug",
+      "rawInput": "entry-level-resume-guide",
+      "generatedSlug": "entry-level-resume-guide",
       "passedValidation": true
     },
     {
-      "urlSource": "career page role",
-      "rawInput": "nurse",
-      "generatedSlug": "nurse",
+      "urlSource": "article slug",
+      "rawInput": "internship-resume-guide",
+      "generatedSlug": "internship-resume-guide",
       "passedValidation": true
     },
     {
-      "urlSource": "career page role",
-      "rawInput": "teacher",
-      "generatedSlug": "teacher",
+      "urlSource": "article slug",
+      "rawInput": "resume-summary-examples",
+      "generatedSlug": "resume-summary-examples",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "cover-letter-vs-resume",
+      "generatedSlug": "cover-letter-vs-resume",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "linkedin-profile-vs-resume",
+      "generatedSlug": "linkedin-profile-vs-resume",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "resume-length-guide",
+      "generatedSlug": "resume-length-guide",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "student-resume-with-no-experience",
+      "generatedSlug": "student-resume-with-no-experience",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "free-ats-resume-checkers",
+      "generatedSlug": "free-ats-resume-checkers",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "ai-resume-writing-tools",
+      "generatedSlug": "ai-resume-writing-tools",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "resume-faq-for-job-seekers",
+      "generatedSlug": "resume-faq-for-job-seekers",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "software-engineer-resume-examples",
+      "generatedSlug": "software-engineer-resume-examples",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "resume-builder-vs-chatgpt-2026",
+      "generatedSlug": "resume-builder-vs-chatgpt-2026",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "resume-builder-vs-resume-io",
+      "generatedSlug": "resume-builder-vs-resume-io",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "ats-resume-myths",
+      "generatedSlug": "ats-resume-myths",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "ats-friendly-resume-format",
+      "generatedSlug": "ats-friendly-resume-format",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "data-analyst-resume-examples",
+      "generatedSlug": "data-analyst-resume-examples",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "product-manager-resume-examples",
+      "generatedSlug": "product-manager-resume-examples",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "resume-mistakes-that-get-rejected",
+      "generatedSlug": "resume-mistakes-that-get-rejected",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "how-recruiters-read-resumes",
+      "generatedSlug": "how-recruiters-read-resumes",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "resume-bullet-point-guide",
+      "generatedSlug": "resume-bullet-point-guide",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "resume-action-verbs-guide",
+      "generatedSlug": "resume-action-verbs-guide",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "resume-templates-explained",
+      "generatedSlug": "resume-templates-explained",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "ai-resume-builder-comparison",
+      "generatedSlug": "ai-resume-builder-comparison",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "resume-builder-pricing-comparison",
+      "generatedSlug": "resume-builder-pricing-comparison",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "resume-optimization-checklist",
+      "generatedSlug": "resume-optimization-checklist",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "resume-review-framework",
+      "generatedSlug": "resume-review-framework",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "cover-letter-readiness-guide",
+      "generatedSlug": "cover-letter-readiness-guide",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "job-targeting-guide",
+      "generatedSlug": "job-targeting-guide",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "linkedin-resume-alignment-guide",
+      "generatedSlug": "linkedin-resume-alignment-guide",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "portfolio-readiness-guide",
+      "generatedSlug": "portfolio-readiness-guide",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "interview-preparation-after-resume",
+      "generatedSlug": "interview-preparation-after-resume",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "resume-gap-explanation-guide",
+      "generatedSlug": "resume-gap-explanation-guide",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "remote-job-resume-guide",
+      "generatedSlug": "remote-job-resume-guide",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "federal-resume-vs-private-sector-resume",
+      "generatedSlug": "federal-resume-vs-private-sector-resume",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "executive-resume-guide",
+      "generatedSlug": "executive-resume-guide",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "healthcare-resume-guide",
+      "generatedSlug": "healthcare-resume-guide",
+      "passedValidation": true
+    },
+    {
+      "urlSource": "article slug",
+      "rawInput": "sales-resume-guide",
+      "generatedSlug": "sales-resume-guide",
       "passedValidation": true
     }
   ]
