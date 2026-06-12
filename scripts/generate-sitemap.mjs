@@ -15,6 +15,7 @@ const programmaticPath = resolve(root, 'src/data/programmaticLandingPages.ts')
 const benchmarkFrameworksPath = resolve(root, 'src/data/benchmarkFrameworks.ts')
 const entitiesPath = resolve(root, 'src/data/entities.ts')
 const sitemapPath = resolve(root, 'public/sitemap.xml')
+const reportPath = resolve(root, 'public/sitemap-url-report.json')
 const source = `${await readFile(articlesPath, 'utf8')}\n${await readFile(
   expandedArticlesPath,
   'utf8',
@@ -24,20 +25,83 @@ const careerSource = await readFile(careerPagesPath, 'utf8')
 const programmaticSource = await readFile(programmaticPath, 'utf8')
 const benchmarkFrameworksSource = await readFile(benchmarkFrameworksPath, 'utf8')
 const entitiesSource = await readFile(entitiesPath, 'utf8')
+const slugPattern = /^[a-z0-9-]+$/
+const invalidUrlReports = []
+const urlReports = []
+
+const validateSlug = (slug) => slugPattern.test(slug)
+
+const reportCandidate = ({ source: urlSource, rawInput, generatedSlug }) => {
+  const passed = validateSlug(generatedSlug)
+  const item = {
+    urlSource,
+    rawInput,
+    generatedSlug,
+    passedValidation: passed,
+  }
+
+  urlReports.push(item)
+
+  if (!passed) {
+    invalidUrlReports.push(item)
+    console.warn(
+      `[sitemap] Excluding invalid slug from ${urlSource}: raw=${JSON.stringify(
+        rawInput,
+      )} slug=${JSON.stringify(generatedSlug)}`,
+    )
+  }
+
+  return passed
+}
+
+const generatedUrl = ({
+  source: urlSource,
+  rawInput,
+  generatedSlug,
+  prefix = '',
+  lastmod = defaultLastmod,
+}) => {
+  if (!reportCandidate({ source: urlSource, rawInput, generatedSlug })) {
+    return null
+  }
+
+  return {
+    loc: `${prefix}/${generatedSlug}`,
+    lastmod,
+  }
+}
+
+const compact = (items) => items.filter(Boolean)
 
 const articleUrls = [...source.matchAll(/slug:\s*'([^']+)'/g)]
   .map((match) => {
     const localSource = source.slice(match.index ?? 0, (match.index ?? 0) + 1200)
     const updatedAt = localSource.match(/updatedAt:\s*'([^']+)'/)?.[1]
 
-    return {
-      loc: `/${match[1]}`,
+    return generatedUrl({
+      source: 'article slug',
+      rawInput: match[1],
+      generatedSlug: match[1],
       lastmod: updatedAt ?? defaultLastmod,
-    }
+    })
   })
+  .filter(Boolean)
   .filter(
     (url, index, list) => list.findIndex((item) => item.loc === url.loc) === index,
   )
+
+const audienceSource =
+  programmaticSource.match(/const audiences = \[([\s\S]*?)\] as const/)?.[1] ?? ''
+const programmaticUrls = compact(
+  [...audienceSource.matchAll(/\[\s*'([^']+)',\s*'([^']+)'/g)].map((match) =>
+    generatedUrl({
+      source: 'programmatic audience category',
+      rawInput: match[1],
+      generatedSlug: `best-resume-builder-for-${match[1]}`,
+      lastmod: defaultLastmod,
+    }),
+  ),
+)
 
 const urls = [
   { loc: '/', lastmod: defaultLastmod },
@@ -50,15 +114,27 @@ const urls = [
   { loc: '/research/acr', lastmod: defaultLastmod },
   { loc: '/research/ars', lastmod: defaultLastmod },
   { loc: '/benchmarks', lastmod: defaultLastmod },
-  ...[...benchmarkFrameworksSource.matchAll(/slug:\s*'([^']+)'/g)].map((match) => ({
-    loc: `/benchmarks/${match[1]}`,
-    lastmod: defaultLastmod,
-  })),
+  ...compact(
+    [...benchmarkFrameworksSource.matchAll(/slug:\s*'([^']+)'/g)].map((match) =>
+      generatedUrl({
+        source: 'benchmark framework slug',
+        rawInput: match[1],
+        generatedSlug: match[1],
+        prefix: '/benchmarks',
+      }),
+    ),
+  ),
   { loc: '/entities', lastmod: defaultLastmod },
-  ...[...entitiesSource.matchAll(/slug:\s*'([^']+)'/g)].map((match) => ({
-    loc: `/entities/${match[1]}`,
-    lastmod: defaultLastmod,
-  })),
+  ...compact(
+    [...entitiesSource.matchAll(/slug:\s*'([^']+)'/g)].map((match) =>
+      generatedUrl({
+        source: 'entity slug',
+        rawInput: match[1],
+        generatedSlug: match[1],
+        prefix: '/entities',
+      }),
+    ),
+  ),
   { loc: '/examples', lastmod: defaultLastmod },
   { loc: '/methodology', lastmod: defaultLastmod },
   { loc: '/compare/rezi', lastmod: defaultLastmod },
@@ -66,18 +142,27 @@ const urls = [
   { loc: '/compare/resume-io', lastmod: defaultLastmod },
   { loc: '/compare/kickresume', lastmod: defaultLastmod },
   { loc: '/compare/zety', lastmod: defaultLastmod },
-  ...[...examplesSource.matchAll(/slug:\s*'([^']+)'/g)].map((match) => ({
-    loc: `/examples/${match[1]}`,
-    lastmod: defaultLastmod,
-  })),
-  ...[...careerSource.matchAll(/makeCareer\('([^']+)'/g)].map((match) => ({
-    loc: `/resume/${match[1]}`,
-    lastmod: defaultLastmod,
-  })),
-  ...[...programmaticSource.matchAll(/\[\s*'([^']+)',\s*'[^']+'/g)].map((match) => ({
-    loc: `/best-resume-builder-for-${match[1]}`,
-    lastmod: defaultLastmod,
-  })),
+  ...compact(
+    [...examplesSource.matchAll(/slug:\s*'([^']+)'/g)].map((match) =>
+      generatedUrl({
+        source: 'resume example slug',
+        rawInput: match[1],
+        generatedSlug: match[1],
+        prefix: '/examples',
+      }),
+    ),
+  ),
+  ...compact(
+    [...careerSource.matchAll(/makeCareer\('([^']+)'/g)].map((match) =>
+      generatedUrl({
+        source: 'career page role',
+        rawInput: match[1],
+        generatedSlug: match[1],
+        prefix: '/resume',
+      }),
+    ),
+  ),
+  ...programmaticUrls,
   ...articleUrls,
 ]
 
@@ -95,5 +180,19 @@ ${urls
 `
 
 await writeFile(sitemapPath, xml)
+await writeFile(
+  reportPath,
+  `${JSON.stringify(
+    {
+      generatedAt: new Date().toISOString(),
+      totalCandidates: urlReports.length,
+      invalidCandidates: invalidUrlReports.length,
+      candidates: urlReports,
+    },
+    null,
+    2,
+  )}\n`,
+)
 
 console.log(`Generated sitemap.xml with ${urls.length} URLs`)
+console.log(`Generated sitemap URL report with ${urlReports.length} candidates`)
