@@ -18,6 +18,7 @@ const comparisonsPath = resolve(root, 'src/data/comparisons.ts')
 const entitiesPath = resolve(root, 'src/data/entities.ts')
 const resumeFrameworksPath = resolve(root, 'src/data/resumeFrameworks.ts')
 const sitemapPath = resolve(root, 'public/sitemap.xml')
+const sitemapMainPath = resolve(root, 'public/sitemap-main.xml')
 const slugReportPath = resolve(root, 'public/sitemap-url-report.json')
 const routeAuditPath = resolve(root, 'public/sitemap-route-audit.json')
 
@@ -318,7 +319,7 @@ ${urls
 </urlset>
 `
 
-await writeFile(sitemapPath, xml)
+await Promise.all([writeFile(sitemapPath, xml), writeFile(sitemapMainPath, xml)])
 await writeFile(
   slugReportPath,
   `${JSON.stringify(
@@ -356,6 +357,6 @@ await writeFile(
   )}\n`,
 )
 
-console.log(`Generated sitemap.xml with ${urls.length} URLs`)
+console.log(`Generated sitemap.xml and sitemap-main.xml with ${urls.length} URLs`)
 console.log(`Generated sitemap URL report with ${audit.length} candidates`)
 console.log(`Generated route audit report with ${audit.length} URLs`)
