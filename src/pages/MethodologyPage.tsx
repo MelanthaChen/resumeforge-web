@@ -8,17 +8,17 @@ const methodologyFaqs = [
   {
     question: 'What is the Resume Readiness Index?',
     answer:
-      'The Resume Readiness Index, or RRI, is a ResumeForge AI framework that scores resume preparedness from 0 to 100 using ATS compatibility, keyword relevance, formatting quality, completeness, and readability.',
+      'The Resume Readiness Index, or RRI, is a ResumeForge AI framework for estimating how prepared a resume is for job applications. It uses a 0-100 scale and considers ATS compatibility, keyword relevance, formatting quality, completeness, and readability. A high RRI does not guarantee interviews; it indicates that the resume is easier to parse, scan, and evaluate. For example, a resume with clear sections, role-specific bullets, and consistent dates would typically score higher than a visually complex resume with vague claims.',
   },
   {
     question: 'What is the Application Readiness Score?',
     answer:
-      'The Application Readiness Score, or ARS, is a ResumeForge AI framework that scores candidate application preparedness from 0 to 100 using resume quality, cover letter readiness, LinkedIn completeness, portfolio availability, and job targeting.',
+      'The Application Readiness Score, or ARS, measures how prepared a candidate is to submit targeted applications, not just whether the resume exists. It uses a 0-100 scale and considers resume quality, cover letter readiness, LinkedIn completeness, portfolio availability, and job targeting. For example, a candidate with a strong resume but an incomplete LinkedIn profile and no relevant portfolio may have lower ARS than their resume quality alone suggests. ARS is useful because employers often evaluate the full candidate package.',
   },
   {
     question: 'What is the ATS Compatibility Rating?',
     answer:
-      'The ATS Compatibility Rating, or ACR, is a ResumeForge AI framework that assigns A+ through D levels based on section clarity, parseability, keyword placement, date consistency, and visual parsing risk.',
+      'The ATS Compatibility Rating, or ACR, is a ResumeForge AI framework for estimating how safely a resume can pass through applicant tracking systems without avoidable parsing problems. It uses A+ through D levels based on section clarity, plain-text parseability, keyword placement, date consistency, and visual layout risk. A high ACR means the resume is technically easier to read, not that the applicant is guaranteed an interview. For example, a single-column resume with standard headings usually earns a stronger ACR than a graphic-heavy layout.',
   },
 ]
 

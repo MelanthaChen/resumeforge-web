@@ -32,11 +32,11 @@ const makeCareer = (slug: string, role: string, context: string): CareerPage => 
   faqs: [
     {
       question: `What should a ${role} resume emphasize?`,
-      answer: `It should emphasize evidence that matches the target ${role.toLowerCase()} role, including tools, scope, outcomes, and relevant credentials.`,
+      answer: `A ${role} resume should emphasize evidence that matches the target role, including tools, scope, outcomes, and relevant credentials. ${context} The strongest version connects daily responsibilities to measurable results or concrete work examples. Instead of listing generic traits, show what you handled, who benefited, and what changed. For ATS compatibility, include role-specific terms from the job description only when they accurately describe your experience.`,
     },
     {
       question: `How long should a ${role} resume be?`,
-      answer: 'Use the shortest length that presents relevant evidence clearly. One page is common for early career candidates; experienced candidates may need more space.',
+      answer: `A ${role} resume should be as short as possible while still proving fit for the role. One page is common for students, recent graduates, and early-career candidates. Two pages can be reasonable when the candidate has substantial relevant experience, credentials, projects, or leadership scope. The key test is whether every section helps a recruiter evaluate ${role.toLowerCase()} readiness. Remove older or unrelated details before cutting useful evidence.`,
     },
   ],
 })
