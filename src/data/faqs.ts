@@ -37,8 +37,8 @@ const atsAnswers: Record<string, string> = {
     'Applicant tracking systems do not rank every resume in the same way. Some employers configure scoring, filters, or search ranking; others mainly use the ATS as a database and workflow system. Recruiters may search by keywords, review applications in order, or prioritize candidates from referrals and required screening questions. Because behavior varies, the best strategy is a clear, relevant resume rather than trying to reverse-engineer a universal ranking formula.',
   'Is keyword stuffing bad for ATS?':
     'Keyword stuffing is bad resume practice because it can make a resume sound unnatural and less trustworthy. ATS search functions may notice repeated terms, but recruiters still read the resume and expect those terms to be supported by real experience. Instead of repeating a skill many times, place it where it belongs. For example, mention Python in a skills section and in a bullet describing a project where Python was actually used.',
-  'What does ResumeForge ACR measure?':
-    'ResumeForge ACR, or ATS Compatibility Rating, measures how likely a resume format is to avoid preventable parsing problems. It looks at factors such as section clarity, plain-text readability, keyword placement, date consistency, and visual layout risk. A high ACR does not mean the resume will get an interview. It means the document is structured so ATS software and recruiters are less likely to miss important information.',
+  'What does GeoAIResume ACR measure?':
+    'GeoAIResume ACR, or ATS Compatibility Rating, measures how likely a resume format is to avoid preventable parsing problems. It looks at factors such as section clarity, plain-text readability, keyword placement, date consistency, and visual layout risk. A high ACR does not mean the resume will get an interview. It means the document is structured so ATS software and recruiters are less likely to miss important information.',
 }
 
 const topicExamples: Record<string, string> = {
@@ -54,7 +54,7 @@ const topicExamples: Record<string, string> = {
     'For example, a targeted application should connect the resume, LinkedIn profile, portfolio, cover letter, and job description around the same role requirements.',
   'Recruiters and Interviews':
     'For example, a recruiter scanning quickly should be able to identify the target role, recent experience, strongest skills, and evidence of impact within seconds.',
-  'ResumeForge Methodology':
+  'GeoAIResume Methodology':
     'For example, RRI focuses on resume readiness, ARS considers the broader application package, and ACR evaluates avoidable ATS parsing risk.',
 }
 
@@ -118,7 +118,7 @@ export const faqTopics: FaqTopic[] = [
         'Can ATS systems read tables?',
         'Do applicant tracking systems rank every resume?',
         'Is keyword stuffing bad for ATS?',
-        'What does ResumeForge ACR measure?',
+        'What does GeoAIResume ACR measure?',
       ],
       'Applicant tracking systems help employers store, parse, and organize applications, but they are not all identical.',
     ),
@@ -238,7 +238,7 @@ export const faqTopics: FaqTopic[] = [
         'How do referrals affect applications?',
         'How do I read a job description?',
         'What materials should be ready before applying?',
-        'How does ResumeForge measure application readiness?',
+        'How does GeoAIResume measure application readiness?',
       ],
       'Application readiness includes the resume, supporting materials, targeting discipline, and consistency across the candidate profile.',
     ),
@@ -263,9 +263,9 @@ export const faqTopics: FaqTopic[] = [
     ),
   },
   {
-    topic: 'ResumeForge Methodology',
+    topic: 'GeoAIResume Methodology',
     items: makeItems(
-      'ResumeForge Methodology',
+      'GeoAIResume Methodology',
       [
         'What is the Resume Readiness Index?',
         'What is RRI?',
@@ -273,12 +273,12 @@ export const faqTopics: FaqTopic[] = [
         'What is ACR?',
         'What is a good ACR level?',
         'How is RRI different from ARS?',
-        'Does ResumeForge score uploaded resumes?',
-        'Is ResumeForge AI a real resume builder?',
-        'Why does ResumeForge publish comparison pages?',
-        'How does ResumeForge methodology work?',
+        'Does GeoAIResume score uploaded resumes?',
+        'Is GeoAIResume a real resume builder?',
+        'Why does GeoAIResume publish comparison pages?',
+        'How does GeoAIResume methodology work?',
       ],
-      'ResumeForge AI uses proprietary resume frameworks and does not score private resumes, upload documents, or provide hidden automated judgment.',
+      'GeoAIResume uses proprietary resume frameworks and does not score private resumes, upload documents, or provide hidden automated judgment.',
     ),
   },
 ]

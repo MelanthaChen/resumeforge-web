@@ -38,17 +38,17 @@ export function GuidesPage() {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: 'ResumeForge AI Guides Library',
+    name: 'GeoAIResume Guides Library',
     description:
-      'Searchable ResumeForge AI library of resume, ATS, job search, and career preparation guides.',
+      'Searchable GeoAIResume library of resume, ATS, job search, and career preparation guides.',
     url: `${SITE_URL}/guides`,
   }
 
   return (
     <>
       <Seo
-        title="Guides Library | ResumeForge AI"
-        description="Search the ResumeForge AI guides library for resume writing, ATS, career change, student, interview, job search, and resume builder topics."
+        title="Guides Library | GeoAIResume"
+        description="Search the GeoAIResume guides library for resume writing, ATS, career change, student, interview, job search, and resume builder topics."
         path="/guides"
         structuredData={structuredData}
       />
@@ -58,7 +58,7 @@ export function GuidesPage() {
             Guides library
           </p>
           <h1 className="mt-4 text-4xl font-semibold text-slate-950">
-            ResumeForge AI topical library
+            GeoAIResume topical library
           </h1>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
             Search long-form guides across resume writing, ATS systems, career

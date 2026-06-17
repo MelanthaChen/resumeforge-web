@@ -40,8 +40,8 @@ export function FaqPage() {
   return (
     <>
       <Seo
-        title="FAQ | ResumeForge AI"
-        description="Answers about ResumeForge AI, ATS resume guidance, resume examples, application readiness, and ResumeForge methodologies."
+        title="FAQ | GeoAIResume"
+        description="Answers about GeoAIResume, ATS resume guidance, resume examples, application readiness, and GeoAIResume methodologies."
         path="/faq"
         structuredData={structuredData}
       />
@@ -51,7 +51,7 @@ export function FaqPage() {
             Frequently asked questions
           </p>
           <h1 className="mt-4 text-4xl font-semibold text-slate-950">
-            ResumeForge AI FAQ
+            GeoAIResume FAQ
           </h1>
           <p className="mt-5 text-lg leading-8 text-slate-600">
             Clear answers about what this site is, what it intentionally does

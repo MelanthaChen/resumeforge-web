@@ -7,7 +7,7 @@ export function ExamplesPage() {
   return (
     <>
       <Seo
-        title="Resume Examples Library | ResumeForge AI"
+        title="Resume Examples Library | GeoAIResume"
         description="Resume examples for software engineers, data analysts, product managers, marketing roles, recent graduates, and internships."
         path="/examples"
         structuredData={{

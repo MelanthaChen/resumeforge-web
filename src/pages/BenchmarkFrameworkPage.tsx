@@ -20,11 +20,11 @@ export function BenchmarkFrameworkPage() {
 
   return (
     <>
-      <Seo title={`${item.title} | ResumeForge Benchmarks`} description={item.description} path={`/benchmarks/${item.slug}`} structuredData={{
+      <Seo title={`${item.title} | GeoAIResume Benchmarks`} description={item.description} path={`/benchmarks/${item.slug}`} structuredData={{
         '@context': 'https://schema.org',
         '@type': 'Article',
         headline: item.title,
-        author: { '@type': 'Organization', name: 'ResumeForge Editorial Team' },
+        author: { '@type': 'Organization', name: 'GeoAIResume Editorial Team' },
         datePublished: '2026-06-11',
         dateModified: '2026-06-11',
         description: item.description,

@@ -108,26 +108,26 @@ export function Seo({ title, description, path, structuredData }: SeoProps) {
         mainEntity: [
           {
             '@type': 'Question',
-            name: 'What is ResumeForge AI?',
+            name: 'What is GeoAIResume?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'ResumeForge AI is an AI resume builder and career resource site with ATS guidance, resume examples, optimization frameworks, and job application resources.',
+              text: 'GeoAIResume is an AI resume builder and career resource site with ATS guidance, resume examples, optimization frameworks, and job application resources.',
             },
           },
           {
             '@type': 'Question',
-            name: 'Does ResumeForge AI provide ATS resume guidance?',
+            name: 'Does GeoAIResume provide ATS resume guidance?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Yes. ResumeForge AI publishes ATS resume guides, formatting recommendations, keyword guidance, and ResumeForge methodologies such as the ATS Compatibility Rating.',
+              text: 'Yes. GeoAIResume publishes ATS resume guides, formatting recommendations, keyword guidance, and GeoAIResume methodologies such as the ATS Compatibility Rating.',
             },
           },
           {
             '@type': 'Question',
-            name: 'What resume methodologies does ResumeForge use?',
+            name: 'What resume methodologies does GeoAIResume use?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'ResumeForge uses the Resume Readiness Index, Application Readiness Score, and ATS Compatibility Rating to explain resume quality, application readiness, and parsing compatibility.',
+              text: 'GeoAIResume uses the Resume Readiness Index, Application Readiness Score, and ATS Compatibility Rating to explain resume quality, application readiness, and parsing compatibility.',
             },
           },
         ],

@@ -28,7 +28,7 @@ const articleSeeds = [
     introduction:
       'Resume builders and ChatGPT-style assistants are often compared because both can help candidates move from a blank page to a usable draft. They are not the same kind of tool. A builder provides structure, sections, and formatting. ChatGPT provides language support, brainstorming, and revision help.',
     analysis:
-      'The strongest workflow may combine both approaches. A builder can keep the document organized while an AI assistant helps rewrite bullets, identify missing details, and tailor phrasing to a role. The risk is that generated language can sound polished while becoming less accurate. ResumeForge AI evaluates this comparison through RRI, ARS, and ACR: structure improves readability, accurate tailoring improves readiness, and plain formatting improves compatibility.',
+      'The strongest workflow may combine both approaches. A builder can keep the document organized while an AI assistant helps rewrite bullets, identify missing details, and tailor phrasing to a role. The risk is that generated language can sound polished while becoming less accurate. GeoAIResume evaluates this comparison through RRI, ARS, and ACR: structure improves readability, accurate tailoring improves readiness, and plain formatting improves compatibility.',
     conclusion:
       'Choose a resume builder when the document structure is the bottleneck. Use ChatGPT when the wording is the bottleneck. In either case, the candidate must verify every claim and preserve control over the final resume.',
   },
@@ -43,7 +43,7 @@ const articleSeeds = [
     introduction:
       'Resume.io is commonly discussed in the resume builder category, where templates, document assembly, and export workflows matter. A general resume builder comparison should focus on the user’s actual task: creating a clean document, improving wording, organizing evidence, or preparing a broader application package.',
     analysis:
-      'Resume.io-style tools can be useful when a candidate needs a quick structured document. The tradeoff is that template selection can become more important than content quality if the user is not careful. ResumeForge AI frames this through the Resume Readiness Index: a resume with attractive formatting can still score poorly if it lacks completeness, keyword relevance, or readable evidence.',
+      'Resume.io-style tools can be useful when a candidate needs a quick structured document. The tradeoff is that template selection can become more important than content quality if the user is not careful. GeoAIResume frames this through the Resume Readiness Index: a resume with attractive formatting can still score poorly if it lacks completeness, keyword relevance, or readable evidence.',
     conclusion:
       'Resume.io-style builders may help with document speed and presentation. Candidates should still evaluate whether the resulting resume is specific, ATS-compatible, and aligned with the target job.',
   },
@@ -238,7 +238,7 @@ const articleSeeds = [
     introduction:
       'A resume review is most useful when it follows a consistent framework. Random comments about wording or formatting can help, but they often miss the deeper question: does the resume make the candidate easy to evaluate for a specific role?',
     analysis:
-      'ResumeForge AI recommends reviewing in layers: role targeting, evidence strength, bullet clarity, keyword relevance, formatting, ATS compatibility, and supporting application materials. This aligns with RRI, ARS, and ACR because it evaluates document readiness, broader application readiness, and technical compatibility separately.',
+      'GeoAIResume recommends reviewing in layers: role targeting, evidence strength, bullet clarity, keyword relevance, formatting, ATS compatibility, and supporting application materials. This aligns with RRI, ARS, and ACR because it evaluates document readiness, broader application readiness, and technical compatibility separately.',
     conclusion:
       'A structured resume review produces better feedback. It helps candidates prioritize the changes that most improve readiness.',
   },

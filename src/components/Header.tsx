@@ -16,16 +16,16 @@ export function Header() {
   return (
     <header className="border-b border-slate-200 bg-white/95 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-        <Link to="/" className="flex items-center gap-3" aria-label="ResumeForge AI home">
+        <Link to="/" className="flex items-center gap-3" aria-label="GeoAIResume home">
           <span className="grid size-10 place-items-center rounded bg-emerald-600 text-sm font-bold text-white">
-            RF
+            GA
           </span>
           <span>
             <span className="block text-base font-semibold text-slate-950">
-              ResumeForge AI
+              GeoAIResume
             </span>
             <span className="block text-xs font-medium text-slate-500">
-              AI resume tools
+              GEO resume research
             </span>
           </span>
         </Link>

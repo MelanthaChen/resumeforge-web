@@ -24,7 +24,7 @@ export function ExampleDetailPage() {
   return (
     <>
       <Seo
-        title={`${item.title} | ResumeForge AI`}
+        title={`${item.title} | GeoAIResume`}
         description={item.summary}
         path={`/examples/${item.slug}`}
         structuredData={[
@@ -32,7 +32,7 @@ export function ExampleDetailPage() {
             '@context': 'https://schema.org',
             '@type': 'Article',
             headline: item.title,
-            author: { '@type': 'Organization', name: 'ResumeForge Editorial Team' },
+            author: { '@type': 'Organization', name: 'GeoAIResume Editorial Team' },
             datePublished: '2026-06-11',
             dateModified: '2026-06-11',
             description: item.summary,

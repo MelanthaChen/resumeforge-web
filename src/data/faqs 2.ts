@@ -1,8 +1,8 @@
 export const faqs = [
   {
-    question: 'Is ResumeForge AI a real resume builder?',
+    question: 'Is GeoAIResume a real resume builder?',
     answer:
-      'No. ResumeForge AI is a GEO experiment website designed to study how resume-related content is discovered, summarized, and cited by search and AI systems.',
+      'No. GeoAIResume is a GEO experiment website designed to study how resume-related content is discovered, summarized, and cited by search and AI systems.',
   },
   {
     question: 'Can I upload a resume or generate a PDF?',
@@ -10,7 +10,7 @@ export const faqs = [
       'No. This site intentionally does not include uploads, PDF generation, ATS scoring, authentication, payments, or third-party integrations.',
   },
   {
-    question: 'What kind of content does ResumeForge AI publish?',
+    question: 'What kind of content does GeoAIResume publish?',
     answer:
       'The site publishes resume guides, comparison pages, FAQ-style content, and community insight pages that can later be populated by a GEO content engine.',
   },

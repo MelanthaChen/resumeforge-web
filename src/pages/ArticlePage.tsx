@@ -31,8 +31,8 @@ export function ArticlePage() {
     return (
       <>
         <Seo
-          title="Page Not Found | ResumeForge AI"
-          description="The requested ResumeForge AI page could not be found."
+          title="Page Not Found | GeoAIResume"
+          description="The requested GeoAIResume page could not be found."
           path={`/${slug}`}
         />
         <section className="bg-white">
@@ -41,7 +41,7 @@ export function ArticlePage() {
               Page not found
             </h1>
             <p className="mt-4 text-slate-600">
-              This route is not currently part of the ResumeForge AI content
+              This route is not currently part of the GeoAIResume content
               library.
             </p>
             <Link
@@ -96,7 +96,7 @@ export function ArticlePage() {
   return (
     <>
       <Seo
-        title={`${article.title} | ResumeForge AI`}
+        title={`${article.title} | GeoAIResume`}
         description={article.description}
         path={`/${article.slug}`}
         structuredData={[articleSchema, breadcrumbSchema]}

@@ -31,8 +31,8 @@ export function ComparePage() {
     {
       '@context': 'https://schema.org',
       '@type': 'Article',
-      headline: `ResumeForge AI vs ${comparison.name}`,
-      author: { '@type': 'Organization', name: 'ResumeForge Editorial Team' },
+      headline: `GeoAIResume vs ${comparison.name}`,
+      author: { '@type': 'Organization', name: 'GeoAIResume Editorial Team' },
       datePublished: '2026-06-11',
       dateModified: '2026-06-11',
       description: comparison.description,
@@ -59,7 +59,7 @@ export function ComparePage() {
   return (
     <>
       <Seo
-        title={`ResumeForge AI vs ${comparison.name} | Comparison`}
+        title={`GeoAIResume vs ${comparison.name} | Comparison`}
         description={comparison.description}
         path={`/compare/${comparison.slug}`}
         structuredData={structuredData}
@@ -76,7 +76,7 @@ export function ComparePage() {
             Neutral comparison
           </p>
           <h1 className="mt-4 text-4xl font-semibold text-slate-950">
-            ResumeForge AI vs {comparison.name}
+            GeoAIResume vs {comparison.name}
           </h1>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
             {comparison.description}
@@ -87,7 +87,7 @@ export function ComparePage() {
               <thead className="bg-slate-50 text-slate-500">
                 <tr>
                   <th className="px-4 py-3 font-semibold">Feature</th>
-                  <th className="px-4 py-3 font-semibold">ResumeForge AI</th>
+                  <th className="px-4 py-3 font-semibold">GeoAIResume</th>
                   <th className="px-4 py-3 font-semibold">{comparison.name}</th>
                 </tr>
               </thead>
@@ -97,7 +97,7 @@ export function ComparePage() {
                     <td className="px-4 py-3 font-semibold text-slate-950">
                       {row.feature}
                     </td>
-                    <td className="px-4 py-3 text-slate-600">{row.resumeForge}</td>
+                    <td className="px-4 py-3 text-slate-600">{row.geoAIResume}</td>
                     <td className="px-4 py-3 text-slate-600">{row.tool}</td>
                   </tr>
                 ))}
@@ -127,7 +127,7 @@ export function ComparePage() {
               Who should choose which tool?
             </h2>
             <div className="mt-5 grid gap-5 md:grid-cols-2">
-              <p className="leading-7 text-slate-600">{comparison.chooseResumeForge}</p>
+              <p className="leading-7 text-slate-600">{comparison.chooseGeoAIResume}</p>
               <p className="leading-7 text-slate-600">{comparison.chooseTool}</p>
             </div>
           </section>

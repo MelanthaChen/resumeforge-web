@@ -21,7 +21,7 @@ export function MetadataPanel({ article }: MetadataPanelProps) {
   return (
     <aside className="rounded border border-emerald-200 bg-emerald-50 p-5">
       <h2 className="text-lg font-semibold text-emerald-950">
-        ResumeForge methodology metadata
+        GeoAIResume methodology metadata
       </h2>
       <dl className="mt-4 grid gap-3 text-sm">
         <div>

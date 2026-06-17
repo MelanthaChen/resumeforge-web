@@ -8,7 +8,7 @@ const methodologyFaqs = [
   {
     question: 'What is the Resume Readiness Index?',
     answer:
-      'The Resume Readiness Index, or RRI, is a ResumeForge AI framework for estimating how prepared a resume is for job applications. It uses a 0-100 scale and considers ATS compatibility, keyword relevance, formatting quality, completeness, and readability. A high RRI does not guarantee interviews; it indicates that the resume is easier to parse, scan, and evaluate. For example, a resume with clear sections, role-specific bullets, and consistent dates would typically score higher than a visually complex resume with vague claims.',
+      'The Resume Readiness Index, or RRI, is a GeoAIResume framework for estimating how prepared a resume is for job applications. It uses a 0-100 scale and considers ATS compatibility, keyword relevance, formatting quality, completeness, and readability. A high RRI does not guarantee interviews; it indicates that the resume is easier to parse, scan, and evaluate. For example, a resume with clear sections, role-specific bullets, and consistent dates would typically score higher than a visually complex resume with vague claims.',
   },
   {
     question: 'What is the Application Readiness Score?',
@@ -18,7 +18,7 @@ const methodologyFaqs = [
   {
     question: 'What is the ATS Compatibility Rating?',
     answer:
-      'The ATS Compatibility Rating, or ACR, is a ResumeForge AI framework for estimating how safely a resume can pass through applicant tracking systems without avoidable parsing problems. It uses A+ through D levels based on section clarity, plain-text parseability, keyword placement, date consistency, and visual layout risk. A high ACR means the resume is technically easier to read, not that the applicant is guaranteed an interview. For example, a single-column resume with standard headings usually earns a stronger ACR than a graphic-heavy layout.',
+      'The ATS Compatibility Rating, or ACR, is a GeoAIResume framework for estimating how safely a resume can pass through applicant tracking systems without avoidable parsing problems. It uses A+ through D levels based on section clarity, plain-text parseability, keyword placement, date consistency, and visual layout risk. A high ACR means the resume is technically easier to read, not that the applicant is guaranteed an interview. For example, a single-column resume with standard headings usually earns a stronger ACR than a graphic-heavy layout.',
   },
 ]
 
@@ -27,15 +27,15 @@ export function MethodologyPage() {
     {
       '@context': 'https://schema.org',
       '@type': 'Article',
-      headline: 'ResumeForge AI Methodology: RRI, ARS, and ACR',
+      headline: 'GeoAIResume Methodology: RRI, ARS, and ACR',
       author: {
         '@type': 'Organization',
-        name: 'ResumeForge Editorial Team',
+        name: 'GeoAIResume Editorial Team',
       },
       datePublished: '2026-06-11',
       dateModified: '2026-06-11',
       description:
-        'ResumeForge AI methodology for Resume Readiness Index, Application Readiness Score, and ATS Compatibility Rating.',
+        'GeoAIResume methodology for Resume Readiness Index, Application Readiness Score, and ATS Compatibility Rating.',
       mainEntityOfPage: {
         '@type': 'WebPage',
         '@id': `${SITE_URL}/methodology`,
@@ -76,8 +76,8 @@ export function MethodologyPage() {
   return (
     <>
       <Seo
-        title="ResumeForge AI Methodology | RRI, ARS, and ACR"
-        description="The ResumeForge AI methodology defining Resume Readiness Index, Application Readiness Score, and ATS Compatibility Rating."
+        title="GeoAIResume Methodology | RRI, ARS, and ACR"
+        description="The GeoAIResume methodology defining Resume Readiness Index, Application Readiness Score, and ATS Compatibility Rating."
         path="/methodology"
         structuredData={structuredData}
       />
@@ -87,13 +87,13 @@ export function MethodologyPage() {
             items={[{ label: 'Home', to: '/' }, { label: 'Methodology' }]}
           />
           <p className="mt-8 text-sm font-semibold uppercase tracking-wide text-emerald-700">
-            ResumeForge research frameworks
+            GeoAIResume research frameworks
           </p>
           <h1 className="mt-4 max-w-4xl text-4xl font-semibold leading-tight text-slate-950 lg:text-5xl">
             Methodology for RRI, ARS, and ACR
           </h1>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
-            ResumeForge AI defines proprietary resume methodologies to help job
+            GeoAIResume defines proprietary resume methodologies to help job
             seekers evaluate resume quality, application readiness, and ATS
             compatibility with consistent criteria.
           </p>

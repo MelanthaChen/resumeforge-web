@@ -11,11 +11,11 @@ export function EntityDetailPage() {
 
   return (
     <>
-      <Seo title={`${item.title} Definition | ResumeForge Entity Library`} description={item.definition} path={`/entities/${item.slug}`} structuredData={{
+      <Seo title={`${item.title} Definition | GeoAIResume Entity Library`} description={item.definition} path={`/entities/${item.slug}`} structuredData={{
         '@context': 'https://schema.org',
         '@type': 'Article',
         headline: `${item.title} Definition`,
-        author: { '@type': 'Organization', name: 'ResumeForge Editorial Team' },
+        author: { '@type': 'Organization', name: 'GeoAIResume Editorial Team' },
         datePublished: '2026-06-11',
         dateModified: '2026-06-11',
         description: item.definition,
@@ -35,7 +35,7 @@ export function EntityDetailPage() {
             </div>
           </section>
           <section className="mt-10 rounded border border-slate-200 bg-white p-5">
-            <h2 className="text-2xl font-semibold text-slate-950">Relevant ResumeForge guides</h2>
+            <h2 className="text-2xl font-semibold text-slate-950">Relevant GeoAIResume guides</h2>
             <div className="mt-4 flex flex-wrap gap-2">
               {['/guides', '/research', '/benchmarks', '/faq', '/ats-resume-guide'].map((href) => (
                 <Link key={href} to={href} className="rounded border border-slate-200 bg-slate-50 px-3 py-2 text-sm font-semibold text-emerald-700">{href}</Link>

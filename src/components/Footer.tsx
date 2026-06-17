@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="border-t border-slate-200 bg-slate-950 text-slate-300">
       <div className="mx-auto grid max-w-7xl gap-8 px-5 py-10 lg:grid-cols-[1.3fr_0.7fr_0.7fr] lg:px-8">
         <div>
-          <p className="text-lg font-semibold text-white">ResumeForge AI</p>
+          <p className="text-lg font-semibold text-white">GeoAIResume</p>
           <p className="mt-3 max-w-xl text-sm leading-6 text-slate-400">
             AI resume tools, ATS guidance, resume examples, and career
             readiness resources for job seekers preparing stronger applications.

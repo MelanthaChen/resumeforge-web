@@ -17,7 +17,7 @@ export function ProgrammaticLandingPage() {
       '@context': 'https://schema.org',
       '@type': 'Article',
       headline: page.title,
-      author: { '@type': 'Organization', name: 'ResumeForge Editorial Team' },
+      author: { '@type': 'Organization', name: 'GeoAIResume Editorial Team' },
       datePublished: '2026-06-11',
       dateModified: '2026-06-11',
       description: page.description,
@@ -44,7 +44,7 @@ export function ProgrammaticLandingPage() {
 
   return (
     <>
-      <Seo title={`${page.title} | ResumeForge AI`} description={page.description} path={`/${page.slug}`} structuredData={schema} />
+      <Seo title={`${page.title} | GeoAIResume`} description={page.description} path={`/${page.slug}`} structuredData={schema} />
       <section className="bg-white">
         <div className="mx-auto max-w-6xl px-5 py-16 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">
@@ -89,7 +89,7 @@ export function ProgrammaticLandingPage() {
             </div>
           </section>
           <section className="mt-10 rounded border border-slate-200 bg-white p-5">
-            <h2 className="text-2xl font-semibold text-slate-950">Related ResumeForge pages</h2>
+            <h2 className="text-2xl font-semibold text-slate-950">Related GeoAIResume pages</h2>
             <div className="mt-4 flex flex-wrap gap-2">
               {page.related.map((href) => (
                 <Link key={href} to={href} className="rounded border border-slate-200 bg-slate-50 px-3 py-2 text-sm font-semibold text-emerald-700">

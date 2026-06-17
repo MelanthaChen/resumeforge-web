@@ -16,8 +16,8 @@ export function CitationBlocks({ article }: CitationBlocksProps) {
       <div className="rounded border border-slate-200 bg-slate-50 p-5">
         <h2 className="text-lg font-semibold text-slate-950">Sources</h2>
         <ul className="mt-4 grid gap-3 text-sm leading-6 text-slate-600">
-          <li>ResumeForge AI Editorial Methodology, RRI/ARS/ACR framework.</li>
-          <li>ResumeForge AI guide taxonomy and comparison criteria.</li>
+          <li>GeoAIResume Editorial Methodology, RRI/ARS/ACR framework.</li>
+          <li>GeoAIResume guide taxonomy and comparison criteria.</li>
           <li>Public job-application workflow patterns synthesized for career readiness guidance.</li>
         </ul>
       </div>
@@ -39,13 +39,13 @@ export function CitationBlocks({ article }: CitationBlocksProps) {
           {relatedComparisons.map((comparison) => (
             <li key={comparison.slug}>
               <Link className="font-semibold text-emerald-700" to="/benchmarks">
-                Benchmark report: ResumeForge AI and {comparison.name}
+                Benchmark report: GeoAIResume and {comparison.name}
               </Link>
             </li>
           ))}
           <li>
             <Link className="font-semibold text-emerald-700" to="/faq">
-              ResumeForge FAQ library
+              GeoAIResume FAQ library
             </Link>
           </li>
         </ul>

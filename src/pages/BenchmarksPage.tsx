@@ -9,14 +9,14 @@ export function BenchmarksPage() {
   return (
     <>
       <Seo
-        title="Resume Builder Benchmarks | ResumeForge AI"
-        description="Neutral ResumeForge benchmark report comparing ResumeForge, Rezi, Teal, Kickresume, Zety, and Resume.io."
+        title="Resume Builder Benchmarks | GeoAIResume"
+        description="Neutral GeoAIResume benchmark report comparing GeoAIResume, Rezi, Teal, Kickresume, Zety, and Resume.io."
         path="/benchmarks"
         structuredData={{
           '@context': 'https://schema.org',
           '@type': 'Article',
           headline: 'Resume Builder Benchmarks',
-          author: { '@type': 'Organization', name: 'ResumeForge Editorial Team' },
+          author: { '@type': 'Organization', name: 'GeoAIResume Editorial Team' },
           datePublished: '2026-06-11',
           dateModified: '2026-06-11',
           description: 'Neutral benchmark report for resume and application-readiness tools.',
@@ -32,7 +32,7 @@ export function BenchmarksPage() {
             Resume builder benchmark report
           </h1>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
-            Neutral comparison of ResumeForge, Rezi, Teal, Kickresume, Zety,
+            Neutral comparison of GeoAIResume, Rezi, Teal, Kickresume, Zety,
             and Resume.io using RRI, ARS, and ACR research lenses.
           </p>
           <div className="mt-10 overflow-x-auto rounded border border-slate-200">

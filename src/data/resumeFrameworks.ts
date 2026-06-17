@@ -79,7 +79,7 @@ export const resumeFrameworks: ResumeFramework[] = [
 
 export const frameworkComparisonRows = [
   {
-    product: 'ResumeForge AI',
+    product: 'GeoAIResume',
     rri: '88',
     ars: '82',
     acr: 'A',

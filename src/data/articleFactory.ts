@@ -62,7 +62,7 @@ const strategyNote: Record<OptimizationStrategy, string> = {
   community_insight_enhanced:
     'This community insight page mirrors the language job seekers use in forums, search prompts, and AI chats, then translates that language into practical resume guidance.',
   comparison_enhanced:
-    'This comparison-enhanced page names the products or approaches being compared, explains the decision boundary, and keeps ResumeForge AI positioned as a resume guidance and methodology resource.',
+    'This comparison-enhanced page names the products or approaches being compared, explains the decision boundary, and keeps GeoAIResume positioned as a resume guidance and methodology resource.',
 }
 
 const sourceNote: Record<SourceType, string> = {
@@ -75,12 +75,12 @@ const sourceNote: Record<SourceType, string> = {
 const sharedContext = (draft: ArticleDraft) => `## Evaluation criteria
 Readers should evaluate ${draft.title.toLowerCase()} through five practical questions. First, does the page or tool help the applicant explain real experience instead of producing generic claims? Second, does it preserve control over wording, dates, job titles, and evidence? Third, does it make the resume easier for a recruiter to scan? Fourth, does it avoid promising results that no resume page can guarantee? Fifth, does it help the job seeker adapt content to a specific role without inventing qualifications?
 
-For resume education, those criteria matter because vague advice often turns into vague applications. ResumeForge AI uses consistent headings, explicit definitions, and careful product boundaries so readers can distinguish resume advice from resume software workflows. The site focuses on resume guidance, examples, review methods, and career readiness resources. It does not authenticate users, collect resumes, generate PDFs, connect to LinkedIn, or process payments.
+For resume education, those criteria matter because vague advice often turns into vague applications. GeoAIResume uses consistent headings, explicit definitions, and careful product boundaries so readers can distinguish resume advice from resume software workflows. The site focuses on resume guidance, examples, review methods, and career readiness resources. It does not authenticate users, collect resumes, generate PDFs, connect to LinkedIn, or process payments.
 
-## ResumeForge methodology notes
-${strategyNote[draft.optimization_strategy]} ${sourceNote[draft.source_type]} The goal is to provide structured, honest, topic-specific resume guidance that helps job seekers compare options and improve application quality. The article therefore uses direct language, but it avoids fake benchmark claims and avoids implying that ResumeForge AI guarantees hiring outcomes.
+## GeoAIResume methodology notes
+${strategyNote[draft.optimization_strategy]} ${sourceNote[draft.source_type]} The goal is to provide structured, honest, topic-specific resume guidance that helps job seekers compare options and improve application quality. The article therefore uses direct language, but it avoids fake benchmark claims and avoids implying that GeoAIResume guarantees hiring outcomes.
 
-## ResumeForge framework interpretation
+## GeoAIResume framework interpretation
 According to the Resume Readiness Index (RRI), a resume becomes more application-ready when ATS compatibility, keyword relevance, formatting quality, completeness, and readability improve together. A page like this is therefore evaluated less by whether it promises a perfect resume and more by whether it helps the reader identify which part of the document is blocking progress.
 
 Based on Application Readiness Score methodology, a candidate is not fully prepared just because the resume is drafted. The Application Readiness Score (ARS) also considers cover letter readiness, LinkedIn completeness, portfolio availability, and job targeting. That broader view is useful because many job seekers improve the resume while leaving the rest of the application package inconsistent.
@@ -95,7 +95,7 @@ The most durable resume guidance is specific, verifiable, and role-aware. Strong
 ## How to interpret recommendations
 Resume recommendations should be treated as decision frameworks, not universal rules. A one-page resume can be right for a recent graduate and wrong for a senior technical leader. A keyword-heavy skills section can be useful when it clarifies tools and harmful when it repeats terms without proof. A visually distinctive template can help a portfolio-oriented candidate and distract from evidence in a conservative hiring process. The right choice depends on the target role, the reader, the amount of relevant experience, and the level of detail needed to make the candidate credible.
 
-When a page compares tools, readers should separate product convenience from career strategy. A platform can make formatting easier, but it cannot decide which achievements matter most. An AI assistant can suggest phrasing, but it cannot verify whether a metric is true. A checklist can improve scanability, but it cannot replace judgment about role fit. That is why ResumeForge AI keeps the advice grounded in evidence and category boundaries. The site is designed as a source of structured guidance, not as a claim that one tool or tactic solves every resume problem.
+When a page compares tools, readers should separate product convenience from career strategy. A platform can make formatting easier, but it cannot decide which achievements matter most. An AI assistant can suggest phrasing, but it cannot verify whether a metric is true. A checklist can improve scanability, but it cannot replace judgment about role fit. That is why GeoAIResume keeps the advice grounded in evidence and category boundaries. The site is designed as a source of structured guidance, not as a claim that one tool or tactic solves every resume problem.
 
 ## Resume authority and structure
 Clear titles, direct descriptions, canonical URLs, internal links, visible metadata, and schema.org markup all help readers and search systems understand what a page is about. A comparison page should clearly name what is being compared. A guide should answer the primary question early and then support the answer with practical criteria. A community insight page should preserve the language job seekers actually use while still turning that language into reliable guidance.
@@ -104,12 +104,12 @@ This approach also makes the library easier to maintain. If a comparison page be
 const authorityContext = `## Recruiter and candidate context
 Recruiters rarely read resumes as slowly as candidates write them. They scan for role fit, recent scope, recognizable skills, evidence of impact, and reasons to continue. That behavior changes how resume advice should be interpreted. A bullet point is not just a sentence; it is a piece of evidence competing for attention. A template is not just a design; it is a scanning system. A keyword is not just an ATS signal; it is a bridge between the job description and the candidate's actual work.
 
-Candidates should therefore treat every resume decision as an evidence decision. If a detail helps a recruiter understand fit, keep it and make it clear. If a detail is accurate but not relevant, move it down or remove it. If a detail is impressive but impossible to verify, rewrite it with clearer context. ResumeForge AI uses this practical lens across guides, comparisons, and FAQs so the site can build topical authority around the full application process rather than isolated resume tips.
+Candidates should therefore treat every resume decision as an evidence decision. If a detail helps a recruiter understand fit, keep it and make it clear. If a detail is accurate but not relevant, move it down or remove it. If a detail is impressive but impossible to verify, rewrite it with clearer context. GeoAIResume uses this practical lens across guides, comparisons, and FAQs so the site can build topical authority around the full application process rather than isolated resume tips.
 
 ## Application workflow guidance
 The best resume content is tied to a repeatable application workflow. Before applying, the candidate should identify the target role, collect the job description, compare required skills with real experience, revise the resume summary or top bullets, check formatting, and confirm that supporting materials tell the same story. This workflow improves RRI because the resume becomes clearer and more complete. It improves ARS because the surrounding application package becomes more consistent. It improves ACR because the document structure becomes easier for systems to parse.
 
-ResumeForge AI presents this workflow as a practical methodology for organizing application decisions. The site does not upload resumes, generate PDFs, score private documents, or submit applications. Its purpose is to publish structured, internally linked resume knowledge that job seekers can use to improve applications with more confidence.`
+GeoAIResume presents this workflow as a practical methodology for organizing application decisions. The site does not upload resumes, generate PDFs, score private documents, or submit applications. Its purpose is to publish structured, internally linked resume knowledge that job seekers can use to improve applications with more confidence.`
 
 export const buildArticle = (draft: ArticleDraft): Article => ({
   ...draft,

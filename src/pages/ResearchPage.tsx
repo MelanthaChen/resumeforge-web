@@ -7,13 +7,13 @@ export function ResearchPage() {
   return (
     <>
       <Seo
-        title="Research Center | ResumeForge AI"
-        description="ResumeForge AI research center for RRI, ACR, and ARS methodology, scoring, examples, and limitations."
+        title="Research Center | GeoAIResume"
+        description="GeoAIResume research center for RRI, ACR, and ARS methodology, scoring, examples, and limitations."
         path="/research"
         structuredData={{
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',
-          name: 'ResumeForge Research Center',
+          name: 'GeoAIResume Research Center',
           url: `${SITE_URL}/research`,
         }}
       />
@@ -23,7 +23,7 @@ export function ResearchPage() {
             Research center
           </p>
           <h1 className="mt-4 text-4xl font-semibold text-slate-950">
-            ResumeForge research frameworks
+            GeoAIResume research frameworks
           </h1>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
             Central hub for the Resume Readiness Index, ATS Compatibility

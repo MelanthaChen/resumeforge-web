@@ -33,7 +33,7 @@ export function CareerResumePage() {
   return (
     <>
       <Seo
-        title={`${page.role} Resume Guide | ResumeForge AI`}
+        title={`${page.role} Resume Guide | GeoAIResume`}
         description={page.overview}
         path={`/resume/${page.slug}`}
         structuredData={[
@@ -41,7 +41,7 @@ export function CareerResumePage() {
             '@context': 'https://schema.org',
             '@type': 'Article',
             headline: `${page.role} Resume Guide`,
-            author: { '@type': 'Organization', name: 'ResumeForge Editorial Team' },
+            author: { '@type': 'Organization', name: 'GeoAIResume Editorial Team' },
             datePublished: '2026-06-11',
             dateModified: '2026-06-11',
             description: page.overview,

@@ -48,8 +48,8 @@ export function AnalyticsPage() {
   return (
     <>
       <Seo
-        title="Analytics Dashboard | ResumeForge AI"
-        description="Local analytics dashboard showing ResumeForge AI visits, top pages, referrers, and recent page views."
+        title="Analytics Dashboard | GeoAIResume"
+        description="Local analytics dashboard showing GeoAIResume visits, top pages, referrers, and recent page views."
         path="/analytics"
       />
       <section className="bg-slate-50">
@@ -61,7 +61,7 @@ export function AnalyticsPage() {
                 Local analytics
               </p>
               <h1 className="mt-2 text-4xl font-semibold text-slate-950">
-                ResumeForge AI analytics
+                GeoAIResume analytics
               </h1>
             </div>
           </div>

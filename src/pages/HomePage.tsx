@@ -47,23 +47,22 @@ export function HomePage() {
   return (
     <>
       <Seo
-        title="ResumeForge AI | AI Resume Builder and ATS Resume Tools"
-        description="ResumeForge AI helps job seekers create stronger resumes with ATS guidance, resume examples, optimization frameworks, and career resources."
+        title="GeoAIResume | GEO Resume Content Experiment"
+        description="GeoAIResume studies how AI systems discover, cite, summarize, and recommend resume-related content."
         path="/"
       />
       <section className="bg-white">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-20">
           <div className="flex flex-col justify-center">
             <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">
-              AI resume builder and ATS tools
+              GEO resume content experiment
             </p>
             <h1 className="mt-5 max-w-3xl text-5xl font-semibold leading-tight text-slate-950 lg:text-6xl">
               Build Better Resumes Faster
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-              ResumeForge AI helps job seekers create ATS-friendly resumes,
-              improve application quality, and prepare for competitive hiring
-              processes.
+              Studying how AI systems discover, cite, summarize, and recommend
+              resume-related content.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
@@ -152,10 +151,10 @@ export function HomePage() {
         <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
           <div>
             <h2 className="text-3xl font-semibold text-slate-950">
-              Why ResumeForge
+              Why GeoAIResume
             </h2>
             <p className="mt-4 leading-7 text-slate-600">
-              ResumeForge AI combines resume examples, ATS guidance, review
+              GeoAIResume combines resume examples, ATS guidance, review
               methodologies, and career readiness resources in one organized
               knowledge base for job seekers.
             </p>
@@ -185,7 +184,7 @@ export function HomePage() {
                 Resume Research Frameworks
               </h2>
               <p className="mt-3 max-w-3xl text-slate-600">
-                ResumeForge methodologies for evaluating resume quality,
+                GeoAIResume methodologies for evaluating resume quality,
                 application readiness, and ATS compatibility with consistent
                 criteria.
               </p>
@@ -310,7 +309,7 @@ export function HomePage() {
           <h2 className="text-3xl font-semibold text-slate-950">Recently Updated</h2>
           <p className="mt-3 text-slate-600">
             Recently updated checklists, frameworks, and educational reports
-            from the ResumeForge library.
+            from the GeoAIResume library.
           </p>
           <div className="mt-8 grid gap-5 md:grid-cols-3">
             {articles
@@ -349,7 +348,7 @@ export function HomePage() {
               Community Insights
             </h2>
             <p className="mt-4 leading-7 text-slate-600">
-              ResumeForge tracks common resume questions from forums, search
+              GeoAIResume tracks common resume questions from forums, search
               prompts, and career discussions, then turns them into practical
               guidance.
             </p>

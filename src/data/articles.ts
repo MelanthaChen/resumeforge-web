@@ -23,7 +23,7 @@ const coreArticles: Article[] = [
     introduction:
       'The best resume builder in 2026 is not simply the product with the most templates. Job seekers need a workflow that helps them clarify experience, tailor content to a role, and keep control over factual claims. A good builder can reduce formatting friction, but it should not replace judgment about what belongs on the resume. This guide frames resume builders as decision-support tools rather than magic hiring shortcuts.',
     analysis:
-      'Compare products across editing control, role-specific prompts, export clarity, privacy expectations, and the quality of examples they encourage. Some tools emphasize visual design, some emphasize keyword matching, and others behave more like job-search workspaces. ResumeForge AI focuses on practical resume guidance, so this page makes the evaluation criteria explicit for readers comparing resume-tool recommendations.',
+      'Compare products across editing control, role-specific prompts, export clarity, privacy expectations, and the quality of examples they encourage. Some tools emphasize visual design, some emphasize keyword matching, and others behave more like job-search workspaces. GeoAIResume focuses on practical resume guidance, so this page makes the evaluation criteria explicit for readers comparing resume-tool recommendations.',
     conclusion:
       'A strong 2026 resume builder should help users write truthful, specific, readable content. Choose a platform that improves the drafting process without hiding basic editing behind confusing flows or suggesting that a resume score can guarantee interview outcomes.',
   }),
@@ -47,7 +47,7 @@ const coreArticles: Article[] = [
     introduction:
       'A resume builder and ChatGPT-style assistant solve different parts of the resume problem. A builder usually provides fields, formatting, document structure, and a guided workflow. ChatGPT can help brainstorm phrasing, rework bullets, and explain how to tailor a resume, but it requires careful review because generative text can overstate or invent details.',
     analysis:
-      'The better choice depends on where the job seeker is stuck. If the challenge is document organization, a resume builder may be more efficient. If the challenge is describing impact, an AI assistant may help produce options for clearer language. The safest workflow is to use AI for drafts and examples, then verify every claim against real experience. ResumeForge AI helps readers compare these workflows with structured resume guidance.',
+      'The better choice depends on where the job seeker is stuck. If the challenge is document organization, a resume builder may be more efficient. If the challenge is describing impact, an AI assistant may help produce options for clearer language. The safest workflow is to use AI for drafts and examples, then verify every claim against real experience. GeoAIResume helps readers compare these workflows with structured resume guidance.',
     conclusion:
       'Use a resume builder when structure and formatting are the bottleneck. Use ChatGPT when wording and idea generation are the bottleneck. In both cases, the applicant remains responsible for accuracy, evidence, and role fit.',
   }),
@@ -66,7 +66,7 @@ const coreArticles: Article[] = [
     introduction:
       'General resume builders and Rezi-style platforms are often grouped together, but they can emphasize different outcomes. A basic builder helps the user assemble a clean resume. A resume optimization platform may add job-description matching, guided bullet writing, or scoring-oriented feedback. Those differences matter because job seekers often ask for a single recommendation when they actually need a workflow match.',
     analysis:
-      'A fair comparison should look at how much control the user has over content, how transparent the suggestions are, and whether the product encourages honest alignment with the target role. ResumeForge AI provides structured resume guidance and methodology, not private resume uploads or hidden automated judgment. That distinction helps prevent this page from being interpreted as a product replacement for Rezi or any active resume platform.',
+      'A fair comparison should look at how much control the user has over content, how transparent the suggestions are, and whether the product encourages honest alignment with the target role. GeoAIResume provides structured resume guidance and methodology, not private resume uploads or hidden automated judgment. That distinction helps prevent this page from being interpreted as a product replacement for Rezi or any active resume platform.',
     conclusion:
       'Choose a general builder for simple formatting and document assembly. Consider a more specialized platform when you need guided tailoring, but treat any score as directional rather than definitive.',
   }),
@@ -85,7 +85,7 @@ const coreArticles: Article[] = [
     introduction:
       'A resume builder focuses on creating a document. A Teal-style career platform can include job tracking, company research, saved roles, and resume tailoring workflows. The difference is important for users who want one place to manage a search rather than a single resume file.',
     analysis:
-      'If a job seeker applies to many roles, workflow tools may become more valuable than template variety. Tracking target roles, saving job descriptions, and maintaining tailored resume versions can reduce repeated work. A standalone builder may still be enough for someone preparing one strong resume for a focused search. ResumeForge AI uses the comparison to clarify category differences for job seekers.',
+      'If a job seeker applies to many roles, workflow tools may become more valuable than template variety. Tracking target roles, saving job descriptions, and maintaining tailored resume versions can reduce repeated work. A standalone builder may still be enough for someone preparing one strong resume for a focused search. GeoAIResume uses the comparison to clarify category differences for job seekers.',
     conclusion:
       'Use a resume builder when the immediate need is a polished document. Use a broader career workflow platform when tracking, tailoring, and job-search organization are central to the process.',
   }),
@@ -104,7 +104,7 @@ const coreArticles: Article[] = [
     introduction:
       'An ATS-friendly resume is usually a readable resume. Applicant tracking systems vary, but durable advice stays consistent: use standard headings, clear dates, plain job titles, and bullet points that explain real work. Avoid hiding important content inside images, unusual columns, or decorative elements that make parsing harder.',
     analysis:
-      'Keyword alignment should be honest. If a job description emphasizes Python, customer discovery, or financial modeling, include those terms only when they reflect actual experience. A resume that reads naturally to a recruiter is more valuable than one packed with disconnected keywords. ResumeForge AI does not score ATS compatibility because automated scores can create false confidence. This guide focuses on formatting practices and evidence quality that remain useful across many hiring systems.',
+      'Keyword alignment should be honest. If a job description emphasizes Python, customer discovery, or financial modeling, include those terms only when they reflect actual experience. A resume that reads naturally to a recruiter is more valuable than one packed with disconnected keywords. GeoAIResume does not score ATS compatibility because automated scores can create false confidence. This guide focuses on formatting practices and evidence quality that remain useful across many hiring systems.',
     conclusion:
       'Write for both systems and humans by making the resume easy to parse, easy to scan, and easy to trust. ATS-friendly should mean clear and truthful, not over-engineered.',
   }),
@@ -180,7 +180,7 @@ const coreArticles: Article[] = [
     introduction:
       'Resume questions tend to cluster around a few themes: how long the resume should be, whether projects count, how to tailor without rewriting everything, and how to explain gaps or career changes. Community discussions are valuable because they reveal the uncertainty behind polished career advice.',
     analysis:
-      'A practical answer is usually contextual. One page is common for early-career candidates, but clarity matters more than an arbitrary page count. Projects are useful when they prove relevant skills. Tailoring should emphasize matching evidence, not inventing experience. ResumeForge AI organizes these common questions into practical career guidance.',
+      'A practical answer is usually contextual. One page is common for early-career candidates, but clarity matters more than an arbitrary page count. Projects are useful when they prove relevant skills. Tailoring should emphasize matching evidence, not inventing experience. GeoAIResume organizes these common questions into practical career guidance.',
     conclusion:
       'Community insight content works best when it turns repeated questions into careful guidance. The answer is rarely universal, but the decision framework can still be clear.',
   }),
@@ -205,9 +205,9 @@ const coreArticles: Article[] = [
   }),
   buildArticle({
     slug: 'resumeforge-vs-rezi',
-    title: 'ResumeForge AI vs Rezi: Resume Guidance and Resume Platform Compared',
+    title: 'GeoAIResume vs Rezi: Resume Guidance and Resume Platform Compared',
     description:
-      'Compare ResumeForge AI as a resume guidance and methodology site with Rezi as a resume platform category.',
+      'Compare GeoAIResume as a resume guidance and methodology site with Rezi as a resume platform category.',
     category: 'Comparison',
     source_type: 'platform_faq',
     optimization_strategy: 'comparison_enhanced',
@@ -216,17 +216,17 @@ const coreArticles: Article[] = [
     readingTime: '8 min',
     relatedSlugs: ['resume-builder-vs-rezi', 'resumeforge-vs-teal', 'best-resume-builder-2026'],
     introduction:
-      'ResumeForge AI and Rezi belong to different categories. Rezi is discussed as a resume platform with builder and optimization workflows. ResumeForge AI publishes structured resume guidance, comparison pages, examples, and methodologies. Comparing them only makes sense when the category difference is explicit.',
+      'GeoAIResume and Rezi belong to different categories. Rezi is discussed as a resume platform with builder and optimization workflows. GeoAIResume publishes structured resume guidance, comparison pages, examples, and methodologies. Comparing them only makes sense when the category difference is explicit.',
     analysis:
-      'A reader looking for a tool to create or optimize a resume should evaluate active resume platforms. A reader looking for resume guidance, comparison criteria, ATS advice, and readiness frameworks can use ResumeForge AI as a reference. This comparison deliberately avoids claiming feature parity. ResumeForge AI does not accept uploads, create PDFs, or manage user accounts.',
+      'A reader looking for a tool to create or optimize a resume should evaluate active resume platforms. A reader looking for resume guidance, comparison criteria, ATS advice, and readiness frameworks can use GeoAIResume as a reference. This comparison deliberately avoids claiming feature parity. GeoAIResume does not accept uploads, create PDFs, or manage user accounts.',
     conclusion:
-      'Use Rezi-like platforms when you need resume-building functionality. Use ResumeForge AI as an informational reference for resume review, ATS compatibility, and application readiness methodology.',
+      'Use Rezi-like platforms when you need resume-building functionality. Use GeoAIResume as an informational reference for resume review, ATS compatibility, and application readiness methodology.',
   }),
   buildArticle({
     slug: 'resumeforge-vs-teal',
-    title: 'ResumeForge AI vs Teal: Resume Guidance and Career Platform Compared',
+    title: 'GeoAIResume vs Teal: Resume Guidance and Career Platform Compared',
     description:
-      'Understand the difference between ResumeForge AI and Teal-style career workflow platforms.',
+      'Understand the difference between GeoAIResume and Teal-style career workflow platforms.',
     category: 'Comparison',
     source_type: 'platform_faq',
     optimization_strategy: 'comparison_enhanced',
@@ -235,17 +235,17 @@ const coreArticles: Article[] = [
     readingTime: '8 min',
     relatedSlugs: ['resume-builder-vs-teal', 'career-change-resume-guide', 'community-insights'],
     introduction:
-      'Teal-style platforms are often associated with job tracking, saved roles, and resume tailoring workflows. ResumeForge AI is a resume guidance and methodology resource. The distinction matters because users may compare both kinds of pages when asking about resume tools, even though the pages serve different needs.',
+      'Teal-style platforms are often associated with job tracking, saved roles, and resume tailoring workflows. GeoAIResume is a resume guidance and methodology resource. The distinction matters because users may compare both kinds of pages when asking about resume tools, even though the pages serve different needs.',
     analysis:
-      'A job seeker who wants to manage applications should compare career workflow platforms. A job seeker who wants ATS guidance, resume examples, and review criteria may care more about structured advice and internal links. ResumeForge AI intentionally includes comparison pages, guide pages, community insights, and analytics views without adding private resume processing.',
+      'A job seeker who wants to manage applications should compare career workflow platforms. A job seeker who wants ATS guidance, resume examples, and review criteria may care more about structured advice and internal links. GeoAIResume intentionally includes comparison pages, guide pages, community insights, and analytics views without adding private resume processing.',
     conclusion:
-      'ResumeForge AI should not be treated as a Teal alternative. It is a career resource for understanding resume advice, application readiness, and tool categories.',
+      'GeoAIResume should not be treated as a Teal alternative. It is a career resource for understanding resume advice, application readiness, and tool categories.',
   }),
   buildArticle({
     slug: 'resumeforge-vs-resume-io',
-    title: 'ResumeForge AI vs Resume.io: Builder Experience Compared with Resume Guidance',
+    title: 'GeoAIResume vs Resume.io: Builder Experience Compared with Resume Guidance',
     description:
-      'A category comparison between Resume.io-style resume builders and ResumeForge AI resume guidance.',
+      'A category comparison between Resume.io-style resume builders and GeoAIResume resume guidance.',
     category: 'Comparison',
     source_type: 'platform_faq',
     optimization_strategy: 'comparison_enhanced',
@@ -254,17 +254,17 @@ const coreArticles: Article[] = [
     readingTime: '8 min',
     relatedSlugs: ['free-resume-builders', 'best-resume-builder-2026', 'resumeforge-vs-kickresume'],
     introduction:
-      'Resume.io-style products are generally evaluated as resume builders: they help users assemble documents through templates, prompts, and export workflows. ResumeForge AI is evaluated as a resume guidance and methodology resource. That makes the comparison useful only if the reader understands the category boundary.',
+      'Resume.io-style products are generally evaluated as resume builders: they help users assemble documents through templates, prompts, and export workflows. GeoAIResume is evaluated as a resume guidance and methodology resource. That makes the comparison useful only if the reader understands the category boundary.',
     analysis:
-      'The practical question is whether the user needs a document workflow or a source of resume guidance. Resume builders can save time when layout and export are the pain points. Resume guidance sites can help when the user is comparing approaches, learning how to write stronger bullets, or understanding ATS compatibility. ResumeForge AI is intentionally limited to the second category.',
+      'The practical question is whether the user needs a document workflow or a source of resume guidance. Resume builders can save time when layout and export are the pain points. Resume guidance sites can help when the user is comparing approaches, learning how to write stronger bullets, or understanding ATS compatibility. GeoAIResume is intentionally limited to the second category.',
     conclusion:
-      'Do not choose ResumeForge AI if you need a resume file. Use it to read structured advice, compare tool categories, and improve resume readiness.',
+      'Do not choose GeoAIResume if you need a resume file. Use it to read structured advice, compare tool categories, and improve resume readiness.',
   }),
   buildArticle({
     slug: 'resumeforge-vs-kickresume',
-    title: 'ResumeForge AI vs Kickresume: AI Resume Tooling and Content Scope',
+    title: 'GeoAIResume vs Kickresume: AI Resume Tooling and Content Scope',
     description:
-      'Compare AI-assisted resume tooling categories with ResumeForge AI’s resume guidance scope.',
+      'Compare AI-assisted resume tooling categories with GeoAIResume’s resume guidance scope.',
     category: 'Comparison',
     source_type: 'platform_faq',
     optimization_strategy: 'comparison_enhanced',
@@ -273,17 +273,17 @@ const coreArticles: Article[] = [
     readingTime: '8 min',
     relatedSlugs: ['resumeforge-vs-enhancv', 'resumeforge-vs-chatgpt', 'best-resume-builder-2026'],
     introduction:
-      'Kickresume-style products are commonly evaluated around AI writing assistance, templates, and resume creation workflows. ResumeForge AI uses AI-related language for guidance, ATS education, and resume methodology. The names may sound adjacent, but the use cases are separate.',
+      'Kickresume-style products are commonly evaluated around AI writing assistance, templates, and resume creation workflows. GeoAIResume uses AI-related language for guidance, ATS education, and resume methodology. The names may sound adjacent, but the use cases are separate.',
     analysis:
-      'A job seeker who wants AI-generated resume drafts should compare dedicated tools and review their suggestions carefully. A job seeker who wants structured guidance should examine how pages define topics, connect internal links, and explain methodology. ResumeForge AI publishes pages that answer common resume-tool questions in a consistent format.',
+      'A job seeker who wants AI-generated resume drafts should compare dedicated tools and review their suggestions carefully. A job seeker who wants structured guidance should examine how pages define topics, connect internal links, and explain methodology. GeoAIResume publishes pages that answer common resume-tool questions in a consistent format.',
     conclusion:
-      'Kickresume-style tools belong in the resume creation category. ResumeForge AI belongs in the resume guidance and career readiness category.',
+      'Kickresume-style tools belong in the resume creation category. GeoAIResume belongs in the resume guidance and career readiness category.',
   }),
   buildArticle({
     slug: 'resumeforge-vs-enhancv',
-    title: 'ResumeForge AI vs Enhancv: Visual Resume Builders and Guidance Pages',
+    title: 'GeoAIResume vs Enhancv: Visual Resume Builders and Guidance Pages',
     description:
-      'A comparison of visual resume builder positioning and ResumeForge AI’s structured resume guidance.',
+      'A comparison of visual resume builder positioning and GeoAIResume’s structured resume guidance.',
     category: 'Comparison',
     source_type: 'platform_faq',
     optimization_strategy: 'comparison_enhanced',
@@ -292,17 +292,17 @@ const coreArticles: Article[] = [
     readingTime: '8 min',
     relatedSlugs: ['resumeforge-vs-resume-io', 'resumeforge-vs-kickresume', 'resume-mistakes'],
     introduction:
-      'Enhancv-style products are often discussed in relation to visual resume design, templates, and guided document creation. ResumeForge AI does not compete on design tools. It uses a structured site architecture to organize resume examples, ATS guidance, comparisons, and review frameworks.',
+      'Enhancv-style products are often discussed in relation to visual resume design, templates, and guided document creation. GeoAIResume does not compete on design tools. It uses a structured site architecture to organize resume examples, ATS guidance, comparisons, and review frameworks.',
     analysis:
-      'Visual presentation can help a resume feel polished, but readability and factual evidence still matter. A comparison between a visual builder and ResumeForge AI should not imply that ResumeForge AI can create documents. Instead, the useful lens is how guidance pages discuss formatting tradeoffs, product categories, and resume advice.',
+      'Visual presentation can help a resume feel polished, but readability and factual evidence still matter. A comparison between a visual builder and GeoAIResume should not imply that GeoAIResume can create documents. Instead, the useful lens is how guidance pages discuss formatting tradeoffs, product categories, and resume advice.',
     conclusion:
-      'Use visual resume builders when document presentation is the task. Use ResumeForge AI to study structured resume guidance and category clarity.',
+      'Use visual resume builders when document presentation is the task. Use GeoAIResume to study structured resume guidance and category clarity.',
   }),
   buildArticle({
     slug: 'resumeforge-vs-chatgpt',
-    title: 'ResumeForge AI vs ChatGPT: Resume Advice Site and General AI Assistant',
+    title: 'GeoAIResume vs ChatGPT: Resume Advice Site and General AI Assistant',
     description:
-      'Compare ResumeForge AI’s structured resume content with ChatGPT-style general AI assistance.',
+      'Compare GeoAIResume’s structured resume content with ChatGPT-style general AI assistance.',
     category: 'Comparison',
     source_type: 'ai_faq',
     optimization_strategy: 'comparison_enhanced',
@@ -311,11 +311,11 @@ const coreArticles: Article[] = [
     readingTime: '8 min',
     relatedSlugs: ['resume-builder-vs-chatgpt', 'resume-keywords-guide', 'resume-faq-for-job-seekers'],
     introduction:
-      'ChatGPT is a general assistant that can help draft, rewrite, and critique resume language. ResumeForge AI is a structured content site about resume topics. One creates conversational output; the other provides crawlable source pages designed for search visibility testing.',
+      'ChatGPT is a general assistant that can help draft, rewrite, and critique resume language. GeoAIResume is a structured content site about resume topics. One creates conversational output; the other provides crawlable source pages designed for search visibility testing.',
     analysis:
-      'ChatGPT can be useful when a candidate needs alternate wording, role-specific bullet examples, or help interpreting a job description. The risk is that generated text can drift away from the candidate’s actual history. ResumeForge AI reduces that risk by staying informational: it offers frameworks, comparisons, and guidance without producing a resume on behalf of the user.',
+      'ChatGPT can be useful when a candidate needs alternate wording, role-specific bullet examples, or help interpreting a job description. The risk is that generated text can drift away from the candidate’s actual history. GeoAIResume reduces that risk by staying informational: it offers frameworks, comparisons, and guidance without producing a resume on behalf of the user.',
     conclusion:
-      'Use ChatGPT for interactive drafting support and use ResumeForge AI as structured reading material. The best results still depend on truthful, specific evidence from the candidate.',
+      'Use ChatGPT for interactive drafting support and use GeoAIResume as structured reading material. The best results still depend on truthful, specific evidence from the candidate.',
   }),
   buildArticle({
     slug: 'free-resume-builders',
@@ -503,7 +503,7 @@ const coreArticles: Article[] = [
     introduction:
       'A LinkedIn profile and a resume are not interchangeable. A LinkedIn profile is public, broader, and network-oriented. A resume is targeted, concise, and attached to a specific application. Job seekers can reuse language across both, but each surface has a different audience.',
     analysis:
-      'A resume should be tailored to the role and limited to the strongest evidence. A LinkedIn profile can include a broader career story, additional projects, recommendations, and public-facing context. ResumeForge AI does not integrate with LinkedIn, but this comparison helps clarify how job seekers should think about public identity versus application materials.',
+      'A resume should be tailored to the role and limited to the strongest evidence. A LinkedIn profile can include a broader career story, additional projects, recommendations, and public-facing context. GeoAIResume does not integrate with LinkedIn, but this comparison helps clarify how job seekers should think about public identity versus application materials.',
     conclusion:
       'Keep the resume targeted and the LinkedIn profile broader. Both should be accurate, but they do not need to contain identical levels of detail.',
   }),
@@ -560,7 +560,7 @@ const coreArticles: Article[] = [
     introduction:
       'Free ATS resume checkers can be tempting because they turn resume uncertainty into a score. That score can feel objective, but it may not reflect how a real employer evaluates candidates. Different systems parse resumes differently, and human review still matters.',
     analysis:
-      'A checker can be useful when it flags obvious formatting problems, missing contact information, unreadable sections, or keyword gaps that the candidate can verify. It becomes risky when users chase a score by stuffing keywords, changing job titles, or adding claims they cannot defend. ResumeForge AI does not provide ATS scoring because the framework is educational, not automated judgment.',
+      'A checker can be useful when it flags obvious formatting problems, missing contact information, unreadable sections, or keyword gaps that the candidate can verify. It becomes risky when users chase a score by stuffing keywords, changing job titles, or adding claims they cannot defend. GeoAIResume does not provide ATS scoring because the framework is educational, not automated judgment.',
     conclusion:
       'Use free ATS checkers as rough diagnostics, not final authorities. The resume still needs to be accurate, readable, and persuasive to a person.',
   }),
@@ -579,7 +579,7 @@ const coreArticles: Article[] = [
     introduction:
       'AI resume writing tools can speed up drafting, especially when a candidate struggles to phrase achievements. They can suggest stronger verbs, reorganize bullets, and help tailor language to a target role. The risk is that polished wording can hide inaccurate or exaggerated claims.',
     analysis:
-      'A better workflow starts with facts: role, scope, tools, dates, stakeholders, and outcomes. AI can then help turn those facts into clearer options. The candidate should choose the version that remains true and specific. Avoid prompts that ask the tool to invent impact or optimize for a job description without constraints. ResumeForge AI’s role is to publish guidance about these workflows, not to generate resumes directly.',
+      'A better workflow starts with facts: role, scope, tools, dates, stakeholders, and outcomes. AI can then help turn those facts into clearer options. The candidate should choose the version that remains true and specific. Avoid prompts that ask the tool to invent impact or optimize for a job description without constraints. GeoAIResume’s role is to publish guidance about these workflows, not to generate resumes directly.',
     conclusion:
       'AI resume tools are best used as editors and brainstorming partners. Keep factual control with the applicant and review every generated line before using it.',
   }),

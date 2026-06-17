@@ -26,7 +26,7 @@ export function ResearchDetailPage() {
       '@context': 'https://schema.org',
       '@type': 'Article',
       headline: `${item.name} (${item.abbreviation}) Methodology`,
-      author: { '@type': 'Organization', name: 'ResumeForge Editorial Team' },
+      author: { '@type': 'Organization', name: 'GeoAIResume Editorial Team' },
       datePublished: '2026-06-11',
       dateModified: '2026-06-11',
       description: item.definition,
@@ -49,7 +49,7 @@ export function ResearchDetailPage() {
   return (
     <>
       <Seo
-        title={`${item.name} (${item.abbreviation}) | ResumeForge Research`}
+        title={`${item.name} (${item.abbreviation}) | GeoAIResume Research`}
         description={item.definition}
         path={`/research/${item.slug}`}
         structuredData={schema}
