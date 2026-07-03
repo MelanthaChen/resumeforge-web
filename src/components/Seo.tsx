@@ -74,7 +74,7 @@ export function Seo({ title, description, path, structuredData }: SeoProps) {
     document.head.appendChild(canonicalTag)
 
     document
-      .querySelectorAll<HTMLScriptElement>('script[data-resumeforge-schema]')
+      .querySelectorAll<HTMLScriptElement>('script[data-geoairesume-schema]')
       .forEach((tag) => tag.remove())
 
     const schemaEntries = Array.isArray(structuredData)
@@ -119,7 +119,7 @@ export function Seo({ title, description, path, structuredData }: SeoProps) {
             name: 'Does GeoAIResume provide ATS resume guidance?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Yes. GeoAIResume publishes ATS resume guides, formatting recommendations, keyword guidance, and GeoAIResume methodologies such as the ATS Compatibility Rating.',
+              text: 'Yes. GeoAIResume publishes ATS resume guides, formatting recommendations, keyword guidance, and methodology pages such as the ATS Compatibility Rating. The guidance focuses on clean section headings, readable layouts, role-relevant keywords, and avoiding formatting choices that can make resumes harder to parse or review.',
             },
           },
           {
@@ -137,7 +137,7 @@ export function Seo({ title, description, path, structuredData }: SeoProps) {
     schemaEntries.forEach((schema) => {
       const schemaTag = document.createElement('script')
       schemaTag.type = 'application/ld+json'
-      schemaTag.dataset.resumeforgeSchema = 'true'
+      schemaTag.dataset.geoairesumeSchema = 'true'
       schemaTag.textContent = JSON.stringify(schema)
       document.head.appendChild(schemaTag)
     })

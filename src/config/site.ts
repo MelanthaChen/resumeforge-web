@@ -1,4 +1,4 @@
-export const SITE_URL = 'https://resumeforge-web-six.vercel.app'
+export const SITE_URL = 'https://geoairesume-web-six.vercel.app'
 
 export const SITE_NAME = 'GeoAIResume'
 

@@ -4,7 +4,7 @@ import type { Article } from '../types/content'
 const articleSeeds = [
   {
     slug: 'best-resume-builder-for-college-students',
-    title: 'Best Resume Builder for College Students',
+    title: 'College Student Resume Builder Guide: How to Compare Tools',
     description:
       'How college students should compare resume builders for internships, first jobs, projects, and early-career applications.',
     guideCategory: 'Students',

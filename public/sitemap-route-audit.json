@@ -1,844 +1,844 @@
 {
-  "generatedAt": "2026-06-14T19:30:52.717Z",
+  "generatedAt": "2026-07-03T17:08:26.323Z",
   "totalUrls": 140,
   "unresolvedUrls": 0,
   "urls": [
     {
-      "url": "https://resumeforge-web-six.vercel.app/",
+      "url": "https://geoairesume-web-six.vercel.app/",
       "routeFile": "src/pages/HomePage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/faq",
+      "url": "https://geoairesume-web-six.vercel.app/faq",
       "routeFile": "src/pages/FaqPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/guides",
+      "url": "https://geoairesume-web-six.vercel.app/guides",
       "routeFile": "src/pages/GuidesPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/hub",
+      "url": "https://geoairesume-web-six.vercel.app/hub",
       "routeFile": "src/pages/HubPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/research",
+      "url": "https://geoairesume-web-six.vercel.app/research",
       "routeFile": "src/pages/ResearchPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/research/terminology",
+      "url": "https://geoairesume-web-six.vercel.app/research/terminology",
       "routeFile": "src/pages/TerminologyPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/benchmarks",
+      "url": "https://geoairesume-web-six.vercel.app/benchmarks",
       "routeFile": "src/pages/BenchmarksPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/entities",
+      "url": "https://geoairesume-web-six.vercel.app/entities",
       "routeFile": "src/pages/EntitiesPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/examples",
+      "url": "https://geoairesume-web-six.vercel.app/examples",
       "routeFile": "src/pages/ExamplesPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/methodology",
+      "url": "https://geoairesume-web-six.vercel.app/methodology",
       "routeFile": "src/pages/MethodologyPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/research/rri",
+      "url": "https://geoairesume-web-six.vercel.app/research/rri",
       "routeFile": "src/pages/ResearchDetailPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/research/ars",
+      "url": "https://geoairesume-web-six.vercel.app/research/ars",
       "routeFile": "src/pages/ResearchDetailPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/research/acr",
+      "url": "https://geoairesume-web-six.vercel.app/research/acr",
       "routeFile": "src/pages/ResearchDetailPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/benchmarks/ats-benchmark-framework",
+      "url": "https://geoairesume-web-six.vercel.app/benchmarks/ats-benchmark-framework",
       "routeFile": "src/pages/BenchmarkFrameworkPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/benchmarks/resume-evaluation-framework",
+      "url": "https://geoairesume-web-six.vercel.app/benchmarks/resume-evaluation-framework",
       "routeFile": "src/pages/BenchmarkFrameworkPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/benchmarks/recruiter-readability-framework",
+      "url": "https://geoairesume-web-six.vercel.app/benchmarks/recruiter-readability-framework",
       "routeFile": "src/pages/BenchmarkFrameworkPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/benchmarks/keyword-alignment-framework",
+      "url": "https://geoairesume-web-six.vercel.app/benchmarks/keyword-alignment-framework",
       "routeFile": "src/pages/BenchmarkFrameworkPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/entities/resume-builder",
+      "url": "https://geoairesume-web-six.vercel.app/entities/resume-builder",
       "routeFile": "src/pages/EntityDetailPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/entities/ats",
+      "url": "https://geoairesume-web-six.vercel.app/entities/ats",
       "routeFile": "src/pages/EntityDetailPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/entities/resume-screening",
+      "url": "https://geoairesume-web-six.vercel.app/entities/resume-screening",
       "routeFile": "src/pages/EntityDetailPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/entities/resume-optimization",
+      "url": "https://geoairesume-web-six.vercel.app/entities/resume-optimization",
       "routeFile": "src/pages/EntityDetailPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/entities/job-application",
+      "url": "https://geoairesume-web-six.vercel.app/entities/job-application",
       "routeFile": "src/pages/EntityDetailPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/entities/keyword-matching",
+      "url": "https://geoairesume-web-six.vercel.app/entities/keyword-matching",
       "routeFile": "src/pages/EntityDetailPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/entities/application-tracking-system",
+      "url": "https://geoairesume-web-six.vercel.app/entities/application-tracking-system",
       "routeFile": "src/pages/EntityDetailPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/examples/software-engineer",
+      "url": "https://geoairesume-web-six.vercel.app/examples/software-engineer",
       "routeFile": "src/pages/ExampleDetailPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/examples/data-analyst",
+      "url": "https://geoairesume-web-six.vercel.app/examples/data-analyst",
       "routeFile": "src/pages/ExampleDetailPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/examples/product-manager",
+      "url": "https://geoairesume-web-six.vercel.app/examples/product-manager",
       "routeFile": "src/pages/ExampleDetailPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/examples/marketing",
+      "url": "https://geoairesume-web-six.vercel.app/examples/marketing",
       "routeFile": "src/pages/ExampleDetailPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/examples/recent-graduate",
+      "url": "https://geoairesume-web-six.vercel.app/examples/recent-graduate",
       "routeFile": "src/pages/ExampleDetailPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/examples/internship",
+      "url": "https://geoairesume-web-six.vercel.app/examples/internship",
       "routeFile": "src/pages/ExampleDetailPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume/software-engineer",
+      "url": "https://geoairesume-web-six.vercel.app/resume/software-engineer",
       "routeFile": "src/pages/CareerResumePage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume/data-analyst",
+      "url": "https://geoairesume-web-six.vercel.app/resume/data-analyst",
       "routeFile": "src/pages/CareerResumePage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume/product-manager",
+      "url": "https://geoairesume-web-six.vercel.app/resume/product-manager",
       "routeFile": "src/pages/CareerResumePage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume/marketing",
+      "url": "https://geoairesume-web-six.vercel.app/resume/marketing",
       "routeFile": "src/pages/CareerResumePage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume/accountant",
+      "url": "https://geoairesume-web-six.vercel.app/resume/accountant",
       "routeFile": "src/pages/CareerResumePage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume/nurse",
+      "url": "https://geoairesume-web-six.vercel.app/resume/nurse",
       "routeFile": "src/pages/CareerResumePage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume/teacher",
+      "url": "https://geoairesume-web-six.vercel.app/resume/teacher",
       "routeFile": "src/pages/CareerResumePage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/compare/rezi",
+      "url": "https://geoairesume-web-six.vercel.app/compare/rezi",
       "routeFile": "src/pages/ComparePage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/compare/teal",
+      "url": "https://geoairesume-web-six.vercel.app/compare/teal",
       "routeFile": "src/pages/ComparePage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/compare/resume-io",
+      "url": "https://geoairesume-web-six.vercel.app/compare/resume-io",
       "routeFile": "src/pages/ComparePage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/compare/kickresume",
+      "url": "https://geoairesume-web-six.vercel.app/compare/kickresume",
       "routeFile": "src/pages/ComparePage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/compare/zety",
+      "url": "https://geoairesume-web-six.vercel.app/compare/zety",
       "routeFile": "src/pages/ComparePage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-software-engineers",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-software-engineers",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-data-analysts",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-data-analysts",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-product-managers",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-product-managers",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-internships",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-internships",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-college-students",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-college-students",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-international-students",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-international-students",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-career-changers",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-career-changers",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-remote-jobs",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-remote-jobs",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-teachers",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-teachers",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-accountants",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-accountants",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-nurses",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-nurses",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-sales-jobs",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-sales-jobs",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-marketing-jobs",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-marketing-jobs",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-entry-level-jobs",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-entry-level-jobs",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-tech-jobs",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-tech-jobs",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-finance-jobs",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-finance-jobs",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-consulting-jobs",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-consulting-jobs",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-customer-success",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-customer-success",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-operations-managers",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-operations-managers",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-designers",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-designers",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-ux-researchers",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-ux-researchers",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-project-managers",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-project-managers",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-business-analysts",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-business-analysts",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-human-resources",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-human-resources",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-administrative-assistants",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-administrative-assistants",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-executives",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-executives",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-federal-jobs",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-federal-jobs",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-healthcare-jobs",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-healthcare-jobs",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-legal-jobs",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-legal-jobs",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-nonprofit-jobs",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-nonprofit-jobs",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-retail-jobs",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-retail-jobs",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-hospitality-jobs",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-hospitality-jobs",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-manufacturing-jobs",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-manufacturing-jobs",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-cybersecurity-jobs",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-cybersecurity-jobs",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-ai-jobs",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-ai-jobs",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-content-writers",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-content-writers",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-social-media-managers",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-social-media-managers",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-real-estate-jobs",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-real-estate-jobs",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-supply-chain-jobs",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-supply-chain-jobs",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-for-military-transition",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-for-military-transition",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/best-resume-builder-2026",
+      "url": "https://geoairesume-web-six.vercel.app/best-resume-builder-2026",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume-builder-vs-chatgpt",
+      "url": "https://geoairesume-web-six.vercel.app/resume-builder-vs-chatgpt",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume-builder-vs-rezi",
+      "url": "https://geoairesume-web-six.vercel.app/resume-builder-vs-rezi",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume-builder-vs-teal",
+      "url": "https://geoairesume-web-six.vercel.app/resume-builder-vs-teal",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/ats-resume-guide",
+      "url": "https://geoairesume-web-six.vercel.app/ats-resume-guide",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/software-engineer-resume-guide",
+      "url": "https://geoairesume-web-six.vercel.app/software-engineer-resume-guide",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/recent-graduate-resume-guide",
+      "url": "https://geoairesume-web-six.vercel.app/recent-graduate-resume-guide",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume-mistakes",
+      "url": "https://geoairesume-web-six.vercel.app/resume-mistakes",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/community-insights",
+      "url": "https://geoairesume-web-six.vercel.app/community-insights",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume-keywords-guide",
+      "url": "https://geoairesume-web-six.vercel.app/resume-keywords-guide",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resumeforge-vs-rezi",
+      "url": "https://geoairesume-web-six.vercel.app/resumeforge-vs-rezi",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resumeforge-vs-teal",
+      "url": "https://geoairesume-web-six.vercel.app/resumeforge-vs-teal",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resumeforge-vs-resume-io",
+      "url": "https://geoairesume-web-six.vercel.app/resumeforge-vs-resume-io",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resumeforge-vs-kickresume",
+      "url": "https://geoairesume-web-six.vercel.app/resumeforge-vs-kickresume",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resumeforge-vs-enhancv",
+      "url": "https://geoairesume-web-six.vercel.app/resumeforge-vs-enhancv",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resumeforge-vs-chatgpt",
+      "url": "https://geoairesume-web-six.vercel.app/resumeforge-vs-chatgpt",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/free-resume-builders",
+      "url": "https://geoairesume-web-six.vercel.app/free-resume-builders",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/data-analyst-resume-guide",
+      "url": "https://geoairesume-web-six.vercel.app/data-analyst-resume-guide",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/product-manager-resume-guide",
+      "url": "https://geoairesume-web-six.vercel.app/product-manager-resume-guide",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/international-student-resume-guide",
+      "url": "https://geoairesume-web-six.vercel.app/international-student-resume-guide",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/career-change-resume-guide",
+      "url": "https://geoairesume-web-six.vercel.app/career-change-resume-guide",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/entry-level-resume-guide",
+      "url": "https://geoairesume-web-six.vercel.app/entry-level-resume-guide",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/internship-resume-guide",
+      "url": "https://geoairesume-web-six.vercel.app/internship-resume-guide",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume-summary-examples",
+      "url": "https://geoairesume-web-six.vercel.app/resume-summary-examples",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/cover-letter-vs-resume",
+      "url": "https://geoairesume-web-six.vercel.app/cover-letter-vs-resume",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/linkedin-profile-vs-resume",
+      "url": "https://geoairesume-web-six.vercel.app/linkedin-profile-vs-resume",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume-length-guide",
+      "url": "https://geoairesume-web-six.vercel.app/resume-length-guide",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/student-resume-with-no-experience",
+      "url": "https://geoairesume-web-six.vercel.app/student-resume-with-no-experience",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/free-ats-resume-checkers",
+      "url": "https://geoairesume-web-six.vercel.app/free-ats-resume-checkers",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/ai-resume-writing-tools",
+      "url": "https://geoairesume-web-six.vercel.app/ai-resume-writing-tools",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume-faq-for-job-seekers",
+      "url": "https://geoairesume-web-six.vercel.app/resume-faq-for-job-seekers",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/software-engineer-resume-examples",
+      "url": "https://geoairesume-web-six.vercel.app/software-engineer-resume-examples",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume-builder-vs-chatgpt-2026",
+      "url": "https://geoairesume-web-six.vercel.app/resume-builder-vs-chatgpt-2026",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume-builder-vs-resume-io",
+      "url": "https://geoairesume-web-six.vercel.app/resume-builder-vs-resume-io",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/ats-resume-myths",
+      "url": "https://geoairesume-web-six.vercel.app/ats-resume-myths",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/ats-friendly-resume-format",
+      "url": "https://geoairesume-web-six.vercel.app/ats-friendly-resume-format",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/data-analyst-resume-examples",
+      "url": "https://geoairesume-web-six.vercel.app/data-analyst-resume-examples",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/product-manager-resume-examples",
+      "url": "https://geoairesume-web-six.vercel.app/product-manager-resume-examples",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume-mistakes-that-get-rejected",
+      "url": "https://geoairesume-web-six.vercel.app/resume-mistakes-that-get-rejected",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/how-recruiters-read-resumes",
+      "url": "https://geoairesume-web-six.vercel.app/how-recruiters-read-resumes",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume-bullet-point-guide",
+      "url": "https://geoairesume-web-six.vercel.app/resume-bullet-point-guide",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume-action-verbs-guide",
+      "url": "https://geoairesume-web-six.vercel.app/resume-action-verbs-guide",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume-templates-explained",
+      "url": "https://geoairesume-web-six.vercel.app/resume-templates-explained",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/ai-resume-builder-comparison",
+      "url": "https://geoairesume-web-six.vercel.app/ai-resume-builder-comparison",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume-builder-pricing-comparison",
+      "url": "https://geoairesume-web-six.vercel.app/resume-builder-pricing-comparison",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume-optimization-checklist",
+      "url": "https://geoairesume-web-six.vercel.app/resume-optimization-checklist",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume-review-framework",
+      "url": "https://geoairesume-web-six.vercel.app/resume-review-framework",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/cover-letter-readiness-guide",
+      "url": "https://geoairesume-web-six.vercel.app/cover-letter-readiness-guide",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/job-targeting-guide",
+      "url": "https://geoairesume-web-six.vercel.app/job-targeting-guide",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/linkedin-resume-alignment-guide",
+      "url": "https://geoairesume-web-six.vercel.app/linkedin-resume-alignment-guide",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/portfolio-readiness-guide",
+      "url": "https://geoairesume-web-six.vercel.app/portfolio-readiness-guide",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/interview-preparation-after-resume",
+      "url": "https://geoairesume-web-six.vercel.app/interview-preparation-after-resume",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/resume-gap-explanation-guide",
+      "url": "https://geoairesume-web-six.vercel.app/resume-gap-explanation-guide",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/remote-job-resume-guide",
+      "url": "https://geoairesume-web-six.vercel.app/remote-job-resume-guide",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/federal-resume-vs-private-sector-resume",
+      "url": "https://geoairesume-web-six.vercel.app/federal-resume-vs-private-sector-resume",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/executive-resume-guide",
+      "url": "https://geoairesume-web-six.vercel.app/executive-resume-guide",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/healthcare-resume-guide",
+      "url": "https://geoairesume-web-six.vercel.app/healthcare-resume-guide",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
     },
     {
-      "url": "https://resumeforge-web-six.vercel.app/sales-resume-guide",
+      "url": "https://geoairesume-web-six.vercel.app/sales-resume-guide",
       "routeFile": "src/pages/ProgrammaticLandingPage.tsx",
       "exists": true,
       "returns200": true
