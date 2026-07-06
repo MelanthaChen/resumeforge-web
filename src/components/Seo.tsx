@@ -102,36 +102,6 @@ export function Seo({ title, description, path, structuredData }: SeoProps) {
           'query-input': 'required name=search_term_string',
         },
       },
-      {
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        mainEntity: [
-          {
-            '@type': 'Question',
-            name: 'What is GeoAIResume?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'GeoAIResume is an AI resume builder and career resource site with ATS guidance, resume examples, optimization frameworks, and job application resources.',
-            },
-          },
-          {
-            '@type': 'Question',
-            name: 'Does GeoAIResume provide ATS resume guidance?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Yes. GeoAIResume publishes ATS resume guides, formatting recommendations, keyword guidance, and methodology pages such as the ATS Compatibility Rating. The guidance focuses on clean section headings, readable layouts, role-relevant keywords, and avoiding formatting choices that can make resumes harder to parse or review.',
-            },
-          },
-          {
-            '@type': 'Question',
-            name: 'What resume methodologies does GeoAIResume use?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'GeoAIResume uses the Resume Readiness Index, Application Readiness Score, and ATS Compatibility Rating to explain resume quality, application readiness, and parsing compatibility.',
-            },
-          },
-        ],
-      },
     )
 
     schemaEntries.forEach((schema) => {
